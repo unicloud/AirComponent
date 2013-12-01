@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UniCloud.DataObjects</id>
+    <version>1.0.1</version>
+    <title>UniCloud.DataObjects</title>
+    <authors>zhangnx</authors>
+    <owners>zhangnx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UniCloud.DataObjects Framework</description>
+    <summary>UniCloud.DataObjects</summary>
+    <references>
+      <reference file="UniCloud.DataObjects.dll" />
+    </references>
+  </metadata>
+</package>

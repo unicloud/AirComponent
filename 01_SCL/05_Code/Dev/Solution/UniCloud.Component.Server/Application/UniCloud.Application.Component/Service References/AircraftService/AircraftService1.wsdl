@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.UniCloud.com" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AircraftService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.UniCloud.com" location="http://localhost:8040/AircraftService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IAircraftService" type="i0:IAircraftService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CommitAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcCategoryByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcCategoryByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategorys">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcCategorys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryWithPagination">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcCategoryWithPagination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcCategoryByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcCategoryCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CommitAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcRegByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcRegByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByReg">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcRegByReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcRegs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegWithPagination">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcRegWithPagination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcRegByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcRegByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcregLicenseByAcregID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcregLicenseByAcregID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcRegCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CommitAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypeByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypeByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ManageAcTypeAta">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/ManageAcTypeAta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcModels">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAcModels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcModels">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAcModels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcConfigs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAcConfigs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcConfigs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAcConfigs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcModels">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAcModels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcConfigs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAcConfigs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeWithPagination">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcTypeWithPagination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcTypeByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModels">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcModels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcModelByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcModelByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigs">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcConfigs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcConfigByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcConfigByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcTypeCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcConfigCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAcModelCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CommitAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CommitAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAtaByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAtaByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAtas">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAtas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaWithPagination">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAtaWithPagination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAtaByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaByGuid">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAtaByGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetAtaCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CreateLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/DeleteLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/UpdateLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CommitLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/CommitLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullLicenseTypeByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypes">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetLicenseTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeWithPagination">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetLicenseTypeWithPagination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeByID">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetLicenseTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeCol">
+      <soap:operation soapAction="http://www.UniCloud.com/IAircraftService/GetLicenseTypeCol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultData">
+        <soap:fault use="literal" name="FaultData" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AircraftService">
+    <wsdl:port name="BasicHttpBinding_IAircraftService" binding="tns:BasicHttpBinding_IAircraftService">
+      <soap:address location="http://localhost:8040/AircraftService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

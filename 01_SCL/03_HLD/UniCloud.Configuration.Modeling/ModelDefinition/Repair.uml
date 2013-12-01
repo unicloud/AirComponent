@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+  dslVersion="1.0.0.0"
+  Id="b7ebbcc4-0f23-4fa7-9bba-4a7beb4640ed"
+  name="Repair" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bd0f5900-d845-432d-b865-90623459473f"
+        LastKnownName="Repair_Active"
+        LastKnownLocation="Repair_Active.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b8d2d133-b557-4537-851b-be6c2e8b5034"
+        LastKnownName="Repair_Class"
+        LastKnownLocation="Repair_Class.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0758042c-3e2f-482d-b55c-1709ecec458f"
+        LastKnownName="Repair_UseCase"
+        LastKnownLocation="Repair_UseCase.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

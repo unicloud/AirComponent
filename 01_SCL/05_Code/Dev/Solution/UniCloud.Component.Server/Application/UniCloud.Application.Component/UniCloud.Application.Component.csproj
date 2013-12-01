@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.Application</RootNamespace>
+    <AssemblyName>UniCloud.Application.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\AutoMapper.2.1.265\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniCloud.Application">
+      <HintPath>..\..\..\packages\UniCloud.Application.1.0.1\lib\UniCloud.Application.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.1.0.2\lib\UniCloud.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Document, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain">
+      <HintPath>..\..\..\packages\UniCloud.Domain.1.0.1\lib\UniCloud.Domain.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UniCloud.Domain.Repositories">
+      <HintPath>..\..\..\packages\UniCloud.Domain.Repositories.1.0.2\lib\UniCloud.Domain.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Events">
+      <HintPath>..\..\..\packages\UniCloud.Events.1.0.1\lib\UniCloud.Events.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.1.0.1\lib\UniCloud.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Caching">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Caching.1.0.1\lib\UniCloud.Infrastructure.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Config">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Config.1.0.1\lib\UniCloud.Infrastructure.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Utility">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Utility.1.0.2\lib\UniCloud.Infrastructure.Utility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationAutoMap.cs" />
+    <Compile Include="Implementation\Part\AcIntUnitUtilizaServiceImpl.cs" />
+    <Compile Include="Implementation\Part\AcStructureServiceImpl.cs" />
+    <Compile Include="Implementation\Part\AdsbComplyServiceImpl.cs" />
+    <Compile Include="Implementation\Part\AdsbServiceImpl.cs" />
+    <Compile Include="Implementation\Part\AirBusMSCNServiceImpl.cs" />
+    <Compile Include="Implementation\Part\AttactDocumentServiceImpl.cs" />
+    <Compile Include="Implementation\Part\CcOrderServiceImpl.cs" />
+    <Compile Include="Implementation\Part\CcpMainServiceImpl.cs" />
+    <Compile Include="Implementation\Part\EgtMarginServiceImpl.cs" />
+    <Compile Include="Implementation\Part\IntUnitServiceImpl.cs" />
+    <Compile Include="Implementation\Part\MajorEventServiceImpl.cs" />
+    <Compile Include="Implementation\Part\OilAnalysisServiceImpl.cs" />
+    <Compile Include="Implementation\Part\OilHistoryServiceImpl.cs" />
+    <Compile Include="Implementation\Part\PartsMonitorServiceImpl.cs" />
+    <Compile Include="Implementation\Part\PnRegServiceImpl.cs" />
+    <Compile Include="Implementation\Part\ScnMainServiceImpl.cs" />
+    <Compile Include="Implementation\Part\SnHistoryServiceImpl.cs" />
+    <Compile Include="Implementation\Part\SnRegServiceImpl.cs" />
+    <Compile Include="Implementation\Part\WfHistoryServiceImpl.cs" />
+    <Compile Include="Implementation\Part\WorkScopeServiceImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AFRP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AircraftService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\UniCloud.DataObjects.AtaDataObject.datasource" />
+    <None Include="Properties\DataSources\UniCloud.DataObjects.AtaResultData.datasource" />
+    <None Include="Properties\DataSources\UniCloud.DataObjects.AtaWithPagination.datasource" />
+    <None Include="Service References\AFRP\AFRPService.wsdl" />
+    <None Include="Service References\AFRP\AFRPService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AFRP\AFRPService1.wsdl" />
+    <None Include="Service References\AFRP\AFRPService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AFRP\AFRPService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AFRP\AFRPService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AFRP\AFRPService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ActionCategoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ActionCategoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ActionCategoryWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftBusinessDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftBusinessDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftCategoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftCategoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftCategoryResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftCategoryWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftTypeDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftTypeDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftTypeResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftTypeWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AircraftWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlineProgrammingDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlineProgrammingDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlineProgrammingDetailDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlineProgrammingResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlineProgrammingWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlinesDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlinesDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlinesResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AirlinesWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualSummaryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualSummaryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualSummaryResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.AnnualSummaryWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalDocDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalDocDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalDocResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalDocWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ApprovalHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.CAACProgrammingDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.CAACProgrammingDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.CAACProgrammingDetailDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.CAACProgrammingResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.CAACProgrammingWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineBusinessHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineBusinessHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineOwnerShipHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineOwnerShipHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EnginePlanDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EnginePlanDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EnginePlanHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EnginePlanResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EnginePlanWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineTypeDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineTypeDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineTypeResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineTypeWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.EngineWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.MailAddressDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.MailAddressDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.MailAddressResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.MailAddressWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManagerDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManagerDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManagerWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManufacturerDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManufacturerDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ManufacturerWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalDocDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalDocDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalDocResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalDocWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCApprovalHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCRequestDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCRequestDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCRequestResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.NDRCRequestWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OperationHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OperationHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OperatorWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnerDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnerDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnerResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnershipHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnershipHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.OwnerWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanAircraftDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanAircraftDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanAircraftResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanAircraftWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanEngineDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanEngineDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanEngineResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanEngineWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.PlanWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ProgrammCategoryWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ProgrammingDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ProgrammingDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.ProgrammingWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalDocDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalDocDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalDocResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalDocWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RAApprovalHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RARequestDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RARequestDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RARequestResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RARequestWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RequestDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RequestDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RequestResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.RequestWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalDocDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalDocDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalDocResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalDocWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalHistoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSApprovalHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSRequestDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSRequestDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSRequestResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SAWSRequestWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SubOperationHistoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SupplierDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SupplierDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.SupplierResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlConfigDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlConfigDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlConfigWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlSettingDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlSettingDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlSettingResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AFRP\UniCloud.Application.AFRP.XmlSettingWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\AircraftService.wsdl" />
+    <None Include="Service References\AircraftService\AircraftService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AircraftService\AircraftService1.wsdl" />
+    <None Include="Service References\AircraftService\AircraftService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AircraftService\AircraftService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AircraftService\AircraftService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AircraftService\AircraftService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcCategoryDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcCategoryDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcCategoryResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcCategoryWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcConfigDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcConfigDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcModelDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcModelDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcRegDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcRegDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcregLicenseDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcRegResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcRegWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcTypeDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcTypeDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcTypeResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AcTypeWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.AtaDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.IDList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.KeyValueDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.LicenseTypeDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.LicenseTypeDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.LicenseTypeResultData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AircraftService\UniCloud.Application.AircraftService.LicenseTypeWithPagination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\UniCloud.Domain.Component\UniCloud.Domain.Component.csproj">
+      <Project>{b2b2448a-1d6d-4ec2-aab7-07a46bd3c528}</Project>
+      <Name>UniCloud.Domain.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Common\UniCloud.Infrastructure.Common.Component\UniCloud.Infrastructure.Common.Component.csproj">
+      <Project>{8aa69373-3753-424f-9160-e877f9c69fef}</Project>
+      <Name>UniCloud.Infrastructure.Common.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Repository\UniCloud.Domain.Repositories.Component\UniCloud.Domain.Repositories.Component.csproj">
+      <Project>{2c50eddc-aa50-4aa3-9d59-61d2634bfeb9}</Project>
+      <Name>UniCloud.Domain.Repositories.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.DataObjects.Component\UniCloud.DataObjects.Component.csproj">
+      <Project>{2f2cc87b-411b-4b0c-8e72-24af47c06a3e}</Project>
+      <Name>UniCloud.DataObjects.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.Query.Component\UniCloud.Query.Component.csproj">
+      <Project>{6a473421-46a1-4298-abff-17f9647025ae}</Project>
+      <Name>UniCloud.Query.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.Service.Refernce\UniCloud.Service.Refernce.csproj">
+      <Project>{bb51fdf9-fc9e-4191-9f98-b8128ced54c7}</Project>
+      <Name>UniCloud.Service.Refernce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.ServiceContracts.Component\UniCloud.ServiceContracts.Component.csproj">
+      <Project>{b5792242-4d99-4c9c-a781-7a22d8642b0d}</Project>
+      <Name>UniCloud.ServiceContracts.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AFRP\" />
+    <WCFMetadataStorage Include="Service References\AircraftService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AFRP\AFRPService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AFRP\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AFRP\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AFRP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AircraftService\AircraftService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AircraftService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AircraftService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AircraftService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

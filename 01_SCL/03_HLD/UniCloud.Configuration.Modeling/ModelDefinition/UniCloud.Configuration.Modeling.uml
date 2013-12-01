@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11"
+  name="UniCloud.Configuration.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dd062d75-a7ff-4a38-b5b7-a2cbeefcfd53"
+        LastKnownName="Aircraft"
+        LastKnownLocation="Aircraft.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="09c12086-f27b-4c37-89f8-ee522cf32076"
+        LastKnownName="Part"
+        LastKnownLocation="Part.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="60dcfff1-3730-4fd7-bc9c-36448d7bc616"
+        LastKnownName="Actor"
+        LastKnownLocation="Actor.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ea957125-10cb-4338-a8e0-d17a4b23a8a9"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dea91e85-939f-4a41-8b82-d7fddb1903e3"
+        name="Decimal" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b5c920b8-05d8-4f06-9435-441b9d35c2ac"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0e0aff57-2065-488e-a6c1-91c45dac55a3"
+        name="int?" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9cbea50a-1245-4a5b-98de-a2ac2e25e754"
+        name="Boolen" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d329ea9b-5a70-4650-ae7e-2df7d7dfb8e1"
+        name="Guid" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1ab4450d-5970-4f62-8347-1cb0c5669447"
+        name="decimal" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7403e7a6-7ce3-4011-8dd5-c014fb428d24"
+        name="ata" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a131d60c-c79f-48fb-b6ae-a0647bd477a2"
+        name="DateTIme" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ee19a5b6-cf47-42d7-8a64-c4bcaadbf11f"
+        name="I" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="51852ca3-75b0-4a8d-850c-10d967e09e9e"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5d6bd07a-3083-44bd-af6c-8772286776d7"
+        name="Dat" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b1fac337-972b-4681-9133-514842400fd8"
+        name="Inter" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="99a5e3f8-f2f7-439a-a48e-355649833ddd"
+        name="de" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c648d2d0-c9c2-4547-ad26-1b538a218c05"
+        name="Date" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="37c96045-e48a-488b-9278-70e015ca2e4b"
+        name="varcher" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="304cfa5b-fddf-41bf-8520-3f6265bf155c"
+        name="varchar(2)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="16005b17-8a36-4940-b543-1cd1a2c5d64f"
+        name="string(2)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="67308ea3-6dba-4068-9813-6182f13fcaa5"
+        name="stri" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cc1dca4d-e39b-421c-b4f7-2c7507db28f3"
+        name="string(100)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="14632852-3f7b-44bf-b475-750949846b4e"
+        name="string(30)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3c7591fe-0ed3-4870-8381-29307639c8e9"
+        name="string(20)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1c2c6e74-4319-4173-95ef-8eb66ba0ac18"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b05e1de8-ce34-477a-9d2b-bcb8d9bea263"
+        name="string(1)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6b18e9d7-6e17-4b38-89c8-20430e7abb8b"
+        name="varchar(4)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="484546a5-8bb2-4688-b555-b01b5b04d7d3"
+        name="string(50)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0e9b0828-166e-44a8-b710-9c8138dbe17a"
+        name="string(10)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3c692f08-60ff-4334-8a4b-fd866a5fe2d9"
+        name="string(6)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="75f13ef6-3277-41ef-ba5e-f7c29380cc28"
+        name="String(2)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c251366a-807a-4b9d-91da-81cc48f3b79c"
+        name="String(20)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ab8d48b5-91ba-4764-b04f-7854f3adc3f8"
+        name="string(4)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="46f2c7ef-5111-42b9-97e5-10c24d12481f"
+        name="string(1000)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="40e77a9e-5a7c-4901-92d1-ec20923ebe8e"
+        name="string(5)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bc48eab7-cd40-4cf9-acd3-dcb4fba7c960"
+        name="st" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="57fbc650-e75b-4a78-9419-f066b130e41c"
+        name="技术标准室"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="35497543-01a5-43b9-83a8-80a195182303"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="维护SCN/MSCN"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9bdc21e9-4264-4a1d-8895-6086ba13c530"
+              LastKnownName="维护SCN/MSCN"
+              LastKnownLocation="Part_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e248a573-03c3-4b2a-b67f-b978872bf995"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b822123d-2866-417b-8d13-6a3afaa032dc"
+                  name="维护SCN/MSCN"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f9fbee19-d1f4-4996-ab3d-c5d33cfc0511"
+        name="机身系统室"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dbb2870d-70f1-4487-8275-da121d3c2380"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="管理附件构型"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="99a7112a-0210-4557-8ad1-3ab653ec7091"
+              LastKnownName="管理附件构型"
+              LastKnownLocation="Part_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71c1fc83-1b19-46c3-8a34-48ad0dd9a1db"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8cd9872-01fe-46e2-9717-a28eeade58d1"
+                  name="管理附件构型"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="62cfaae9-454f-4f6a-be6a-4844901ffecf"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="查询维修记录"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c024b08-1cc3-4ab4-a01c-d6d30f96959d"
+              LastKnownName="查询维修记录"
+              LastKnownLocation="Part_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15a0a0ea-d436-4b69-8ad3-e9a93edbc2ec"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dbd655e-c2a0-4a1a-875c-d01564d7ea65"
+                  name="查询维修记录"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="70a3932b-68ed-4599-acc6-532dce9c056a"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="查询AD执行历史"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9343903a-1548-4ce3-ab0d-60f8a937d7be"
+              LastKnownName="查询AD执行历史"
+              LastKnownLocation="Repair_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f572d84-e0de-470c-8921-04dfbcfbe18a"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5251ecc8-872a-4800-a447-58949bc3eb0a"
+                  name="查询AD执行历史"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c6ad9d1f-8041-4ad7-8ad0-21e65554ef04"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="查询SB执行历史"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f36cec73-9ef7-44ad-b449-a79444b9a7e9"
+              LastKnownName="查询SB执行历史"
+              LastKnownLocation="Repair_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4998b63-ebf0-4ce3-b709-1927f68df830"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="588a5a43-5a4f-4366-8643-ef6fd3c33108"
+                  name="查询SB执行历史"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b3b699d3-8ac2-49ad-953c-0815c776c5d2"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="查询结构损伤记录"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7c0761e9-fd13-43ff-b2c4-0da446832e11"
+              LastKnownName="查询结构损伤记录"
+              LastKnownLocation="Repair_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cb828d6-bf53-4ea7-a66d-f99ef90df929"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ccd1a5b8-20fa-4750-99a5-2b798a4ed23f"
+                  name="查询结构损伤记录"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e08ad26c-d5ae-4253-91c3-433aa1803a4e"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="管理结构损伤记录"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="863ca3c5-ab4f-47f3-b771-04b9024dfcd3"
+              LastKnownName="管理结构损伤记录"
+              LastKnownLocation="Repair_UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b350c26-fbcb-4709-b165-ea85c3031e57"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6810de40-e749-4124-b19e-4344e368eed1"
+                  name="管理结构损伤记录"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b7541823-3279-49a1-bfc3-88f1e03bda5d"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="查询腐蚀记录"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="566c4fa8-9d15-4d41-b238-55bb4aa35fbc"
+              LastKnownName="查询腐蚀记录"
+              LastKnownLocation="UniCloud.Configuration.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5321aac4-b49b-4901-bf25-6641cbba50fd"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="539a2b09-365a-4644-9ca7-f36024d3877b"
+                  name="查询腐蚀记录"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4b83788e-ae51-4bbb-8e6c-5a602e194ece"
+            isDerived="false"
+            sourceEndRoleName="机身系统室"
+            targetEndRoleName="管理结构损伤记录1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="29b2e2ff-916b-4c13-ada2-3aabd3cc5bb0"
+              LastKnownName="管理腐蚀记录"
+              LastKnownLocation="UniCloud.Configuration.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="050753dc-ded3-4b2a-a54c-082442284925"
+                  name="机身系统室"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71bf8029-ccce-46a6-8820-e7c14f638f0a"
+                  name="管理结构损伤记录1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b7ebbcc4-0f23-4fa7-9bba-4a7beb4640ed"
+        LastKnownName="Repair"
+        LastKnownLocation="Repair.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e578afb5-f948-4072-9bc4-221c33b1aecd"
+        name="发管室"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a8fcb980-c6ef-4733-88b2-d7ef0e41cb63"
+        name="string(500)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c12bc839-3e6d-4c66-82bf-032b337eb8de"
+        name="decimal(10,2)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b4ac78fa-cf22-431d-a92d-03be09b4e44e"
+        name="string(200)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="baed6e0a-ccee-4736-a765-f75160f56e51"
+        name="string(8)" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="153bab1f-2a4f-4ed9-b03e-654d926cd3d7"
+        name="date" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="566c4fa8-9d15-4d41-b238-55bb4aa35fbc"
+        name="查询腐蚀记录"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="59b6dbdf-bbc6-421d-a3c1-70b71c670612">
+            <useCaseMoniker
+              Id="cd71fc8d-b6ee-473c-8d92-ad48e5bb7ad2"
+              LastKnownName="查询腐蚀附件"
+              LastKnownLocation="UniCloud.Configuration.Modeling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29b2e2ff-916b-4c13-ada2-3aabd3cc5bb0"
+        name="管理腐蚀记录"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7bd2ff5e-0742-42ab-95c6-2adfe2ad777c">
+            <useCaseMoniker
+              Id="6e0d3ba1-7be0-4b98-bc19-e64d39069dfd"
+              LastKnownName="管理腐蚀附件"
+              LastKnownLocation="UniCloud.Configuration.Modeling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cd71fc8d-b6ee-473c-8d92-ad48e5bb7ad2"
+        name="查询腐蚀附件"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e0d3ba1-7be0-4b98-bc19-e64d39069dfd"
+        name="管理腐蚀附件"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="62c44c4d-1e3d-452a-8918-feedcfd93610"
+        name="Date?" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c2bdfc72-a450-4634-9c40-9296eb382c87"
+        name="date?" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="afad4a42-36f3-4f84-bcff-ff18cc30e8c6"
+        name="decimal(10,2)?" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

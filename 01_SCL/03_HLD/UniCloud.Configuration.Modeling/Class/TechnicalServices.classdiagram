@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="95d16101-0d6e-4636-9dfb-18c9acf00957" name="TechnicalServices" linkedPackageId="aad66fdb-aa94-460a-b2a0-e52ee82bf323" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4eb465f8-c9cb-42d4-ba8f-6464c788b9ee" name="Adsb" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>ADSB文件信息</description>
+        <elementDefinition Id="911d39f4-f24a-4ff9-a3a1-ec3bef7fb46f" />
+        <targetEnds>
+          <association Id="bb39852d-32a7-473a-b4f6-87fb9f6a356e" isDerived="false" sourceEndRoleName="Adsb" targetEndRoleName="AdsbComply" isLeaf="false" isAbstract="false">
+            <classMoniker Id="079b2fae-335f-4072-b5c3-65b7ca1d5753" LastKnownName="AdsbComply" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6237ce46-6a42-499f-938c-450258ad02d3" name="Adsb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="23c01e1e-be63-4702-84be-fba2570bb39a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2854407-e9d9-4fac-9e12-65cf8cd3d4be" name="AdsbComply" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="bfd0b6bd-3e00-4736-8086-9caf4ebdb702" name="Lower" value="*">
+                      <elementDefinition Id="f0125cdb-47db-4f81-9f6b-ef0bdf30c100" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ef09cf73-471c-455a-a362-5a37f907b5b2" name="Upper" value="*">
+                      <elementDefinition Id="c92cc4ca-72b1-4a3c-a01d-164b0dd19751" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c3c9d356-997c-44b2-a31c-9744351c3be2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fbc0d182-00a3-4e0e-bdb2-c9cc63f03d16" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="73947015-688d-4cf0-9785-b08dfec6479d" name="Actype" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>系列</description>
+            <elementDefinition Id="da09e6b0-003b-480b-9761-c7b12f2fb1f2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2ba643b0-fd06-4f1a-b50f-caf810d8493e" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="71ffb3c4-6fda-49bc-af05-c79c47a23af6" name="FileType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件类型</description>
+            <elementDefinition Id="f122531e-bf44-4f46-a425-4635e91274ee" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ff67e4dc-92d5-4b6f-8599-fcd389bd8f30" LastKnownName="string(6)" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e9a10cd-1042-4efa-9474-e9e55bef3be8" name="FileNo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件号</description>
+            <elementDefinition Id="e6f68dda-3ebe-44aa-b6fd-20639f9e3f3f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f9f4dc42-e527-47ad-8f5b-4a5a71b083d6" LastKnownName="string(20)" />
+            </type_NamedElement>
+          </property>
+          <property Id="f7aba3ab-a2b5-4022-a1ea-4711d99a106f" name="FileVersion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件版本</description>
+            <elementDefinition Id="f9499ff7-9c59-4467-a379-1e2431138753" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="59c22f7d-b129-4e6f-a3ef-7225f52302c7" LastKnownName="string(4)" />
+            </type_NamedElement>
+          </property>
+          <property Id="878327d8-c5d8-49a3-8a63-bcab59b5636f" name="FileTitle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件标题</description>
+            <elementDefinition Id="cfea9460-3ed4-4b3c-9cd6-ce8fd9a18cec" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="79fb5bc9-b1fe-47fd-a43f-66b78085bfd7" LastKnownName="string(500)" />
+            </type_NamedElement>
+          </property>
+          <property Id="403db731-558f-4a87-81cc-95524bea5f76" name="FromFile" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>来源文件</description>
+            <elementDefinition Id="2b06fc26-cfe1-48d2-b72d-efb0156ef187" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="487c8b33-fa03-4c79-8d20-8a98f6b0bc8a" LastKnownName="string(20)" />
+            </type_NamedElement>
+          </property>
+          <property Id="bab6f6a9-e681-4111-9a23-e5b31aad8663" name="Content" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件内容描述</description>
+            <elementDefinition Id="04fc8c19-42ee-4702-9d3d-4170c3066d38" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="566aaf8f-daaa-4e2a-8c70-f248d463fb23" LastKnownName="string(1000)" />
+            </type_NamedElement>
+          </property>
+          <property Id="638f9b57-0750-4ca4-9121-9ed08252800b" name="ReceiveDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>收文日期</description>
+            <elementDefinition Id="8a3ad44e-8d72-4558-9437-d5cdce254db5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="79caa456-ae1c-4932-91f2-44cc5148ab99" LastKnownName="Date?" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="487c8b33-fa03-4c79-8d20-8a98f6b0bc8a" name="string(20)" isAbstract="false" isLeaf="false" cachedFullName="string(20)">
+        <elementDefinition Id="3c7591fe-0ed3-4870-8381-29307639c8e9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="79fb5bc9-b1fe-47fd-a43f-66b78085bfd7" name="string(500)" isAbstract="false" isLeaf="false" cachedFullName="string(500)">
+        <elementDefinition Id="a8fcb980-c6ef-4733-88b2-d7ef0e41cb63" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="566aaf8f-daaa-4e2a-8c70-f248d463fb23" name="string(1000)" isAbstract="false" isLeaf="false" cachedFullName="string(1000)">
+        <elementDefinition Id="46f2c7ef-5111-42b9-97e5-10c24d12481f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ff67e4dc-92d5-4b6f-8599-fcd389bd8f30" name="string(6)" isAbstract="false" isLeaf="false" cachedFullName="string(6)">
+        <elementDefinition Id="3c692f08-60ff-4334-8a4b-fd866a5fe2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59c22f7d-b129-4e6f-a3ef-7225f52302c7" name="string(4)" isAbstract="false" isLeaf="false" cachedFullName="string(4)">
+        <elementDefinition Id="ab8d48b5-91ba-4764-b04f-7854f3adc3f8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f9f4dc42-e527-47ad-8f5b-4a5a71b083d6" name="string(20)" isAbstract="false" isLeaf="false" cachedFullName="string(20)">
+        <elementDefinition Id="3c7591fe-0ed3-4870-8381-29307639c8e9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2ba643b0-fd06-4f1a-b50f-caf810d8493e" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5f878c0a-fef6-462e-8081-057ff70e9a95" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="043131cf-998b-4b15-aca7-3d48b00e44d8" name="string(6)" isAbstract="false" isLeaf="false" cachedFullName="string(6)">
+        <elementDefinition Id="3c692f08-60ff-4334-8a4b-fd866a5fe2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="008061dd-b80a-4840-8af5-e3f51b6b4d60" name="string(20)" isAbstract="false" isLeaf="false" cachedFullName="string(20)">
+        <elementDefinition Id="3c7591fe-0ed3-4870-8381-29307639c8e9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dd25caf4-da36-4725-9d0a-c8e1b262a9f8" name="string(4)" isAbstract="false" isLeaf="false" cachedFullName="string(4)">
+        <elementDefinition Id="ab8d48b5-91ba-4764-b04f-7854f3adc3f8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="37666feb-ee99-4119-8288-298b286ebd50" name="string(20)" isAbstract="false" isLeaf="false" cachedFullName="string(20)">
+        <elementDefinition Id="3c7591fe-0ed3-4870-8381-29307639c8e9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1952f203-2489-4269-8c34-766dba5dbf91" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2d48631-fc65-40dc-bfb7-ef706b5f46e8" name="string(100)" isAbstract="false" isLeaf="false" cachedFullName="string(100)">
+        <elementDefinition Id="cc1dca4d-e39b-421c-b4f7-2c7507db28f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="33aea627-898f-48e8-88d7-a44c77d71d1a" name="string(6)" isAbstract="false" isLeaf="false" cachedFullName="string(6)">
+        <elementDefinition Id="3c692f08-60ff-4334-8a4b-fd866a5fe2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="622eb323-51f8-4f8e-80c4-955f7fd99f10" name="string(200)" isAbstract="false" isLeaf="false" cachedFullName="string(200)">
+        <elementDefinition Id="b4ac78fa-cf22-431d-a92d-03be09b4e44e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aa54ccfe-0948-4afc-b4da-3e100e40d9bf" name="string(8)" isAbstract="false" isLeaf="false" cachedFullName="string(8)">
+        <elementDefinition Id="baed6e0a-ccee-4736-a765-f75160f56e51" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="079b2fae-335f-4072-b5c3-65b7ca1d5753" name="AdsbComply" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>ADSB 执行情况</description>
+        <elementDefinition Id="083d5eee-7c62-4ac2-a1fd-512dde59adde" />
+        <ownedAttributesInternal>
+          <property Id="33dea00b-8508-4324-9c9a-5e44126b3eed" name="Actype" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>系列</description>
+            <elementDefinition Id="733a3ddf-5c2f-46e9-be12-9b4ac5fd684c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f878c0a-fef6-462e-8081-057ff70e9a95" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="4d022b38-a17c-46bb-bd76-9f49c8a3d162" name="FileType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件类型</description>
+            <elementDefinition Id="717e7a8f-e13a-4944-8789-183b6457d567" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="043131cf-998b-4b15-aca7-3d48b00e44d8" LastKnownName="string(6)" />
+            </type_NamedElement>
+          </property>
+          <property Id="10ea42bb-67e7-4fd7-bf43-b003a9ca76e8" name="FileNo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件号</description>
+            <elementDefinition Id="2a7efacf-21cb-456d-af4d-c4c92c17df0e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="008061dd-b80a-4840-8af5-e3f51b6b4d60" LastKnownName="string(20)" />
+            </type_NamedElement>
+          </property>
+          <property Id="cf863eb3-712c-4de5-a4e5-8f11831df13b" name="FileVersion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件版本</description>
+            <elementDefinition Id="774b8e12-8b4f-46b4-9a7e-4d9f3bbc1285" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dd25caf4-da36-4725-9d0a-c8e1b262a9f8" LastKnownName="string(4)" />
+            </type_NamedElement>
+          </property>
+          <property Id="12885cc7-4057-4f60-8289-83cd5be1d198" name="ComplyAc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行飞机</description>
+            <elementDefinition Id="97463ffc-d7de-4337-b01b-3072f8bd001a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="37666feb-ee99-4119-8288-298b286ebd50" LastKnownName="string(20)" />
+            </type_NamedElement>
+          </property>
+          <property Id="82583e56-7a32-4339-b415-89b6f05b3f02" name="ComplyStatus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行状态</description>
+            <elementDefinition Id="148f30fa-ea41-4e0f-9cd1-1dc41d5c9851" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1952f203-2489-4269-8c34-766dba5dbf91" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="3cb4e695-f15b-4faf-a71a-6851ceaebad2" name="ComplyDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行日期</description>
+            <elementDefinition Id="a27c9f9c-207d-4718-b482-1c8954a06ba2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f872ef22-a0b3-4db2-b2a7-322efa3b5bad" LastKnownName="Date?" />
+            </type_NamedElement>
+          </property>
+          <property Id="f9e94904-03e1-4b73-bf04-23bbde419d65" name="ComplyNotes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行反馈</description>
+            <elementDefinition Id="eccfdf0d-0ef0-472f-9074-9cdf2978e011" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a2d48631-fc65-40dc-bfb7-ef706b5f46e8" LastKnownName="string(100)" />
+            </type_NamedElement>
+          </property>
+          <property Id="4154cb53-d882-4f9f-803e-2a1725d72178" name="ComplyClose" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行监控关闭情况</description>
+            <elementDefinition Id="f8cd225e-b393-4b0b-bbb7-bec8d7e6b4ad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="33aea627-898f-48e8-88d7-a44c77d71d1a" LastKnownName="string(6)" />
+            </type_NamedElement>
+          </property>
+          <property Id="563dff98-491d-40b8-b1d9-ff9e616220d7" name="ComFee" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行费用</description>
+            <elementDefinition Id="268c4129-50b4-4c4c-b42d-17abbb905e18" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="898ba886-d9c8-48f9-8cbb-8765cf002d48" LastKnownName="decimal(10,2)?" />
+            </type_NamedElement>
+          </property>
+          <property Id="6812fca0-4336-4e4d-9e4a-cb28a9f8378b" name="ComFeeNotes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行费用备注</description>
+            <elementDefinition Id="55d19847-f467-480c-a4c1-38caec57eb26" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="622eb323-51f8-4f8e-80c4-955f7fd99f10" LastKnownName="string(200)" />
+            </type_NamedElement>
+          </property>
+          <property Id="bcef74e9-5f5e-4c5f-8e78-b1d26c0e99a5" name="ComFeeCurrency" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>执行费用币种</description>
+            <elementDefinition Id="0168e125-5384-4def-bf26-1d30527313d8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="aa54ccfe-0948-4afc-b4da-3e100e40d9bf" LastKnownName="string(8)" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="898ba886-d9c8-48f9-8cbb-8765cf002d48" name="decimal(10,2)?" isAbstract="false" isLeaf="false" cachedFullName="decimal(10,2)?">
+        <elementDefinition Id="afad4a42-36f3-4f84-bcff-ff18cc30e8c6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f872ef22-a0b3-4db2-b2a7-322efa3b5bad" name="Date?" isAbstract="false" isLeaf="false" cachedFullName="Date?">
+        <elementDefinition Id="62c44c4d-1e3d-452a-8918-feedcfd93610" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="79caa456-ae1c-4932-91f2-44cc5148ab99" name="Date?" isAbstract="false" isLeaf="false" cachedFullName="Date?">
+        <elementDefinition Id="62c44c4d-1e3d-452a-8918-feedcfd93610" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="aad66fdb-aa94-460a-b2a0-e52ee82bf323" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3369e929-14e1-4083-8b5f-81beea85f7bb">
+        <profileInstance Id="31cc1deb-4847-465f-aba9-002ec79948ec" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ffe13ef5-4a5c-438f-8579-bc1ca2848c9b">
+        <profileInstance Id="12ebac4b-d75d-4803-bf75-84a17afb42b1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

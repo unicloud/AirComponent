@@ -1,0 +1,137 @@
+-- --------------------------------------------------
+-- Creating all Sequence
+-- --------------------------------------------------
+
+-- Creating sequence  'Ccin'
+CREATE sequence "UC_AMD"."SEQ_CCIN" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Cc_Order'
+CREATE sequence "UC_AMD"."SEQ_CC_ORDER" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Ccout'
+CREATE sequence "UC_AMD"."SEQ_CCOUT" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Ccp_Limit'
+CREATE sequence "UC_AMD"."SEQ_CCP_LIMIT" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Ccp_Main'
+CREATE sequence "UC_AMD"."SEQ_CCP_MAIN" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'CcpPn'
+CREATE sequence "UC_AMD"."SEQ_CCPPN" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Int_Unit'
+CREATE sequence "UC_AMD"."SEQ_INT_UNIT" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Oil_History'
+CREATE sequence "UC_AMD"."SEQ_OIL_HISTORY" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Parts_Monitor'
+CREATE sequence "UC_AMD"."SEQ_PARTS_MONITOR" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Parts_Monitor_Detail'
+CREATE sequence "UC_AMD"."SEQ_PARTS_MONITOR_DETAIL" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Pn_Reg'
+CREATE sequence "UC_AMD"."SEQ_PN_REG" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Scn_Acorder'
+CREATE sequence "UC_AMD"."SEQ_SCN_ACORDER" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Scn_Item'
+CREATE sequence "UC_AMD"."SEQ_SCN_ITEM" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Scn_Main'
+CREATE sequence "UC_AMD"."SEQ_SCN_MAIN" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Sn_History'
+CREATE sequence "UC_AMD"."SEQ_SN_HISTORY" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Sn_History_Unit'
+CREATE sequence "UC_AMD"."SEQ_SN_HISTORY_UNIT" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Sn_Reg'
+CREATE sequence "UC_AMD"."SEQ_SN_REG" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Wf_History'
+CREATE sequence "UC_AMD"."SEQ_WF_HISTORY" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Work_Scope'
+CREATE sequence "UC_AMD"."SEQ_WORK_SCOPE" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+

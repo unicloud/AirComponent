@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.Application</RootNamespace>
+    <AssemblyName>UniCloud.Application.AcConfiguration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\AutoMapper.2.1.265\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniCloud.Application">
+      <HintPath>..\..\..\packages\UniCloud.Application.1.0.1\lib\UniCloud.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.1.0.2\lib\UniCloud.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Document">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain">
+      <HintPath>..\..\..\packages\UniCloud.Domain.1.0.1\lib\UniCloud.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain.Repositories">
+      <HintPath>..\..\..\packages\UniCloud.Domain.Repositories.1.0.2\lib\UniCloud.Domain.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Events">
+      <HintPath>..\..\..\packages\UniCloud.Events.1.0.1\lib\UniCloud.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.1.0.1\lib\UniCloud.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Caching">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Caching.1.0.1\lib\UniCloud.Infrastructure.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Config">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Config.1.0.1\lib\UniCloud.Infrastructure.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Utility">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Utility.1.0.2\lib\UniCloud.Infrastructure.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationAutoMap.cs" />
+    <Compile Include="Implementation\AircraftServiceImpl.cs" />
+    <Compile Include="Implementation\Aircraft\AcCategoryServiceImpl.cs" />
+    <Compile Include="Implementation\Aircraft\AcRegServiceImpl.cs" />
+    <Compile Include="Implementation\Aircraft\AcTypeServiceImpl.cs" />
+    <Compile Include="Implementation\Aircraft\AtaServiceImpl.cs" />
+    <Compile Include="Implementation\Aircraft\LicenseTypeServiceImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\UniCloud.Domain.AcConfiguration\UniCloud.Domain.AcConfiguration.csproj">
+      <Project>{c3f5e35e-dbf5-48e8-92ec-c5e6b4e1e1b6}</Project>
+      <Name>UniCloud.Domain.AcConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Common\UniCloud.Infrastructure.Common.AcConfiguration\UniCloud.Infrastructure.Common.AcConfiguration.csproj">
+      <Project>{699f1079-c8d2-4b3c-a100-b69b0b70f33c}</Project>
+      <Name>UniCloud.Infrastructure.Common.AcConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Repository\UniCloud.Domain.Repositories.AcConfiguration\UniCloud.Domain.Repositories.AcConfiguration.csproj">
+      <Project>{ed2c2978-3f3a-4270-9875-a3107ce0d394}</Project>
+      <Name>UniCloud.Domain.Repositories.AcConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.DataObjects.AcConfiguration\UniCloud.DataObjects.AcConfiguration.csproj">
+      <Project>{e9efac1f-41a9-4875-8725-0fd3c81a808e}</Project>
+      <Name>UniCloud.DataObjects.AcConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.Query.AcConfiguration\UniCloud.Query.AcConfiguration.csproj">
+      <Project>{4c7c811e-4ac3-4d23-bdc9-ad28faab6481}</Project>
+      <Name>UniCloud.Query.AcConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.Service.Refernce\UniCloud.Service.Refernce.csproj">
+      <Project>{eb557f34-d628-4ab5-b71c-47677d57837b}</Project>
+      <Name>UniCloud.Service.Refernce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.ServiceContracts.AcConfiguration\UniCloud.ServiceContracts.AcConfiguration.csproj">
+      <Project>{78169235-2e96-4069-b123-ac06ee01d247}</Project>
+      <Name>UniCloud.ServiceContracts.AcConfiguration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

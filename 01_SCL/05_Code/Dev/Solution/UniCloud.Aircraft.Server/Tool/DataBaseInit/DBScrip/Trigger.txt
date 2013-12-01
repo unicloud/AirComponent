@@ -1,0 +1,75 @@
+﻿-- --------------------------------------------------
+-- Creating all Trigger
+-- --------------------------------------------------
+
+-- Creating trigger  for  'Ac_Ata'
+CREATE Trigger "UC_AMD"."TRG_AC_ATA" 
+before insert on "UC_AMD"."AC_ATA"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_ATA".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'AC_CATEGORY'
+CREATE Trigger "UC_AMD"."TRG_AC_CATEGORY" 
+before insert on "UC_AMD"."AC_CATEGORY"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_CATEGORY".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ac_Config'
+CREATE Trigger "UC_AMD"."TRG_AC_CONFIG" 
+before insert on "UC_AMD"."AC_CONFIG"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_CONFIG".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ac_Model'
+CREATE Trigger "UC_AMD"."TRG_AC_MODEL" 
+before insert on "UC_AMD"."AC_MODEL"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_MODEL".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ac_Reg'
+CREATE Trigger "UC_AMD"."TRG_AC_REG" 
+before insert on "UC_AMD"."AC_REG"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_REG".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'ACREG_LICENSE'
+CREATE Trigger "UC_AMD"."TRG_ACREG_LICENSE" 
+before insert on "UC_AMD"."ACREG_LICENSE"
+for each row
+begin
+select "UC_AMD"."SEQ_ACREG_LICENSE".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'ATA'
+CREATE Trigger "UC_AMD"."TRG_ATA" 
+before insert on "UC_AMD"."ATA"
+for each row
+begin
+select "UC_AMD"."SEQ_ATA".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ac_Type'
+CREATE Trigger "UC_AMD"."TRG_AC_TYPE" 
+before insert on "UC_AMD"."AC_TYPE"
+for each row
+begin
+select "UC_AMD"."SEQ_AC_TYPE".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'LICENSE_TYPE'
+CREATE Trigger "UC_AMD"."TRG_LICENSE_TYPE" 
+before insert on "UC_AMD"."LICENSE_TYPE"
+for each row
+begin
+select "UC_AMD"."SEQ_LICENSE_TYPE".nextval into:new.id from dual;
+end;

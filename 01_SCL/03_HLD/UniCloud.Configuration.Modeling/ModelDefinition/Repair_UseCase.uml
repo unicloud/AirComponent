@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0758042c-3e2f-482d-b55c-1709ecec458f"
+  name="Repair_UseCase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="9343903a-1548-4ce3-ab0d-60f8a937d7be"
+        name="查询AD执行历史"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="18da80c2-1353-4ec2-a3ea-81dd70ac5b66">
+            <useCaseMoniker
+              Id="e181c493-7848-4c11-8318-980d43f33721"
+              LastKnownName="补录AD执行费用"
+              LastKnownLocation="Repair_UseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f36cec73-9ef7-44ad-b449-a79444b9a7e9"
+        name="查询SB执行历史"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="674dc92a-54db-40e1-a4ba-b862d25e0520">
+            <useCaseMoniker
+              Id="5dfeed99-9081-489a-afea-755605287c3a"
+              LastKnownName="补录SB执行费用"
+              LastKnownLocation="Repair_UseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e181c493-7848-4c11-8318-980d43f33721"
+        name="补录AD执行费用"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5dfeed99-9081-489a-afea-755605287c3a"
+        name="补录SB执行费用"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c0761e9-fd13-43ff-b2c4-0da446832e11"
+        name="查询结构损伤记录"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="936c0240-8d87-4036-a634-da88213f0945">
+            <useCaseMoniker
+              Id="77fd07ed-9a51-46bc-9034-0f3134e49ac9"
+              LastKnownName="查询结构损伤附件"
+              LastKnownLocation="Repair_UseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="863ca3c5-ab4f-47f3-b771-04b9024dfcd3"
+        name="管理结构损伤记录"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3585c34b-f8b4-43bd-aa9e-f770d9158d5e">
+            <useCaseMoniker
+              Id="af61c467-5081-43ae-9a3c-ee38f53950d4"
+              LastKnownName="管理结构损伤附件"
+              LastKnownLocation="Repair_UseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="77fd07ed-9a51-46bc-9034-0f3134e49ac9"
+        name="查询结构损伤附件"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="af61c467-5081-43ae-9a3c-ee38f53950d4"
+        name="管理结构损伤附件"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

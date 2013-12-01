@@ -1,0 +1,295 @@
+
+2013-09-04 17:17:04,746 [49] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcModelInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1709
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcModelInfo_DelegateImplementation>__79(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:17:04,847 [49] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcConfigInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1421
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcConfigInfo_DelegateImplementation>__66(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:17:04,889 [49] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcRegInfo_DelegateImplementation>__39(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:13,696 [15] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcModelInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1709
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcModelInfo_DelegateImplementation>__79(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:13,734 [15] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcConfigInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1421
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcConfigInfo_DelegateImplementation>__66(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:13,753 [15] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcModelInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1709
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcModelInfo_DelegateImplementation>__79(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:13,908 [15] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcConfigInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1421
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcConfigInfo_DelegateImplementation>__66(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:14,056 [22] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcRegInfo_DelegateImplementation>__39(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-04 17:31:14,067 [22] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Domain.Model.AcModel.GetHashCode() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Domain\UniCloud.Domain.AcConfiguration\Model\Aircraft\AcModel.cs:行号 104
+   在 System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.ContainsEntity(IEntityWrapper wrappedEntity)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.VerifyEntityForAdd(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedEntity, Boolean applyConstraints)
+   在 System.Data.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   在 System.Data.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   在 System.Data.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   在 System.Data.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   在 System.Data.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.AcType_219EE40980ACF1EDA0982C1A7E17EE74CD6CDE0429DFA5F3B2213537614C6C31.get_Acmodels()
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcModelInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1709
+   在 DynamicModule.ns.Wrapped_IAircraftService_2a25492c8d63445f884ff7bb34b492c1.<GetAllAcModelInfo_DelegateImplementation>__79(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 14:12:21,552 [14] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 14:13:09,932 [21] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 14:14:17,145 [34] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 16:43:46,999 [80] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 16:50:48,113 [139] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 17:07:37,503 [80] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-05 17:31:42,936 [52] ERROR UniCloud.Logger - Exception caught
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAllAcRegInfo() 位置 e:\XMZZ\AcCompent\Solution\UniCloud.AcConfiguration.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 684
+   在 DynamicModule.ns.Wrapped_IAircraftService_e7dbbdd8ab8f41769765596561014270.<GetAllAcRegInfo_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-17 09:39:56,169 [11] ERROR UniCloud.Logger - Exception caught
+System.InvalidOperationException: 序列不包含任何元素
+   在 System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   在 UniCloud.Domain.Repositories.EntityFramework.EntityFrameworkIntRepository`1.DoGetByKey(Object key)
+   在 UniCloud.Domain.Repositories.Repository`1.GetByKey(Object key)
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAcregLicense(Int32 acRegId) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1882
+   在 DynamicModule.ns.Wrapped_IAircraftService_e5ed8fb12fb746609b2b41569636924c.<GetAcregLicense_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-24 23:19:19,909 [10] ERROR UniCloud.Logger - Exception caught
+System.ArgumentNullException: 页码必须大于或等于1。
+参数名: pagination
+   在 UniCloud.Query.QueryExtension.LoadPageDataObjects[TEntity,TObject](DbContext context, Expression`1 wherelambda, Expression`1 sortPredicate, Pagination pagination, Expression`1 entityToObject) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\BaseQuery\QueryExtension.cs:行号 37
+   在 UniCloud.Query.AcConfiguration.AcCategoryQuery.GetAcCategoryPage(Expression`1 wherePredicate, Expression`1 sortPredicate, Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\Aircraft\AcCategoryQuery.cs:行号 103
+   在 UniCloud.Query.AcConfiguration.AcCategoryQuery.GetAcCategoryWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\Aircraft\AcCategoryQuery.cs:行号 58
+   在 UniCloud.Query.AcConfiguration.AircraftQuery.GetAcCategoryWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\AircraftQuery.cs:行号 53
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetAcCategoryWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 1988
+   在 DynamicModule.ns.Wrapped_IAircraftService_3492defac9fb425a8e75d158c1287c2b.<GetAcCategoryWithPagination_DelegateImplementation>__16(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+
+2013-09-25 10:01:47,902 [10] ERROR UniCloud.Logger - Exception caught
+System.ArgumentNullException: 页码必须大于或等于1。
+参数名: pagination
+   在 UniCloud.Query.QueryExtension.LoadPageDataObjects[TEntity,TObject](DbContext context, Expression`1 wherelambda, Expression`1 sortPredicate, Pagination pagination, Expression`1 entityToObject) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\BaseQuery\QueryExtension.cs:行号 37
+   在 UniCloud.Query.AcConfiguration.LicenseTypeQuery.GetLicenseTypePage(Expression`1 wherePredicate, Expression`1 sortPredicate, Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\Aircraft\LicenseTypeQuery.cs:行号 105
+   在 UniCloud.Query.AcConfiguration.LicenseTypeQuery.GetLicenseTypeWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\Aircraft\LicenseTypeQuery.cs:行号 58
+   在 UniCloud.Query.AcConfiguration.AircraftQuery.GetLicenseTypeWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\Querys\AircraftQuery.cs:行号 113
+   在 UniCloud.Application.Implementation.AircraftServiceImpl.GetLicenseTypeWithPagination(Pagination pagination) 位置 d:\AcHRS\AirComponent\AirCraftComponent\01_SCL\05_Code\Dev\Solution\UniCloud.Aircraft.Server\Application\UniCloud.Application.AcConfiguration\Implementation\AircraftServiceImpl.cs:行号 2008
+   在 DynamicModule.ns.Wrapped_IAircraftService_7fe340626e174681a372b75583c7c587.<GetLicenseTypeWithPagination_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)

@@ -1,0 +1,66 @@
+﻿--------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on "ID"in table 'AcAta'
+ALTER TABLE "UC_AMD"."AC_ATA"
+ADD CONSTRAINT "PK_ACATA_AC_TYPEID"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'AC_CATEGORY'
+ALTER TABLE "UC_AMD"."AC_CATEGORY"
+ADD CONSTRAINT "PK_ACCATEGORY"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'AC_CONFIG'
+ALTER TABLE "UC_AMD"."AC_CONFIG"
+ADD CONSTRAINT "PK_ACCONFIG"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'AcModel'
+ALTER TABLE "UC_AMD"."AC_MODEL"
+ADD CONSTRAINT "PK_ACMODEL"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'AC_REG'
+ALTER TABLE "UC_AMD"."AC_REG"
+ADD CONSTRAINT "PK_ACREG"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'ACREG_LICENSE'
+ALTER TABLE "UC_AMD"."ACREG_LICENSE"
+ADD CONSTRAINT "PK_ACREGLICENSE"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'ATA'
+ALTER TABLE "UC_AMD"."ATA"
+ADD CONSTRAINT "PK_ATA"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'AC_TYPE'
+ALTER TABLE "UC_AMD"."AC_TYPE"
+ADD CONSTRAINT "PK_ACTYPE"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'LICENSE_TYPE'
+ALTER TABLE "UC_AMD"."LICENSE_TYPE"
+ADD CONSTRAINT "PK_LICENSETYPE"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;

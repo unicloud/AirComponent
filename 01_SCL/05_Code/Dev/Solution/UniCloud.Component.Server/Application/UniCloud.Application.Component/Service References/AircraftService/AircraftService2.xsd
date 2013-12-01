@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd3" namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" />
+  <xs:complexType name="AcCategoryDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcCategoryDataObject" nillable="true" type="tns:AcCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcCategoryDataObjectList" nillable="true" type="tns:AcCategoryDataObjectList" />
+  <xs:complexType name="AcCategoryDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Level" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Regional" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcCategoryDataObject" nillable="true" type="tns:AcCategoryDataObject" />
+  <xs:complexType name="FaultData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StackTrace" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FaultData" nillable="true" type="tns:FaultData" />
+  <xs:complexType name="AcCategoryResultData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultData_AcCategoryDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcCategoryResultData" nillable="true" type="tns:AcCategoryResultData" />
+  <xs:complexType name="ResultData_AcCategoryDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultData_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcCategoryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedCollection" nillable="true" type="tns:ArrayOfAcCategoryDataObject" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DeletedCollection" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsSaved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModefiedCollection" nillable="true" type="tns:ArrayOfAcCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultData_AcCategoryDataObject" nillable="true" type="tns:ResultData_AcCategoryDataObject" />
+  <xs:complexType name="ArrayOfAcCategoryDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcCategoryDataObject" nillable="true" type="tns:AcCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcCategoryDataObject" nillable="true" type="tns:ArrayOfAcCategoryDataObject" />
+  <xs:complexType name="ColumnFilterDescriptorCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ColumnFilterDescriptor" nillable="true" type="tns:ColumnFilterDescriptor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColumnFilterDescriptorCollection" nillable="true" type="tns:ColumnFilterDescriptorCollection" />
+  <xs:complexType name="ColumnFilterDescriptor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DistinctFilter" nillable="true" type="tns:DistinctFilterDescriptor" />
+      <xs:element minOccurs="0" name="FieldFilter" nillable="true" type="tns:FieldFilterDescriptor" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Member" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operator" type="tns:LogicalOperator" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColumnFilterDescriptor" nillable="true" type="tns:ColumnFilterDescriptor" />
+  <xs:complexType name="DistinctFilterDescriptor">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DistinctValues" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Field" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Operator" type="tns:LogicalOperator" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DistinctFilterDescriptor" nillable="true" type="tns:DistinctFilterDescriptor" />
+  <xs:simpleType name="LogicalOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="And" />
+      <xs:enumeration value="Or" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LogicalOperator" nillable="true" type="tns:LogicalOperator" />
+  <xs:complexType name="FieldFilterDescriptor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Field" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Filter1" nillable="true" type="tns:FilterDescriptorBase" />
+      <xs:element minOccurs="0" name="Filter2" nillable="true" type="tns:FilterDescriptorBase" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Operator" type="tns:LogicalOperator" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FieldFilterDescriptor" nillable="true" type="tns:FieldFilterDescriptor" />
+  <xs:complexType name="FilterDescriptorBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompareOperator" type="tns:FilterCompareOperator" />
+      <xs:element minOccurs="0" name="Field" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCaseSensitive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterDescriptorBase" nillable="true" type="tns:FilterDescriptorBase" />
+  <xs:simpleType name="FilterCompareOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IsLessThan" />
+      <xs:enumeration value="IsLessThanOrEqualTo" />
+      <xs:enumeration value="IsEqualTo" />
+      <xs:enumeration value="IsNotEqualTo" />
+      <xs:enumeration value="IsGreaterThanOrEqualTo" />
+      <xs:enumeration value="IsGreaterThan" />
+      <xs:enumeration value="StartsWith" />
+      <xs:enumeration value="EndsWith" />
+      <xs:enumeration value="Contains" />
+      <xs:enumeration value="DoesNotContain" />
+      <xs:enumeration value="IsContainedIn" />
+      <xs:enumeration value="IsNotContainedIn" />
+      <xs:enumeration value="IsNull" />
+      <xs:enumeration value="IsNotNull" />
+      <xs:enumeration value="IsEmpty" />
+      <xs:enumeration value="IsNotEmpty" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FilterCompareOperator" nillable="true" type="tns:FilterCompareOperator" />
+  <xs:complexType name="ColumnSortDescriptorCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ColumnSortDescriptor" nillable="true" type="tns:ColumnSortDescriptor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColumnSortDescriptorCollection" nillable="true" type="tns:ColumnSortDescriptorCollection" />
+  <xs:complexType name="ColumnSortDescriptor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SortOrder" type="tns:SortOrder" />
+      <xs:element minOccurs="0" name="SortPredicate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColumnSortDescriptor" nillable="true" type="tns:ColumnSortDescriptor" />
+  <xs:simpleType name="SortOrder">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ascending">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Descending">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SortOrder" nillable="true" type="tns:SortOrder" />
+  <xs:complexType name="Pagination">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FilterDescriptors" nillable="true" type="tns:ColumnFilterDescriptorCollection" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="SortOrder" type="tns:SortOrder" />
+      <xs:element minOccurs="0" name="SortPredicate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalItemCounts" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalPages" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pagination" nillable="true" type="tns:Pagination" />
+  <xs:complexType name="AcCategoryWithPagination">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDataObjectListWithPagination_AcCategoryDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcCategoryWithPagination" nillable="true" type="tns:AcCategoryWithPagination" />
+  <xs:complexType name="BaseDataObjectListWithPagination_AcCategoryDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseDataObjectListWithPagination_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcCategoryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://www.UniCloud.com/CollectionDataObjectList.xsd" minOccurs="0" name="BaseDataObjectList" nillable="true" type="q3:BaseAcCategoryDataObjectList" />
+      <xs:element minOccurs="0" name="Pagination" nillable="true" type="tns:Pagination" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDataObjectListWithPagination_AcCategoryDataObject" nillable="true" type="tns:BaseDataObjectListWithPagination_AcCategoryDataObject" />
+  <xs:complexType name="KeyValueDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueDataObject" nillable="true" type="tns:KeyValueDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValueDataObjectList" nillable="true" type="tns:KeyValueDataObjectList" />
+  <xs:complexType name="KeyValueDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GuidKey" type="ser:guid" />
+      <xs:element minOccurs="0" name="IntKey" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StringKey" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValueDataObject" nillable="true" type="tns:KeyValueDataObject" />
+  <xs:complexType name="AcRegDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcRegDataObject" nillable="true" type="tns:AcRegDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcRegDataObjectList" nillable="true" type="tns:AcRegDataObjectList" />
+  <xs:complexType name="AcRegDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcConfigGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcConfigID" type="xs:int" />
+      <xs:element minOccurs="0" name="AcModelGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcModelID" type="xs:int" />
+      <xs:element minOccurs="0" name="AcTypeGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="AcregLicenses" nillable="true" type="tns:AcregLicenseDataObjectList" />
+      <xs:element minOccurs="0" name="CarryingCapacity" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DecodeConfigGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="DecodeConfigID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EngineTr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExportCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExportDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FactoryDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ImportCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImportDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsOperation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Msn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OffsetUTC" type="xs:int" />
+      <xs:element minOccurs="0" name="Operators" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Owner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeatingCapacity" type="xs:int" />
+      <xs:element minOccurs="0" name="SubframeLenght" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcRegDataObject" nillable="true" type="tns:AcRegDataObject" />
+  <xs:complexType name="AcregLicenseDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcregLicenseDataObject" nillable="true" type="tns:AcregLicenseDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcregLicenseDataObjectList" nillable="true" type="tns:AcregLicenseDataObjectList" />
+  <xs:complexType name="AcregLicenseDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcRegGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcRegID" type="xs:int" />
+      <xs:element minOccurs="0" name="CopyFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document" nillable="true" type="tns:DocumentDataObject" />
+      <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IssuedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssuedFrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseType" nillable="true" type="tns:LicenseTypeDataObject" />
+      <xs:element minOccurs="0" name="LicenseTypeGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="LicenseTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidMonths" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcregLicenseDataObject" nillable="true" type="tns:AcregLicenseDataObject" />
+  <xs:complexType name="DocumentDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abstract" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocumentFileStream" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="DocumentTypeID" type="ser:guid" />
+      <xs:element minOccurs="0" name="DocumentTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtendType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsDeleted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsIndex" type="xs:int" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentDocument" nillable="true" type="tns:DocumentDataObject" />
+      <xs:element minOccurs="0" name="SubDocuments" nillable="true" type="tns:ArrayOfDocumentDataObject" />
+      <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uploader" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentDataObject" nillable="true" type="tns:DocumentDataObject" />
+  <xs:complexType name="ArrayOfDocumentDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentDataObject" nillable="true" type="tns:DocumentDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentDataObject" nillable="true" type="tns:ArrayOfDocumentDataObject" />
+  <xs:complexType name="OfficialDocumentDataObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentDataObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DispatchDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ReferenceNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitID" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OfficialDocumentDataObject" nillable="true" type="tns:OfficialDocumentDataObject" />
+  <xs:complexType name="StandardDocumentDataObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StandardDocumentDataObject" nillable="true" type="tns:StandardDocumentDataObject" />
+  <xs:complexType name="LicenseTypeDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="HasFile" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LicenseTypeDataObject" nillable="true" type="tns:LicenseTypeDataObject" />
+  <xs:complexType name="AcRegResultData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultData_AcRegDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcRegResultData" nillable="true" type="tns:AcRegResultData" />
+  <xs:complexType name="ResultData_AcRegDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultData_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcRegDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedCollection" nillable="true" type="tns:ArrayOfAcRegDataObject" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DeletedCollection" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsSaved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModefiedCollection" nillable="true" type="tns:ArrayOfAcRegDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultData_AcRegDataObject" nillable="true" type="tns:ResultData_AcRegDataObject" />
+  <xs:complexType name="ArrayOfAcRegDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcRegDataObject" nillable="true" type="tns:AcRegDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcRegDataObject" nillable="true" type="tns:ArrayOfAcRegDataObject" />
+  <xs:complexType name="AcRegWithPagination">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDataObjectListWithPagination_AcRegDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcRegWithPagination" nillable="true" type="tns:AcRegWithPagination" />
+  <xs:complexType name="BaseDataObjectListWithPagination_AcRegDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseDataObjectListWithPagination_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcRegDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://www.UniCloud.com/CollectionDataObjectList.xsd" minOccurs="0" name="BaseDataObjectList" nillable="true" type="q5:BaseAcRegDataObjectList" />
+      <xs:element minOccurs="0" name="Pagination" nillable="true" type="tns:Pagination" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDataObjectListWithPagination_AcRegDataObject" nillable="true" type="tns:BaseDataObjectListWithPagination_AcRegDataObject" />
+  <xs:complexType name="AcTypeDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcTypeDataObject" nillable="true" type="tns:AcTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcTypeDataObjectList" nillable="true" type="tns:AcTypeDataObjectList" />
+  <xs:complexType name="AcTypeDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AcCategoryGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="Acmodels" nillable="true" type="tns:AcModelDataObjectList" />
+      <xs:element minOccurs="0" name="Atas" nillable="true" type="tns:AtaDataObjectList" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcTypeDataObject" nillable="true" type="tns:AcTypeDataObject" />
+  <xs:complexType name="AcModelDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcModelDataObject" nillable="true" type="tns:AcModelDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcModelDataObjectList" nillable="true" type="tns:AcModelDataObjectList" />
+  <xs:complexType name="AcModelDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcConfigs" nillable="true" type="tns:AcConfigDataObjectList" />
+      <xs:element minOccurs="0" name="AcTypeGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcModelDataObject" nillable="true" type="tns:AcModelDataObject" />
+  <xs:complexType name="AcConfigDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcConfigDataObject" nillable="true" type="tns:AcConfigDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcConfigDataObjectList" nillable="true" type="tns:AcConfigDataObjectList" />
+  <xs:complexType name="AcConfigDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcModelGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="AcModelID" type="xs:int" />
+      <xs:element minOccurs="0" name="AcTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="BEW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BWF" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BWI" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MCC" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MLW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MMFW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MTOW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MTW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MZFW" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcConfigDataObject" nillable="true" type="tns:AcConfigDataObject" />
+  <xs:complexType name="AtaDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AtaDataObject" nillable="true" type="tns:AtaDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AtaDataObjectList" nillable="true" type="tns:AtaDataObjectList" />
+  <xs:complexType name="AtaDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ATA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChildAtas" nillable="true" type="tns:AtaDataObjectList" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentAta" nillable="true" type="tns:AtaDataObject" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AtaDataObject" nillable="true" type="tns:AtaDataObject" />
+  <xs:complexType name="AcTypeResultData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultData_AcTypeDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcTypeResultData" nillable="true" type="tns:AcTypeResultData" />
+  <xs:complexType name="ResultData_AcTypeDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultData_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedCollection" nillable="true" type="tns:ArrayOfAcTypeDataObject" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DeletedCollection" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsSaved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModefiedCollection" nillable="true" type="tns:ArrayOfAcTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultData_AcTypeDataObject" nillable="true" type="tns:ResultData_AcTypeDataObject" />
+  <xs:complexType name="ArrayOfAcTypeDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcTypeDataObject" nillable="true" type="tns:AcTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcTypeDataObject" nillable="true" type="tns:ArrayOfAcTypeDataObject" />
+  <xs:complexType name="AcTypeWithPagination">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDataObjectListWithPagination_AcTypeDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcTypeWithPagination" nillable="true" type="tns:AcTypeWithPagination" />
+  <xs:complexType name="BaseDataObjectListWithPagination_AcTypeDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseDataObjectListWithPagination_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q7="http://www.UniCloud.com/CollectionDataObjectList.xsd" minOccurs="0" name="BaseDataObjectList" nillable="true" type="q7:BaseAcTypeDataObjectList" />
+      <xs:element minOccurs="0" name="Pagination" nillable="true" type="tns:Pagination" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDataObjectListWithPagination_AcTypeDataObject" nillable="true" type="tns:BaseDataObjectListWithPagination_AcTypeDataObject" />
+  <xs:complexType name="AtaResultData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultData_AtaDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AtaResultData" nillable="true" type="tns:AtaResultData" />
+  <xs:complexType name="ResultData_AtaDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultData_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AtaDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedCollection" nillable="true" type="tns:ArrayOfAtaDataObject" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DeletedCollection" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsSaved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModefiedCollection" nillable="true" type="tns:ArrayOfAtaDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultData_AtaDataObject" nillable="true" type="tns:ResultData_AtaDataObject" />
+  <xs:complexType name="ArrayOfAtaDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AtaDataObject" nillable="true" type="tns:AtaDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAtaDataObject" nillable="true" type="tns:ArrayOfAtaDataObject" />
+  <xs:complexType name="AtaWithPagination">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDataObjectListWithPagination_AtaDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AtaWithPagination" nillable="true" type="tns:AtaWithPagination" />
+  <xs:complexType name="BaseDataObjectListWithPagination_AtaDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseDataObjectListWithPagination_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AtaDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q9="http://www.UniCloud.com/CollectionDataObjectList.xsd" minOccurs="0" name="BaseDataObjectList" nillable="true" type="q9:BaseAtaDataObjectList" />
+      <xs:element minOccurs="0" name="Pagination" nillable="true" type="tns:Pagination" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDataObjectListWithPagination_AtaDataObject" nillable="true" type="tns:BaseDataObjectListWithPagination_AtaDataObject" />
+  <xs:complexType name="LicenseTypeDataObjectList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseTypeDataObject" nillable="true" type="tns:LicenseTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LicenseTypeDataObjectList" nillable="true" type="tns:LicenseTypeDataObjectList" />
+  <xs:complexType name="LicenseTypeResultData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultData_LicenseTypeDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseTypeResultData" nillable="true" type="tns:LicenseTypeResultData" />
+  <xs:complexType name="ResultData_LicenseTypeDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultData_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LicenseTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedCollection" nillable="true" type="tns:ArrayOfLicenseTypeDataObject" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DeletedCollection" nillable="true" type="q10:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsSaved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModefiedCollection" nillable="true" type="tns:ArrayOfLicenseTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultData_LicenseTypeDataObject" nillable="true" type="tns:ResultData_LicenseTypeDataObject" />
+  <xs:complexType name="ArrayOfLicenseTypeDataObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseTypeDataObject" nillable="true" type="tns:LicenseTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLicenseTypeDataObject" nillable="true" type="tns:ArrayOfLicenseTypeDataObject" />
+  <xs:complexType name="LicenseTypeWithPagination">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseDataObjectListWithPagination_LicenseTypeDataObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseTypeWithPagination" nillable="true" type="tns:LicenseTypeWithPagination" />
+  <xs:complexType name="BaseDataObjectListWithPagination_LicenseTypeDataObject">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseDataObjectListWithPagination_{0}" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LicenseTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q11="http://www.UniCloud.com/CollectionDataObjectList.xsd" minOccurs="0" name="BaseDataObjectList" nillable="true" type="q11:BaseLicenseTypeDataObjectList" />
+      <xs:element minOccurs="0" name="Pagination" nillable="true" type="tns:Pagination" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseDataObjectListWithPagination_LicenseTypeDataObject" nillable="true" type="tns:BaseDataObjectListWithPagination_LicenseTypeDataObject" />
+</xs:schema>

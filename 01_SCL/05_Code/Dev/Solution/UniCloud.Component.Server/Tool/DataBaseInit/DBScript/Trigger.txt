@@ -1,0 +1,156 @@
+-- --------------------------------------------------
+-- Creating all Trigger
+-- --------------------------------------------------
+
+-- Creating trigger  for  'Ccin'
+CREATE Trigger "UC_AMD"."TRG_CCIN" 
+before insert on "UC_AMD"."CCIN"
+for each row
+begin
+select "UC_AMD"."SEQ_CCIN".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Cc_Order'
+CREATE Trigger "UC_AMD"."TRG_CC_ORDER" 
+before insert on "UC_AMD"."CC_ORDER"
+for each row
+begin
+select "UC_AMD"."SEQ_CC_ORDER".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ccout'
+CREATE Trigger "UC_AMD"."TRG_CCOUT" 
+before insert on "UC_AMD"."CCOUT"
+for each row
+begin
+select "UC_AMD"."SEQ_CCOUT".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ccp_Limit'
+CREATE Trigger "UC_AMD"."TRG_CCP_LIMIT" 
+before insert on "UC_AMD"."CCP_LIMIT"
+for each row
+begin
+select "UC_AMD"."SEQ_CCP_LIMIT".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Ccp_Main'
+CREATE Trigger "UC_AMD"."TRG_CCP_MAIN" 
+before insert on "UC_AMD"."CCP_MAIN"
+for each row
+begin
+select "UC_AMD"."SEQ_CCP_MAIN".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'CcpPn'
+CREATE Trigger "UC_AMD"."TRG_CCPPN" 
+before insert on "UC_AMD"."CCPPN"
+for each row
+begin
+select "UC_AMD"."SEQ_CCPPN".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Int_Unit'
+CREATE Trigger "UC_AMD"."TRG_INT_UNIT" 
+before insert on "UC_AMD"."INT_UNIT"
+for each row
+begin
+select "UC_AMD"."SEQ_INT_UNIT".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Oil_History'
+CREATE Trigger "UC_AMD"."TRG_OIL_HISTORY" 
+before insert on "UC_AMD"."OIL_HISTORY"
+for each row
+begin
+select "UC_AMD"."SEQ_OIL_HISTORY".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Parts_Monitor'
+CREATE Trigger "UC_AMD"."TRG_PARTS_MONITOR" 
+before insert on "UC_AMD"."PARTS_MONITOR"
+for each row
+begin
+select "UC_AMD"."SEQ_PARTS_MONITOR".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Parts_Monitor_Detail'
+CREATE Trigger "UC_AMD"."TRG_PARTS_MONITOR_DETAIL" 
+before insert on "UC_AMD"."PARTS_MONITOR_DETAIL"
+for each row
+begin
+select "UC_AMD"."SEQ_PARTS_MONITOR_DETAIL".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Pn_Reg'
+CREATE Trigger "UC_AMD"."TRG_PN_REG" 
+before insert on "UC_AMD"."PN_REG"
+for each row
+begin
+select "UC_AMD"."SEQ_PN_REG".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Scn_Acorder'
+CREATE Trigger "UC_AMD"."TRG_SCN_ACORDER" 
+before insert on "UC_AMD"."SCN_ACORDER"
+for each row
+begin
+select "UC_AMD"."SEQ_SCN_ACORDER".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Scn_Item'
+CREATE Trigger "UC_AMD"."TRG_SCN_ITEM" 
+before insert on "UC_AMD"."SCN_ITEM"
+for each row
+begin
+select "UC_AMD"."SEQ_SCN_ITEM".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Scn_Main'
+CREATE Trigger "UC_AMD"."TRG_SCN_MAIN" 
+before insert on "UC_AMD"."SCN_MAIN"
+for each row
+begin
+select "UC_AMD"."SEQ_SCN_MAIN".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Sn_History'
+CREATE Trigger "UC_AMD"."TRG_SN_HISTORY" 
+before insert on "UC_AMD"."SN_HISTORY"
+for each row
+begin
+select "UC_AMD"."SEQ_SN_HISTORY".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Sn_History_Unit'
+CREATE Trigger "UC_AMD"."TRG_SN_HISTORY_UNIT" 
+before insert on "UC_AMD"."SN_HISTORY_UNIT"
+for each row
+begin
+select "UC_AMD"."SEQ_SN_HISTORY_UNIT".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Sn_Reg'
+CREATE Trigger "UC_AMD"."TRG_SN_REG" 
+before insert on "UC_AMD"."SN_REG"
+for each row
+begin
+select "UC_AMD"."SEQ_SN_REG".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Wf_History'
+CREATE Trigger "UC_AMD"."TRG_WF_HISTORY" 
+before insert on "UC_AMD"."WF_HISTORY"
+for each row
+begin
+select "UC_AMD"."SEQ_WF_HISTORY".nextval into:new.id from dual;
+end;
+
+-- Creating trigger  for  'Work_Scope'
+CREATE Trigger "UC_AMD"."TRG_WORK_SCOPE" 
+before insert on "UC_AMD"."WORK_SCOPE"
+for each row
+begin
+select "UC_AMD"."SEQ_WORK_SCOPE".nextval into:new.id from dual;
+end;
+

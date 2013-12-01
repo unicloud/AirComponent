@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="mcc">
+  <useCaseModelRootMoniker Id="2e8d6976-e9d0-4a04-a89b-d3bd2cccb5da" />
+  <nestedChildShapes>
+    <useCaseShape Id="4051bd64-aa0d-445f-b9a6-fc395cab72c8" absoluteBounds="2.375, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="31d4c5ae-204b-402a-b236-725f29dbb60c" LastKnownName="查询结构损伤记录" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <actorShape Id="4ceacf73-14bd-4950-ae45-1e06ffd0f65a" absoluteBounds="0.75, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b10067b9-86d1-41b2-8600-3f48ee312604" LastKnownName="机身系统室" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 3); (2.65139320225002 : 1.59860679774998)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c1ad2880-fce1-4372-87f3-bde6db1847cf" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4ceacf73-14bd-4950-ae45-1e06ffd0f65a" />
+        <useCaseShapeMoniker Id="4051bd64-aa0d-445f-b9a6-fc395cab72c8" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="02b375b1-cbf4-4c9e-b773-59c75a56de1a" absoluteBounds="2.375, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0b6b63af-d340-45dd-a250-09829ad28e59" LastKnownName="管理结构损伤记录" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 3.18333333333333); (2.43382352941176 : 2.86764705882353)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e32076d8-e2d6-40ae-8139-2bf2228201f5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4ceacf73-14bd-4950-ae45-1e06ffd0f65a" />
+        <useCaseShapeMoniker Id="02b375b1-cbf4-4c9e-b773-59c75a56de1a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="67369b52-7d52-4bd7-8893-8d3f7976c23d" absoluteBounds="4.25, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="83ccde99-2394-44a3-ac54-569a81acc37d" LastKnownName="查询结构损伤附件" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.33923834544263 : 1.28215233091147); (4.28576165455737 : 1.09284766908853)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="ca87b5da-031c-4cce-b147-279d816b36fe" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.5, 0.9375, 0.52083333333333337, 0.15087890625" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="4051bd64-aa0d-445f-b9a6-fc395cab72c8" />
+        <useCaseShapeMoniker Id="67369b52-7d52-4bd7-8893-8d3f7976c23d" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="1c387d8f-1386-44c6-986b-690d1c6bc15e" absoluteBounds="4.375, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="74eee9da-b900-4700-8f77-6ce2313b533b" LastKnownName="管理结构损伤附件" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.32221359549996 : 2.63819660112501); (4.42778640450004 : 2.36180339887499)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="65eea78f-2c47-431b-92a5-ae5db112edf0" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.5625, 2.3125, 0.52083333333333337, 0.15087890625" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="02b375b1-cbf4-4c9e-b773-59c75a56de1a" />
+        <useCaseShapeMoniker Id="1c387d8f-1386-44c6-986b-690d1c6bc15e" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="f44d6018-6f9d-4cfc-9205-1fb6cd6e6dbf" absoluteBounds="2.5, 3.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8daf670a-2a2f-4963-9146-1337bbfee8a7" LastKnownName="查询腐蚀记录" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 3.296875); (2.53183541121548 : 3.5372191396029)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="9b3728e8-b806-40ee-a097-0f6122ff80bb" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4ceacf73-14bd-4950-ae45-1e06ffd0f65a" />
+        <useCaseShapeMoniker Id="f44d6018-6f9d-4cfc-9205-1fb6cd6e6dbf" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f1330e2c-f758-4f22-9b5a-1944c150af63" absoluteBounds="2.5, 4.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9f738c3f-061a-4348-bdca-686cfa2b9298" LastKnownName="管理腐蚀记录" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.23714577468012 : 3.5); (2.55339255856564 : 4.88759248995791)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="041ab70a-48ff-40e9-b6af-42d526436713" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4ceacf73-14bd-4950-ae45-1e06ffd0f65a" />
+        <useCaseShapeMoniker Id="f1330e2c-f758-4f22-9b5a-1944c150af63" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f827c0e0-672a-434b-8f02-752392b20396" absoluteBounds="4.375, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="358a7db4-a103-482d-bc73-60c4519d01ab" LastKnownName="查询腐蚀附件" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.46423834544263 : 3.53215233091147); (4.41076165455737 : 3.34284766908853)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="622283de-0df0-487f-abca-7aba7a8901f6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="f44d6018-6f9d-4cfc-9205-1fb6cd6e6dbf" />
+        <useCaseShapeMoniker Id="f827c0e0-672a-434b-8f02-752392b20396" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="25fc744a-0948-42a3-ba8d-254e65700041" absoluteBounds="4.5, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="98b976c4-12bc-4f71-b1d4-b3a5ebe16220" LastKnownName="管理腐蚀附件" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(3.44721359549996 : 4.88819660112501); (4.55278640450004 : 4.61180339887499)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«扩展»">
+      <extendMoniker Id="586527c2-0432-444d-83e4-2cb86d05ad53" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="f1330e2c-f758-4f22-9b5a-1944c150af63" />
+        <useCaseShapeMoniker Id="25fc744a-0948-42a3-ba8d-254e65700041" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

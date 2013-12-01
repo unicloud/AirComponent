@@ -1,0 +1,207 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{505C2B73-E1E8-4E09-A793-B2015E379DC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A465841E-506E-4DFE-A495-AB0B70D6154C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3E90CC24-C600-462C-A1C2-8D62C063D87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{4EF2B4F4-DF0A-4D8B-87F4-B4019CB91017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Domain.AcConfiguration", "UniCloud.Aircraft.Server\Domain\UniCloud.Domain.AcConfiguration\UniCloud.Domain.AcConfiguration.csproj", "{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{CBFB653C-AFCB-4FAD-A080-E952A3EDB5BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0C18DA46-A8F9-490F-9295-A94C95A3DC15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Domain.Repositories.AcConfiguration", "UniCloud.Aircraft.Server\Infrastructure\Repository\UniCloud.Domain.Repositories.AcConfiguration\UniCloud.Domain.Repositories.AcConfiguration.csproj", "{ED2C2978-3F3A-4270-9875-A3107CE0D394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Events.Handlers.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.Events.Handlers.AcConfiguration\UniCloud.Events.Handlers.AcConfiguration.csproj", "{F9462A3C-9862-4A4A-A748-F6FF7D092243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.ServiceContracts.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.ServiceContracts.AcConfiguration\UniCloud.ServiceContracts.AcConfiguration.csproj", "{78169235-2E96-4069-B123-AC06EE01D247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Application.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.Application.AcConfiguration\UniCloud.Application.AcConfiguration.csproj", "{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.DataObjects.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.DataObjects.AcConfiguration\UniCloud.DataObjects.AcConfiguration.csproj", "{E9EFAC1F-41A9-4875-8725-0FD3C81A808E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Infrastructure.Common.AcConfiguration", "UniCloud.Aircraft.Server\Infrastructure\Common\UniCloud.Infrastructure.Common.AcConfiguration\UniCloud.Infrastructure.Common.AcConfiguration.csproj", "{699F1079-C8D2-4B3C-A100-B69B0B70F33C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{744255A0-5CB7-4EF7-AB79-4A76EC544486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseInit", "UniCloud.Aircraft.Server\Tool\DataBaseInit\DataBaseInit.csproj", "{1F947CAE-123A-46FF-B858-6836DC86B65A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Services.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.Services.AcConfiguration\UniCloud.Services.AcConfiguration.csproj", "{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Application.AcConfiguration.Test", "UniCloud.Aircraft.Server\UnitTest\UniCloud.Application.AcConfiguration.Test\UniCloud.Application.AcConfiguration.Test.csproj", "{CD8556EB-D114-4DBE-86E6-EEE10FB426A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Services.AcConfiguration.Silverlight", "UniCloud.Aircraft.Server\Application\UniCloud.Services.AcConfiguration.Silverlight\UniCloud.Services.AcConfiguration.Silverlight.csproj", "{7807ACE1-397E-48ED-BF60-1FEB33EA245F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.DataObjects.AcConfiguration.Silverlight", "UniCloud.Aircraft.Server\Application\UniCloud.DataObjects.AcConfiguration.Silverlight\UniCloud.DataObjects.AcConfiguration.Silverlight.csproj", "{696C6D17-8585-459F-946A-FF73927E23D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCodeTools", "UniCloud.Aircraft.Server\Tool\BaseCodeTools\BaseCodeTools.csproj", "{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Query.AcConfiguration", "UniCloud.Aircraft.Server\Application\UniCloud.Query.AcConfiguration\UniCloud.Query.AcConfiguration.csproj", "{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Service.Refernce", "UniCloud.Aircraft.Server\Application\UniCloud.Service.Refernce\UniCloud.Service.Refernce.csproj", "{EB557F34-D628-4AB5-B71C-47677D57837B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://unicloud:8080/tfs/achrs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UniCloud.Aircraft.Server\\Domain\\UniCloud.Domain.AcConfiguration\\UniCloud.Domain.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName1 = UniCloud.Aircraft.Server.sln
+		SccProjectName1 = UniCloud.Aircraft.Server/Domain/UniCloud.Domain.AcConfiguration
+		SccLocalPath1 = UniCloud.Aircraft.Server\\Domain\\UniCloud.Domain.AcConfiguration
+		SccProjectUniqueName2 = UniCloud.Aircraft.Server\\Infrastructure\\Repository\\UniCloud.Domain.Repositories.AcConfiguration\\UniCloud.Domain.Repositories.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName2 = UniCloud.Aircraft.Server.sln
+		SccProjectName2 = UniCloud.Aircraft.Server/Infrastructure/Repository/UniCloud.Domain.Repositories.AcConfiguration
+		SccLocalPath2 = UniCloud.Aircraft.Server\\Infrastructure\\Repository\\UniCloud.Domain.Repositories.AcConfiguration
+		SccProjectUniqueName3 = UniCloud.Aircraft.Server\\Infrastructure\\Common\\UniCloud.Infrastructure.Common.AcConfiguration\\UniCloud.Infrastructure.Common.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName3 = UniCloud.Aircraft.Server.sln
+		SccProjectName3 = UniCloud.Aircraft.Server/Infrastructure/Common/UniCloud.Infrastructure.Common.AcConfiguration
+		SccLocalPath3 = UniCloud.Aircraft.Server\\Infrastructure\\Common\\UniCloud.Infrastructure.Common.AcConfiguration
+		SccProjectUniqueName4 = UniCloud.Aircraft.Server\\Application\\UniCloud.DataObjects.AcConfiguration\\UniCloud.DataObjects.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName4 = UniCloud.Aircraft.Server.sln
+		SccProjectName4 = UniCloud.Aircraft.Server/Application/UniCloud.DataObjects.AcConfiguration
+		SccLocalPath4 = UniCloud.Aircraft.Server\\Application\\UniCloud.DataObjects.AcConfiguration
+		SccProjectUniqueName5 = UniCloud.Aircraft.Server\\Application\\UniCloud.ServiceContracts.AcConfiguration\\UniCloud.ServiceContracts.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName5 = UniCloud.Aircraft.Server.sln
+		SccProjectName5 = UniCloud.Aircraft.Server/Application/UniCloud.ServiceContracts.AcConfiguration
+		SccLocalPath5 = UniCloud.Aircraft.Server\\Application\\UniCloud.ServiceContracts.AcConfiguration
+		SccProjectUniqueName6 = UniCloud.Aircraft.Server\\Application\\UniCloud.Application.AcConfiguration\\UniCloud.Application.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName6 = UniCloud.Aircraft.Server.sln
+		SccProjectName6 = UniCloud.Aircraft.Server/Application/UniCloud.Application.AcConfiguration
+		SccLocalPath6 = UniCloud.Aircraft.Server\\Application\\UniCloud.Application.AcConfiguration
+		SccProjectUniqueName7 = UniCloud.Aircraft.Server\\Application\\UniCloud.Services.AcConfiguration\\UniCloud.Services.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName7 = UniCloud.Aircraft.Server.sln
+		SccProjectName7 = UniCloud.Aircraft.Server/Application/UniCloud.Services.AcConfiguration
+		SccLocalPath7 = UniCloud.Aircraft.Server\\Application\\UniCloud.Services.AcConfiguration
+		SccProjectUniqueName8 = UniCloud.Aircraft.Server\\Application\\UniCloud.DataObjects.AcConfiguration.Silverlight\\UniCloud.DataObjects.AcConfiguration.Silverlight.csproj
+		SccProjectTopLevelParentUniqueName8 = UniCloud.Aircraft.Server.sln
+		SccProjectName8 = UniCloud.Aircraft.Server/Application/UniCloud.DataObjects.AcConfiguration.Silverlight
+		SccLocalPath8 = UniCloud.Aircraft.Server\\Application\\UniCloud.DataObjects.AcConfiguration.Silverlight
+		SccProjectUniqueName9 = UniCloud.Aircraft.Server\\Application\\UniCloud.Services.AcConfiguration.Silverlight\\UniCloud.Services.AcConfiguration.Silverlight.csproj
+		SccProjectTopLevelParentUniqueName9 = UniCloud.Aircraft.Server.sln
+		SccProjectName9 = UniCloud.Aircraft.Server/Application/UniCloud.Services.AcConfiguration.Silverlight
+		SccLocalPath9 = UniCloud.Aircraft.Server\\Application\\UniCloud.Services.AcConfiguration.Silverlight
+		SccProjectUniqueName10 = UniCloud.Aircraft.Server\\Application\\UniCloud.Events.Handlers.AcConfiguration\\UniCloud.Events.Handlers.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName10 = UniCloud.Aircraft.Server.sln
+		SccProjectName10 = UniCloud.Aircraft.Server/Application/UniCloud.Events.Handlers.AcConfiguration
+		SccLocalPath10 = UniCloud.Aircraft.Server\\Application\\UniCloud.Events.Handlers.AcConfiguration
+		SccProjectUniqueName11 = UniCloud.Aircraft.Server\\UnitTest\\UniCloud.Application.AcConfiguration.Test\\UniCloud.Application.AcConfiguration.Test.csproj
+		SccProjectTopLevelParentUniqueName11 = UniCloud.Aircraft.Server.sln
+		SccProjectName11 = UniCloud.Aircraft.Server/UnitTest/UniCloud.Application.AcConfiguration.Test
+		SccLocalPath11 = UniCloud.Aircraft.Server\\UnitTest\\UniCloud.Application.AcConfiguration.Test
+		SccProjectUniqueName12 = UniCloud.Aircraft.Server\\Tool\\DataBaseInit\\DataBaseInit.csproj
+		SccProjectTopLevelParentUniqueName12 = UniCloud.Aircraft.Server.sln
+		SccProjectName12 = UniCloud.Aircraft.Server/Tool/DataBaseInit
+		SccLocalPath12 = UniCloud.Aircraft.Server\\Tool\\DataBaseInit
+		SccProjectUniqueName13 = UniCloud.Aircraft.Server\\Tool\\BaseCodeTools\\BaseCodeTools.csproj
+		SccProjectTopLevelParentUniqueName13 = UniCloud.Aircraft.Server.sln
+		SccProjectName13 = UniCloud.Aircraft.Server/Tool/BaseCodeTools
+		SccLocalPath13 = UniCloud.Aircraft.Server\\Tool\\BaseCodeTools
+		SccProjectUniqueName14 = UniCloud.Aircraft.Server\\Application\\UniCloud.Query.AcConfiguration\\UniCloud.Query.AcConfiguration.csproj
+		SccProjectTopLevelParentUniqueName14 = UniCloud.Aircraft.Server.sln
+		SccProjectName14 = UniCloud.Aircraft.Server/Application/UniCloud.Query.AcConfiguration
+		SccLocalPath14 = UniCloud.Aircraft.Server\\Application\\UniCloud.Query.AcConfiguration
+		SccProjectUniqueName15 = UniCloud.Aircraft.Server\\Application\\UniCloud.Service.Refernce\\UniCloud.Service.Refernce.csproj
+		SccProjectTopLevelParentUniqueName15 = UniCloud.Aircraft.Server.sln
+		SccProjectName15 = UniCloud.Aircraft.Server/Application/UniCloud.Service.Refernce
+		SccLocalPath15 = UniCloud.Aircraft.Server\\Application\\UniCloud.Service.Refernce
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2C2978-3F3A-4270-9875-A3107CE0D394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2C2978-3F3A-4270-9875-A3107CE0D394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2C2978-3F3A-4270-9875-A3107CE0D394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2C2978-3F3A-4270-9875-A3107CE0D394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9462A3C-9862-4A4A-A748-F6FF7D092243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9462A3C-9862-4A4A-A748-F6FF7D092243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9462A3C-9862-4A4A-A748-F6FF7D092243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9462A3C-9862-4A4A-A748-F6FF7D092243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78169235-2E96-4069-B123-AC06EE01D247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78169235-2E96-4069-B123-AC06EE01D247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78169235-2E96-4069-B123-AC06EE01D247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78169235-2E96-4069-B123-AC06EE01D247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9EFAC1F-41A9-4875-8725-0FD3C81A808E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9EFAC1F-41A9-4875-8725-0FD3C81A808E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9EFAC1F-41A9-4875-8725-0FD3C81A808E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9EFAC1F-41A9-4875-8725-0FD3C81A808E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699F1079-C8D2-4B3C-A100-B69B0B70F33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699F1079-C8D2-4B3C-A100-B69B0B70F33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699F1079-C8D2-4B3C-A100-B69B0B70F33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699F1079-C8D2-4B3C-A100-B69B0B70F33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F947CAE-123A-46FF-B858-6836DC86B65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F947CAE-123A-46FF-B858-6836DC86B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F947CAE-123A-46FF-B858-6836DC86B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F947CAE-123A-46FF-B858-6836DC86B65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8556EB-D114-4DBE-86E6-EEE10FB426A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8556EB-D114-4DBE-86E6-EEE10FB426A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8556EB-D114-4DBE-86E6-EEE10FB426A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8556EB-D114-4DBE-86E6-EEE10FB426A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7807ACE1-397E-48ED-BF60-1FEB33EA245F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7807ACE1-397E-48ED-BF60-1FEB33EA245F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7807ACE1-397E-48ED-BF60-1FEB33EA245F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7807ACE1-397E-48ED-BF60-1FEB33EA245F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696C6D17-8585-459F-946A-FF73927E23D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696C6D17-8585-459F-946A-FF73927E23D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696C6D17-8585-459F-946A-FF73927E23D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696C6D17-8585-459F-946A-FF73927E23D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB557F34-D628-4AB5-B71C-47677D57837B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB557F34-D628-4AB5-B71C-47677D57837B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB557F34-D628-4AB5-B71C-47677D57837B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB557F34-D628-4AB5-B71C-47677D57837B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9462A3C-9862-4A4A-A748-F6FF7D092243} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{78169235-2E96-4069-B123-AC06EE01D247} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{598DF5E0-1C9F-4190-B3ED-3F2E37FC3ED7} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{E9EFAC1F-41A9-4875-8725-0FD3C81A808E} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{D2A3824A-7145-4AF4-8C90-B03A8C7EDBAC} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{7807ACE1-397E-48ED-BF60-1FEB33EA245F} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{696C6D17-8585-459F-946A-FF73927E23D8} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{4C7C811E-4AC3-4D23-BDC9-AD28FAAB6481} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{EB557F34-D628-4AB5-B71C-47677D57837B} = {505C2B73-E1E8-4E09-A793-B2015E379DC6}
+		{C3F5E35E-DBF5-48E8-92EC-C5E6B4E1E1B6} = {A465841E-506E-4DFE-A495-AB0B70D6154C}
+		{CBFB653C-AFCB-4FAD-A080-E952A3EDB5BF} = {3E90CC24-C600-462C-A1C2-8D62C063D87D}
+		{0C18DA46-A8F9-490F-9295-A94C95A3DC15} = {3E90CC24-C600-462C-A1C2-8D62C063D87D}
+		{CD8556EB-D114-4DBE-86E6-EEE10FB426A8} = {4EF2B4F4-DF0A-4D8B-87F4-B4019CB91017}
+		{ED2C2978-3F3A-4270-9875-A3107CE0D394} = {CBFB653C-AFCB-4FAD-A080-E952A3EDB5BF}
+		{699F1079-C8D2-4B3C-A100-B69B0B70F33C} = {0C18DA46-A8F9-490F-9295-A94C95A3DC15}
+		{1F947CAE-123A-46FF-B858-6836DC86B65A} = {744255A0-5CB7-4EF7-AB79-4A76EC544486}
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1} = {744255A0-5CB7-4EF7-AB79-4A76EC544486}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\Unity.2.1.505.2\lib\NET35
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

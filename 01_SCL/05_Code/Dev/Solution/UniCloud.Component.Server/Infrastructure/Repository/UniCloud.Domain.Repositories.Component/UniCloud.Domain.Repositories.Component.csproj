@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.Domain.Repositories</RootNamespace>
+    <AssemblyName>UniCloud.Domain.Repositories.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\..\..\packages\Microsoft.Practices.Unity.1.0.0\lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniCloud.Domain">
+      <HintPath>..\..\..\..\packages\UniCloud.Domain.1.0.1\lib\UniCloud.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain.Repositories">
+      <HintPath>..\..\..\..\packages\UniCloud.Domain.Repositories.1.0.2\lib\UniCloud.Domain.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Events">
+      <HintPath>..\..\..\..\packages\UniCloud.Events.1.0.1\lib\UniCloud.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure">
+      <HintPath>..\..\..\..\packages\UniCloud.Infrastructure.1.0.1\lib\UniCloud.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Config">
+      <HintPath>..\..\..\..\packages\UniCloud.Infrastructure.Config.1.0.1\lib\UniCloud.Infrastructure.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Utility">
+      <HintPath>..\..\..\..\packages\UniCloud.Infrastructure.Utility.1.0.2\lib\UniCloud.Infrastructure.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityFramework\AcComponentDbContextInitailizer.cs" />
+    <Compile Include="EntityFramework\AircraftDbContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFramework\ComponentDbContext.cs" />
+    <Compile Include="EntityFramework\EntityFrameworkRepositoryComponentDbContext.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Aircraft\ModelConfigurationsFactory.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Aircraft\OracleConfigurations.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Aircraft\SqlServerConfigurations.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\IModelConfigurations.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Component\ModelConfigurationsFactory.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Component\OracleConfigurations.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Aircraft\AtaConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AcIntUnitUtilizaConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AcStructureConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AdsbComplyConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AdsbConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AirBusMSCNConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\AttactDocumentConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcinConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcOrderConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcoutConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcpLimitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcpMainConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\CcpPnConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\EgtMarginConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\IntUnitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\MajorEventConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\OilAnalysisConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AcStructureConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AdsbComplyConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AdsbConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AirBusMSCNConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\MajorEventConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AcIntUnitUtilizaConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\OilAnalysisConfiguration.cs" />
+    <Compile Include="Repositories\Part\AcStructureRepository.cs" />
+    <Compile Include="Repositories\Part\AdsbComplyRepository.cs" />
+    <Compile Include="Repositories\Part\AdsbRepository.cs" />
+    <Compile Include="Repositories\Part\AirBusMSCNRepository.cs" />
+    <Compile Include="Repositories\Part\AttactDocumentRepository.cs" />
+    <Compile Include="Repositories\Part\MajorEventRepository.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\OilHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\PartsMonitorConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\PartsMonitorDetailConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\PnRegConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\ScnAcorderConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\ScnItemConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\ScnMainConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\SnHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\SnHistoryUnitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\SnRegConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\WfHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Oracle\Part\WorkScopeConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Schema.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\Component\SqlServerConfigurations.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Aircraft\AtaConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\AttactDocumentConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcinConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcOrderConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcoutConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcpLimitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcpMainConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\CcpPnConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\EgtMarginConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\IntUnitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\OilHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\PartsMonitorConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\PartsMonitorDetailConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\PnRegConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\ScnAcorderConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\ScnItemConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\ScnMainConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\SnHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\SnHistoryUnitConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\SnRegConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\WfHistoryConfiguration.cs" />
+    <Compile Include="EntityFramework\ModelConfigurations\SqlServer\Part\WorkScopeConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Part\CcOrderRepository.cs" />
+    <Compile Include="Repositories\Part\CcpMainRepository.cs" />
+    <Compile Include="Repositories\Part\EgtMarginRepository.cs" />
+    <Compile Include="Repositories\Part\IntUnitRepository.cs" />
+    <Compile Include="Repositories\Part\OilAnalysisRepository.cs" />
+    <Compile Include="Repositories\Part\OilHistoryRepository.cs" />
+    <Compile Include="Repositories\Part\PartsMonitorRepository.cs" />
+    <Compile Include="Repositories\Part\PnRegRepository.cs" />
+    <Compile Include="Repositories\Part\ScnMainRepository.cs" />
+    <Compile Include="Repositories\Part\SnHistoryRepository.cs" />
+    <Compile Include="Repositories\Part\SnRegRepository.cs" />
+    <Compile Include="Repositories\Part\WfHistoryRepository.cs" />
+    <Compile Include="Repositories\Part\WorkScopeRepository.cs" />
+    <Compile Include="Repositories\Part\AcIntUnitUtilizaRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\UniCloud.Domain.Component\UniCloud.Domain.Component.csproj">
+      <Project>{b2b2448a-1d6d-4ec2-aab7-07a46bd3c528}</Project>
+      <Name>UniCloud.Domain.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\Aircraft\" />
+    <Folder Include="Specifications\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="91da33dc-a3ff-4e7d-aa3a-3903973bc006"
+  name="Aircraft_UseCase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+        name="飞机构型"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f8536046-684f-403e-b480-4c308ffeeb60"
+        name="管理飞机构型"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e453637d-a88a-4715-a016-6b39df7c8b2a">
+            <useCaseMoniker
+              Id="6f6c117e-4597-4d3c-85bd-4ce771a9ef17"
+              LastKnownName="管理客户机型/飞机系列"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+          <include
+            Id="46c2c827-33ff-4a52-bde3-9ab723b0a9e7">
+            <useCaseMoniker
+              Id="6d0e5bc2-3314-4ba9-b5ab-21bd65c41d46"
+              LastKnownName="管理机型/飞机型号"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+          <include
+            Id="8877c877-578b-46ff-b5e0-d74538319142">
+            <useCaseMoniker
+              Id="47b7b3a2-11e9-4d8b-a994-8cc5e7633dc6"
+              LastKnownName="管理飞机配置/小机型"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+          <include
+            Id="1fc2027f-3aa1-43ae-9907-7440f1351b23">
+            <useCaseMoniker
+              Id="b45bebee-41be-488e-a2a7-619c98effe23"
+              LastKnownName="维护座机等级"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+          <include
+            Id="3fd02abc-d2f7-4831-b355-8633b167d6f7">
+            <useCaseMoniker
+              Id="ab0d64b1-68f5-4fe3-9dad-8979e7bdb89a"
+              LastKnownName="管理软件配置"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6927c91c-de8e-4127-8004-3d7397c39d16"
+        name="管理飞机数据"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="04a7cb6c-2583-49aa-8730-e26941f79247">
+            <useCaseMoniker
+              Id="0ec57538-9065-4129-a2f0-f33cfb419378"
+              LastKnownName="维护飞机证照"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+          <include
+            Id="a32f90a5-9951-4640-8129-181535254f32">
+            <useCaseMoniker
+              Id="125d4624-8a96-4331-8e1e-79efeff2194a"
+              LastKnownName="维护/查看飞机信息"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="125d4624-8a96-4331-8e1e-79efeff2194a"
+        name="维护/查看飞机信息"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47b7b3a2-11e9-4d8b-a994-8cc5e7633dc6"
+        name="管理飞机配置/小机型"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6d0e5bc2-3314-4ba9-b5ab-21bd65c41d46"
+        name="管理机型/飞机型号"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6f6c117e-4597-4d3c-85bd-4ce771a9ef17"
+        name="管理客户机型/飞机系列"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="2e0d22d0-7223-44b3-90ab-010e8a018916">
+            <useCaseMoniker
+              Id="99f72e20-176f-430c-a601-dd9105873021"
+              LastKnownName="维护系列章节"
+              LastKnownLocation="Aircraft_UseCase.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ec57538-9065-4129-a2f0-f33cfb419378"
+        name="维护飞机证照"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="2d3d8046-785a-4b8e-8b94-527242c41a21">
+            <useCaseMoniker
+              Id="20528b05-1d99-4dff-86d9-2fdcc5a145a7"
+              LastKnownName="维护证照类型"
+              LastKnownLocation="UniCloud.Configuration.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="99f72e20-176f-430c-a601-dd9105873021"
+        name="维护系列章节"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b45bebee-41be-488e-a2a7-619c98effe23"
+        name="维护座机等级"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ab0d64b1-68f5-4fe3-9dad-8979e7bdb89a"
+        name="管理软件配置"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c"
+            LastKnownName="飞机构型"
+            LastKnownLocation="Aircraft_UseCase.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

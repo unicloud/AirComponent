@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5f7ba609-29e5-48b0-bcca-6005d66cdefb" name="Aircraft" linkedPackageId="bc443b52-eded-4508-bb0a-5a8b37e38eeb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="862d47f1-5910-43a1-8306-fc0720fb67cd" name="飞机构型" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb6c5d4b-8c2f-409d-9f00-c88dc190607c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="7401bd49-5de0-4402-8566-1b4f090adb32" name="管理飞机数据" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6927c91c-de8e-4127-8004-3d7397c39d16" />
+        <additions>
+          <include Id="aadb03a9-c339-41bf-8aa8-2415a9194d6d">
+            <useCaseMoniker Id="6272a7b5-65b3-4b0c-bb30-de99b03130cd" LastKnownName="维护飞机证照" />
+            <elementDefinition Id="04a7cb6c-2583-49aa-8730-e26941f79247" />
+          </include>
+          <include Id="a9d9e973-d153-4aa0-b518-3d1e6eeab28b">
+            <useCaseMoniker Id="136cff38-d05a-4262-a1d2-ad67fefc7f45" LastKnownName="维护/查看飞机信息" />
+            <elementDefinition Id="a32f90a5-9951-4640-8129-181535254f32" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="23bb7509-caa7-4105-93a7-b9703122d18e" name="管理飞机构型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8536046-684f-403e-b480-4c308ffeeb60" />
+        <additions>
+          <include Id="5debf4bb-1af5-418d-9314-cc98fa9adeed">
+            <useCaseMoniker Id="177af8af-d43c-4f2c-9968-4a82ce1e865e" LastKnownName="管理客户机型/飞机系列" />
+            <elementDefinition Id="e453637d-a88a-4715-a016-6b39df7c8b2a" />
+          </include>
+          <include Id="882926a7-06dc-4da0-a83a-9c49511b6e42">
+            <useCaseMoniker Id="d15b2dbc-c98f-4dab-923e-d81d22aeec74" LastKnownName="管理机型/飞机型号" />
+            <elementDefinition Id="46c2c827-33ff-4a52-bde3-9ab723b0a9e7" />
+          </include>
+          <include Id="920ad353-2f42-4928-a80a-fc43b3ea2741">
+            <useCaseMoniker Id="e49c943b-c868-410f-afc2-7f1c3a4510cf" LastKnownName="管理飞机配置/小机型" />
+            <elementDefinition Id="8877c877-578b-46ff-b5e0-d74538319142" />
+          </include>
+          <include Id="b7a8305f-af1c-4497-89bd-67678a0b190c">
+            <useCaseMoniker Id="ed487fbe-8dc6-4fec-b361-374d08a50e69" LastKnownName="维护座机等级" />
+            <elementDefinition Id="1fc2027f-3aa1-43ae-9907-7440f1351b23" />
+          </include>
+          <include Id="80cf334c-925a-4c50-9ad1-08581e77fabf">
+            <useCaseMoniker Id="dbad0b85-3012-4051-9de4-1ff3abfa74d9" LastKnownName="管理软件配置" />
+            <elementDefinition Id="3fd02abc-d2f7-4831-b355-8633b167d6f7" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="177af8af-d43c-4f2c-9968-4a82ce1e865e" name="管理客户机型/飞机系列" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f6c117e-4597-4d3c-85bd-4ce771a9ef17" />
+        <additions>
+          <include Id="791e7140-53c5-4471-89d8-c502c2b73a24">
+            <useCaseMoniker Id="faa67bd5-2f19-45e8-93a2-ae04ddbca74d" LastKnownName="维护系列章节" />
+            <elementDefinition Id="2e0d22d0-7223-44b3-90ab-010e8a018916" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d15b2dbc-c98f-4dab-923e-d81d22aeec74" name="管理机型/飞机型号" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d0e5bc2-3314-4ba9-b5ab-21bd65c41d46" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e49c943b-c868-410f-afc2-7f1c3a4510cf" name="管理飞机配置/小机型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47b7b3a2-11e9-4d8b-a994-8cc5e7633dc6" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="136cff38-d05a-4262-a1d2-ad67fefc7f45" name="维护/查看飞机信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="125d4624-8a96-4331-8e1e-79efeff2194a" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="efa7e8b5-3bb6-4b60-8520-5501f3ee1677" name="用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="544aa30c-be09-4770-abb5-9baabb66add0" />
+        <targetEnds>
+          <association Id="1df4c30a-2158-4ede-b423-8d5c658e0f33" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="管理飞机基础数据" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7401bd49-5de0-4402-8566-1b4f090adb32" LastKnownName="管理飞机数据" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad5a732f-316b-4d4f-a251-54b043a761b7" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b22f8240-1bf5-43fc-b21e-6bfa6c7a25b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebd4eb17-617b-496a-997c-95804a4513ae" name="管理飞机基础数据" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1d0ee7e0-76f1-41e1-b80e-5ea4b5c0a2ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="787d1808-c721-44d9-bc82-c1143c8d9658" />
+          </association>
+          <association Id="c417ae9b-986e-4395-bef7-2fdc94acdd7e" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="管理飞机构型" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="23bb7509-caa7-4105-93a7-b9703122d18e" LastKnownName="管理飞机构型" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33e4bb1b-4c5a-4b50-962b-f86d61663112" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b43bccd7-15ba-4e8d-9a39-c5d800383ddb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17643003-5ed5-42ed-8180-e279ffd068c5" name="管理飞机构型" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6839b66-b5f5-42dd-83c1-525def308bce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d96a550a-56e8-4f9d-b2c4-743b66a03a3c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="6272a7b5-65b3-4b0c-bb30-de99b03130cd" name="维护飞机证照" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ec57538-9065-4129-a2f0-f33cfb419378" />
+        <additions>
+          <include Id="7c6b5118-c720-4f41-97eb-43fea046a1b4">
+            <useCaseMoniker Id="4665df32-2869-419e-b019-ba9427e2b39a" LastKnownName="维护证照类型" />
+            <elementDefinition Id="2d3d8046-785a-4b8e-8b94-527242c41a21" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="faa67bd5-2f19-45e8-93a2-ae04ddbca74d" name="维护系列章节" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99f72e20-176f-430c-a601-dd9105873021" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ed487fbe-8dc6-4fec-b361-374d08a50e69" name="维护座机等级" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b45bebee-41be-488e-a2a7-619c98effe23" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dbad0b85-3012-4051-9de4-1ff3abfa74d9" name="管理软件配置" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ab0d64b1-68f5-4fe3-9dad-8979e7bdb89a" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4665df32-2869-419e-b019-ba9427e2b39a" name="维护证照类型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20528b05-1d99-4dff-86d9-2fdcc5a145a7" />
+        <subjects>
+          <subsystemMoniker Id="862d47f1-5910-43a1-8306-fc0720fb67cd" LastKnownName="飞机构型" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="bc443b52-eded-4508-bb0a-5a8b37e38eeb" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+    <profileInstances>
+      <packageHasProfileInstances Id="de7074b9-327b-431c-848f-0cf9dd2bf702">
+        <profileInstance Id="b010481a-5e38-488b-a7cd-ce2a6d771c99" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d5fe6750-b7a0-4074-8566-78d257cf1e56">
+        <profileInstance Id="3e4e3ba4-4381-4640-aa08-e6c3e6517689" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

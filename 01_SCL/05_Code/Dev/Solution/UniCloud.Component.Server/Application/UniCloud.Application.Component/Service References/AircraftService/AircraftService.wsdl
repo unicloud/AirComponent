@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.UniCloud.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.UniCloud.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.UniCloud.com/Imports">
+      <xsd:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd0" namespace="http://www.UniCloud.com" />
+      <xsd:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+      <xsd:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd3" namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" />
+      <xsd:import schemaLocation="http://localhost:8040/AircraftService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAircraftService_CreateAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategoryByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcCategoryByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategoryByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcCategoryByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategoryByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q1:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategorys_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryWithPagination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryWithPagination" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryWithPagination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryWithPaginationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryWithPagination_FaultData_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q2:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q3:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcCategoryColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcCategoryCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q4:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q5:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q6:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByReg" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegByRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegByReg_FaultData_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q7:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegWithPagination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegWithPagination" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegWithPagination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegWithPaginationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegWithPagination_FaultData_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q8:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q9:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q10:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcregLicenseByAcregID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcregLicenseByAcregID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcregLicenseByAcregID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcregLicenseByAcregIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcregLicenseByAcregID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q11:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcRegColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcRegCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q12:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q13:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypeByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypeByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypeByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q14:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_ManageAcTypeAta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ManageAcTypeAta" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_ManageAcTypeAta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ManageAcTypeAtaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_ManageAcTypeAta_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcModels_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcModels" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcModels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcModelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcModels_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcModels_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcModels" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcModels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcModelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcModels_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcConfigs_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcConfigs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcConfigs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAcConfigsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAcConfigs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcConfigs_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcConfigs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcConfigs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcConfigsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAcConfigs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcModels_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcModels" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcModels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcModelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcModels_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcConfigs_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcConfigs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcConfigs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcConfigsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAcConfigs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeWithPagination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeWithPagination" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeWithPagination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeWithPaginationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeWithPagination_FaultData_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q15:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q16:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q17:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModels" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModels_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q18:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q19:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigs" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigs_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q20:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q21:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcTypeColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcTypeCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q22:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcConfigColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcConfigCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q23:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcModelColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAcModelCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q24:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtaByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAtaByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtaByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAtaByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtaByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q25:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtas" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtas_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaWithPagination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaWithPagination" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaWithPagination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaWithPaginationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaWithPagination_FaultData_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q26:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q27:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaByGuid" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaByGuid_FaultData_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q28:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAtaColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetAtaCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q29:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CreateLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_DeleteLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_UpdateLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_CommitLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypeByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullLicenseTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypeByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullLicenseTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypeByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q30:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetFullLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypes_FaultData_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeWithPagination_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeWithPagination" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeWithPagination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeWithPaginationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeWithPagination_FaultData_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q31:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeByID_FaultData_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q32:FaultData" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeCol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeCol" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeCol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseTypeColResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAircraftService_GetLicenseTypeCol_FaultData_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" name="detail" element="q33:FaultData" />
+  </wsdl:message>
+  <wsdl:portType name="IAircraftService">
+    <wsdl:operation name="CreateAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcCategorys" message="tns:IAircraftService_CreateAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcCategorysResponse" message="tns:IAircraftService_CreateAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_CreateAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcCategorys" message="tns:IAircraftService_DeleteAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcCategorysResponse" message="tns:IAircraftService_DeleteAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_DeleteAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcCategorys" message="tns:IAircraftService_UpdateAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcCategorysResponse" message="tns:IAircraftService_UpdateAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_UpdateAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcCategorys" message="tns:IAircraftService_CommitAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcCategorysResponse" message="tns:IAircraftService_CommitAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_CommitAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcCategoryByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategoryByID" message="tns:IAircraftService_GetFullAcCategoryByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategoryByIDResponse" message="tns:IAircraftService_GetFullAcCategoryByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategoryByIDDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcCategoryByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategorys" message="tns:IAircraftService_GetFullAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategorysResponse" message="tns:IAircraftService_GetFullAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategorys">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategorys" message="tns:IAircraftService_GetAcCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategorysResponse" message="tns:IAircraftService_GetAcCategorys_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategorysDataFault" name="FaultData" message="tns:IAircraftService_GetAcCategorys_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryWithPagination">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryWithPagination" message="tns:IAircraftService_GetAcCategoryWithPagination_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryWithPaginationResponse" message="tns:IAircraftService_GetAcCategoryWithPagination_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryWithPaginationDataFault" name="FaultData" message="tns:IAircraftService_GetAcCategoryWithPagination_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryByID" message="tns:IAircraftService_GetAcCategoryByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryByIDResponse" message="tns:IAircraftService_GetAcCategoryByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcCategoryByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcCategoryCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryCol" message="tns:IAircraftService_GetAcCategoryCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryColResponse" message="tns:IAircraftService_GetAcCategoryCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcCategoryColDataFault" name="FaultData" message="tns:IAircraftService_GetAcCategoryCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcRegs" message="tns:IAircraftService_CreateAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcRegsResponse" message="tns:IAircraftService_CreateAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcRegsDataFault" name="FaultData" message="tns:IAircraftService_CreateAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcRegs" message="tns:IAircraftService_DeleteAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcRegsResponse" message="tns:IAircraftService_DeleteAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcRegsDataFault" name="FaultData" message="tns:IAircraftService_DeleteAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcRegs" message="tns:IAircraftService_UpdateAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcRegsResponse" message="tns:IAircraftService_UpdateAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcRegsDataFault" name="FaultData" message="tns:IAircraftService_UpdateAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcRegs" message="tns:IAircraftService_CommitAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcRegsResponse" message="tns:IAircraftService_CommitAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcRegsDataFault" name="FaultData" message="tns:IAircraftService_CommitAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByID" message="tns:IAircraftService_GetFullAcRegByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByIDResponse" message="tns:IAircraftService_GetFullAcRegByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByIDDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcRegByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByGuid" message="tns:IAircraftService_GetFullAcRegByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByGuidResponse" message="tns:IAircraftService_GetFullAcRegByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcRegByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegByReg">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByReg" message="tns:IAircraftService_GetFullAcRegByReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByRegResponse" message="tns:IAircraftService_GetFullAcRegByReg_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegByRegDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcRegByReg_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegs" message="tns:IAircraftService_GetFullAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegsResponse" message="tns:IAircraftService_GetFullAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcRegsDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegs" message="tns:IAircraftService_GetAcRegs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegsResponse" message="tns:IAircraftService_GetAcRegs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegsDataFault" name="FaultData" message="tns:IAircraftService_GetAcRegs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegWithPagination">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegWithPagination" message="tns:IAircraftService_GetAcRegWithPagination_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegWithPaginationResponse" message="tns:IAircraftService_GetAcRegWithPagination_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegWithPaginationDataFault" name="FaultData" message="tns:IAircraftService_GetAcRegWithPagination_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByID" message="tns:IAircraftService_GetAcRegByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByIDResponse" message="tns:IAircraftService_GetAcRegByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcRegByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByGuid" message="tns:IAircraftService_GetAcRegByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByGuidResponse" message="tns:IAircraftService_GetAcRegByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetAcRegByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcregLicenseByAcregID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcregLicenseByAcregID" message="tns:IAircraftService_GetAcregLicenseByAcregID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcregLicenseByAcregIDResponse" message="tns:IAircraftService_GetAcregLicenseByAcregID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcregLicenseByAcregIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcregLicenseByAcregID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcRegCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegCol" message="tns:IAircraftService_GetAcRegCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegColResponse" message="tns:IAircraftService_GetAcRegCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcRegColDataFault" name="FaultData" message="tns:IAircraftService_GetAcRegCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcTypes" message="tns:IAircraftService_CreateAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcTypesResponse" message="tns:IAircraftService_CreateAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcTypesDataFault" name="FaultData" message="tns:IAircraftService_CreateAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcTypes" message="tns:IAircraftService_DeleteAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcTypesResponse" message="tns:IAircraftService_DeleteAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcTypesDataFault" name="FaultData" message="tns:IAircraftService_DeleteAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcTypes" message="tns:IAircraftService_UpdateAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcTypesResponse" message="tns:IAircraftService_UpdateAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcTypesDataFault" name="FaultData" message="tns:IAircraftService_UpdateAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcTypes" message="tns:IAircraftService_CommitAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcTypesResponse" message="tns:IAircraftService_CommitAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAcTypesDataFault" name="FaultData" message="tns:IAircraftService_CommitAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypeByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByID" message="tns:IAircraftService_GetFullAcTypeByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByIDResponse" message="tns:IAircraftService_GetFullAcTypeByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByIDDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcTypeByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypeByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByGuid" message="tns:IAircraftService_GetFullAcTypeByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByGuidResponse" message="tns:IAircraftService_GetFullAcTypeByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypeByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcTypeByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypes" message="tns:IAircraftService_GetFullAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypesResponse" message="tns:IAircraftService_GetFullAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAcTypesDataFault" name="FaultData" message="tns:IAircraftService_GetFullAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ManageAcTypeAta">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/ManageAcTypeAta" message="tns:IAircraftService_ManageAcTypeAta_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/ManageAcTypeAtaResponse" message="tns:IAircraftService_ManageAcTypeAta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/ManageAcTypeAtaDataFault" name="FaultData" message="tns:IAircraftService_ManageAcTypeAta_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcModels">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcModels" message="tns:IAircraftService_CreateAcModels_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcModelsResponse" message="tns:IAircraftService_CreateAcModels_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcModelsDataFault" name="FaultData" message="tns:IAircraftService_CreateAcModels_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcModels">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcModels" message="tns:IAircraftService_UpdateAcModels_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcModelsResponse" message="tns:IAircraftService_UpdateAcModels_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcModelsDataFault" name="FaultData" message="tns:IAircraftService_UpdateAcModels_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcConfigs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcConfigs" message="tns:IAircraftService_CreateAcConfigs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcConfigsResponse" message="tns:IAircraftService_CreateAcConfigs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAcConfigsDataFault" name="FaultData" message="tns:IAircraftService_CreateAcConfigs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcConfigs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcConfigs" message="tns:IAircraftService_UpdateAcConfigs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcConfigsResponse" message="tns:IAircraftService_UpdateAcConfigs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAcConfigsDataFault" name="FaultData" message="tns:IAircraftService_UpdateAcConfigs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcModels">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcModels" message="tns:IAircraftService_DeleteAcModels_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcModelsResponse" message="tns:IAircraftService_DeleteAcModels_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcModelsDataFault" name="FaultData" message="tns:IAircraftService_DeleteAcModels_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcConfigs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcConfigs" message="tns:IAircraftService_DeleteAcConfigs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcConfigsResponse" message="tns:IAircraftService_DeleteAcConfigs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAcConfigsDataFault" name="FaultData" message="tns:IAircraftService_DeleteAcConfigs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypes" message="tns:IAircraftService_GetAcTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypesResponse" message="tns:IAircraftService_GetAcTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypesDataFault" name="FaultData" message="tns:IAircraftService_GetAcTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeWithPagination">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeWithPagination" message="tns:IAircraftService_GetAcTypeWithPagination_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeWithPaginationResponse" message="tns:IAircraftService_GetAcTypeWithPagination_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeWithPaginationDataFault" name="FaultData" message="tns:IAircraftService_GetAcTypeWithPagination_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByID" message="tns:IAircraftService_GetAcTypeByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByIDResponse" message="tns:IAircraftService_GetAcTypeByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcTypeByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByGuid" message="tns:IAircraftService_GetAcTypeByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByGuidResponse" message="tns:IAircraftService_GetAcTypeByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetAcTypeByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModels">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModels" message="tns:IAircraftService_GetAcModels_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelsResponse" message="tns:IAircraftService_GetAcModels_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelsDataFault" name="FaultData" message="tns:IAircraftService_GetAcModels_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByID" message="tns:IAircraftService_GetAcModelByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByIDResponse" message="tns:IAircraftService_GetAcModelByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcModelByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByGuid" message="tns:IAircraftService_GetAcModelByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByGuidResponse" message="tns:IAircraftService_GetAcModelByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetAcModelByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigs">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigs" message="tns:IAircraftService_GetAcConfigs_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigsResponse" message="tns:IAircraftService_GetAcConfigs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigsDataFault" name="FaultData" message="tns:IAircraftService_GetAcConfigs_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByID" message="tns:IAircraftService_GetAcConfigByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByIDResponse" message="tns:IAircraftService_GetAcConfigByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAcConfigByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByGuid" message="tns:IAircraftService_GetAcConfigByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByGuidResponse" message="tns:IAircraftService_GetAcConfigByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetAcConfigByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcTypeCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeCol" message="tns:IAircraftService_GetAcTypeCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeColResponse" message="tns:IAircraftService_GetAcTypeCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcTypeColDataFault" name="FaultData" message="tns:IAircraftService_GetAcTypeCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcConfigCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigCol" message="tns:IAircraftService_GetAcConfigCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigColResponse" message="tns:IAircraftService_GetAcConfigCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcConfigColDataFault" name="FaultData" message="tns:IAircraftService_GetAcConfigCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcModelCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelCol" message="tns:IAircraftService_GetAcModelCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelColResponse" message="tns:IAircraftService_GetAcModelCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAcModelColDataFault" name="FaultData" message="tns:IAircraftService_GetAcModelCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAtas" message="tns:IAircraftService_CreateAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAtasResponse" message="tns:IAircraftService_CreateAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateAtasDataFault" name="FaultData" message="tns:IAircraftService_CreateAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAtas" message="tns:IAircraftService_DeleteAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAtasResponse" message="tns:IAircraftService_DeleteAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteAtasDataFault" name="FaultData" message="tns:IAircraftService_DeleteAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAtas" message="tns:IAircraftService_UpdateAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAtasResponse" message="tns:IAircraftService_UpdateAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateAtasDataFault" name="FaultData" message="tns:IAircraftService_UpdateAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAtas" message="tns:IAircraftService_CommitAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAtasResponse" message="tns:IAircraftService_CommitAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitAtasDataFault" name="FaultData" message="tns:IAircraftService_CommitAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAtaByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtaByID" message="tns:IAircraftService_GetFullAtaByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtaByIDResponse" message="tns:IAircraftService_GetFullAtaByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtaByIDDataFault" name="FaultData" message="tns:IAircraftService_GetFullAtaByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtas" message="tns:IAircraftService_GetFullAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtasResponse" message="tns:IAircraftService_GetFullAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullAtasDataFault" name="FaultData" message="tns:IAircraftService_GetFullAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAtas">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtas" message="tns:IAircraftService_GetAtas_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtasResponse" message="tns:IAircraftService_GetAtas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtasDataFault" name="FaultData" message="tns:IAircraftService_GetAtas_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaWithPagination">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaWithPagination" message="tns:IAircraftService_GetAtaWithPagination_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaWithPaginationResponse" message="tns:IAircraftService_GetAtaWithPagination_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaWithPaginationDataFault" name="FaultData" message="tns:IAircraftService_GetAtaWithPagination_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByID" message="tns:IAircraftService_GetAtaByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByIDResponse" message="tns:IAircraftService_GetAtaByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByIDDataFault" name="FaultData" message="tns:IAircraftService_GetAtaByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaByGuid">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByGuid" message="tns:IAircraftService_GetAtaByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByGuidResponse" message="tns:IAircraftService_GetAtaByGuid_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaByGuidDataFault" name="FaultData" message="tns:IAircraftService_GetAtaByGuid_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAtaCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaCol" message="tns:IAircraftService_GetAtaCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaColResponse" message="tns:IAircraftService_GetAtaCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetAtaColDataFault" name="FaultData" message="tns:IAircraftService_GetAtaCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateLicenseTypes" message="tns:IAircraftService_CreateLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateLicenseTypesResponse" message="tns:IAircraftService_CreateLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CreateLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_CreateLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteLicenseTypes" message="tns:IAircraftService_DeleteLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteLicenseTypesResponse" message="tns:IAircraftService_DeleteLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/DeleteLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_DeleteLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateLicenseTypes" message="tns:IAircraftService_UpdateLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateLicenseTypesResponse" message="tns:IAircraftService_UpdateLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/UpdateLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_UpdateLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitLicenseTypes" message="tns:IAircraftService_CommitLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitLicenseTypesResponse" message="tns:IAircraftService_CommitLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/CommitLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_CommitLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullLicenseTypeByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypeByID" message="tns:IAircraftService_GetFullLicenseTypeByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypeByIDResponse" message="tns:IAircraftService_GetFullLicenseTypeByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypeByIDDataFault" name="FaultData" message="tns:IAircraftService_GetFullLicenseTypeByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypes" message="tns:IAircraftService_GetFullLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypesResponse" message="tns:IAircraftService_GetFullLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetFullLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_GetFullLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypes">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypes" message="tns:IAircraftService_GetLicenseTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypesResponse" message="tns:IAircraftService_GetLicenseTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypesDataFault" name="FaultData" message="tns:IAircraftService_GetLicenseTypes_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeWithPagination">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeWithPagination" message="tns:IAircraftService_GetLicenseTypeWithPagination_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeWithPaginationResponse" message="tns:IAircraftService_GetLicenseTypeWithPagination_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeWithPaginationDataFault" name="FaultData" message="tns:IAircraftService_GetLicenseTypeWithPagination_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeByID">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeByID" message="tns:IAircraftService_GetLicenseTypeByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeByIDResponse" message="tns:IAircraftService_GetLicenseTypeByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeByIDDataFault" name="FaultData" message="tns:IAircraftService_GetLicenseTypeByID_FaultData_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseTypeCol">
+      <wsdl:input wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeCol" message="tns:IAircraftService_GetLicenseTypeCol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeColResponse" message="tns:IAircraftService_GetLicenseTypeCol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.UniCloud.com/IAircraftService/GetLicenseTypeColDataFault" name="FaultData" message="tns:IAircraftService_GetLicenseTypeCol_FaultData_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UniCloud.Application</id>
+    <version>1.0.1</version>
+    <title>UniCloud.Application</title>
+    <authors>zhangnx</authors>
+    <owners>zhangnx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UniCloud.Application Framework</description>
+    <summary>UniCloud.Application</summary>
+    <dependencies>
+      <dependency id="UniCloud.Infrastructure" version="1.0.0" />
+      <dependency id="UniCloud.Domain" version="1.0.0" />
+      <dependency id="UniCloud.Events" version="1.0.0" />
+    </dependencies>
+    <references>
+      <reference file="UniCloud.Application.dll" />
+    </references>
+  </metadata>
+</package>

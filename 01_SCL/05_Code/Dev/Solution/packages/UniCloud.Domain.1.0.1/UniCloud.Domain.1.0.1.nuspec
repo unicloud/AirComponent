@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UniCloud.Domain</id>
+    <version>1.0.1</version>
+    <title>UniCloud.Domain</title>
+    <authors>zhangnx</authors>
+    <owners>zhangnx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UniCloud.Domain FrameWork
+Include Packages List
+UniCloud.Domain.dll</description>
+    <summary>UniCloud.Domain FrameWork</summary>
+    <dependencies>
+      <dependency id="UniCloud.Infrastructure" version="1.0.0" />
+      <dependency id="UniCloud.Events" version="1.0.0" />
+    </dependencies>
+    <references>
+      <reference file="UniCloud.Domain.dll" />
+    </references>
+  </metadata>
+</package>

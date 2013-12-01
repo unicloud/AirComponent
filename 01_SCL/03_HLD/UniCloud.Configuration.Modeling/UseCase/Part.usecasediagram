@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="cd295e6c-47d0-4def-aa02-16a3186edd43" name="Part" linkedPackageId="325c8975-9d56-4456-af16-b659db24cb7c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="43630174-3464-47b4-a3fc-060b2a961dc3" name="附件" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f56c5fe-37c9-4ef9-a443-b2faee53e2fe" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b707fe43-45e6-4a5c-bb0c-5fd064ec532b" name="发动机用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="544aa30c-be09-4770-abb5-9baabb66add0" />
+        <targetEnds>
+          <association Id="0a005ae6-a58b-457a-91bf-cad9257c43cc" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="管理附件项" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f41dae80-44b2-4ee6-ad9d-40d2f3d239cb" LastKnownName="管理附件项" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="695896d0-1371-4027-a773-a3b2658980b1" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d02eaf81-fe54-4698-8d7c-377b68bb9102" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25cd1e35-87b9-4ff6-bbc2-ba10d829a0ca" name="管理附件项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d1bf9f51-df97-4c79-b9d5-8b92b58b810f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b819cf0-aef1-48a9-b460-43ac07ea3d3a" />
+          </association>
+          <association Id="5b656c2d-7bff-49da-be64-5e1cd0cb3cbc" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="预测附件到寿时间" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="28d6c3b5-3948-4f3c-a0fe-489267d2f6a8" LastKnownName="预测附件到寿时间" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="735f200c-6fab-48d1-9130-747b1f1a0e1d" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dad6e215-9812-491e-ae23-93a4a3e6aabe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6c9988e-6367-4a1d-9e11-8a33757da739" name="预测附件到寿时间" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e83d81af-04f6-45e6-be8a-354c53a96d0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00ecf95b-9497-448e-881f-e156fc2d313d" />
+          </association>
+          <association Id="1f049dd9-2b89-4038-bbc9-9de020db6f86" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="查询在位信息" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98179a82-3a65-4c38-bf10-1db862ba2693" LastKnownName="查询在位信息" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ac5a0c0-27ea-4b01-b894-bcec797868b8" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b37742a-38e6-4574-9c3d-fe622d084cd1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="addc80b9-90c9-4e32-bf5d-fd892650ed1f" name="查询在位信息" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68052a46-a19b-4885-bf89-c2c4f926b34d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="716f9543-d5d9-4339-be80-dd14e2da5378" />
+          </association>
+          <association Id="7075fd0b-dec4-4691-bf54-00eca926ca09" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="查询部件状态" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="250ba736-1457-43f2-b9eb-f5923a21bed7" LastKnownName="查询部件状态" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1af825e6-165d-4aa3-ac9c-a8ecf1e4f988" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="911f3156-0d36-4d24-8044-b67a9011945a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc72d5bf-e7a5-4dee-b6ad-577d45d8b31b" name="查询部件状态" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5fbf0b75-3484-4548-a498-3d487490b4eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c575e35-d146-4313-b28e-cdb8e4e7832a" />
+          </association>
+          <association Id="67cd4b76-4a03-456a-a5ec-d05ae14a3a84" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="查询部件拆换记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec64b1e5-0125-45d3-afa7-5171502c505c" LastKnownName="维护部件拆换记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbe2b21f-600d-4de8-9953-e5b215db065b" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2d71e99c-6b68-4e37-9a5e-42845718522e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aee0dfd9-9d25-44f5-87a6-672c0eeb5aa2" name="查询部件拆换记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="782c4a1f-8014-4924-aeb5-0aaf007db7b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ad8a052e-ad87-4476-98d4-750b50884503" />
+          </association>
+          <association Id="70d57be9-ab24-4955-8821-667f95df3042" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="管理APU、发动机华油" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8758d051-a03c-418c-8763-00831f6076e0" LastKnownName="管理APU、发动机滑油" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8498a44-8735-48d1-89c3-cf25f4af4871" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c0d52a38-9afe-40b6-9b91-a845bf3e022f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b81e00a0-e7e0-463d-a0b9-ba31053569e0" name="管理APU、发动机华油" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ed5008d-f43c-4a5c-b4ca-d957f2cd545e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b12a8706-a2aa-4c9d-86fb-a45810bdb4b6" />
+          </association>
+          <association Id="ce2e6cd7-536c-4d6a-b8e9-176d2ceb0896" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="管理件号" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="11337acb-77b2-4ccb-b91e-339e188150e1" LastKnownName="管理件号" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d37d6610-7120-4fed-83c4-26abfb0b08d6" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7a0aba5b-6a90-4d38-aa97-2e78c643a4a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47f80271-521e-405f-83f4-e5efc4cc26fc" name="管理件号" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e094d0b-229f-465b-96eb-6729eaba6ec6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3baa73e8-e52b-4290-87f1-df3f2243f4b9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="1d373e28-636b-475f-a5d2-105b31738d56" name="管理附件构型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99a7112a-0210-4557-8ad1-3ab653ec7091" />
+        <additions>
+          <include Id="e17f71b0-53dc-42e9-978c-b9ca655d5c16">
+            <useCaseMoniker Id="fe27f84c-961a-478e-a175-3bb5afccb0cd" LastKnownName="管理使用过程构型" />
+            <elementDefinition Id="3d0f9453-484d-4553-951e-49ff98fce179" />
+          </include>
+          <include Id="bd3b9236-7af9-40e3-8f91-3b9d012f4ffc">
+            <useCaseMoniker Id="35f3049c-6d41-4227-8386-b3f3cdddc1ab" LastKnownName="管理初始构型" />
+            <elementDefinition Id="61466108-42e3-4957-b116-af54ecb285c3" />
+          </include>
+          <include Id="bc191331-6a94-4f72-bc77-b99b4a97da1a">
+            <useCaseMoniker Id="cccfce58-7e6b-4c8d-bf41-641f88f5aabb" LastKnownName="查询附件构型" />
+            <elementDefinition Id="a660519e-1bff-4970-a36a-33a089d179ed" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fe27f84c-961a-478e-a175-3bb5afccb0cd" name="管理使用过程构型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1ff5bf6-0151-48ea-a629-1a972fcab2e6" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="35f3049c-6d41-4227-8386-b3f3cdddc1ab" name="管理初始构型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5297cbc4-3209-4631-b3bb-26f63882be2a" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f41dae80-44b2-4ee6-ad9d-40d2f3d239cb" name="管理附件项" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="513c1516-db59-42cc-a713-72d58f5b3f14" />
+        <additions>
+          <include Id="94374a7b-8917-4aca-adf7-97b87d352b05">
+            <useCaseMoniker Id="e141ae2d-4a67-4a0e-b7bb-ba5ea0cf3607" LastKnownName="定义维修控制时限" />
+            <elementDefinition Id="392900b6-ebc4-49b5-b73a-dc85e300ccb6" />
+          </include>
+          <include Id="5d2df6fb-83b6-4fda-a3c6-330fec07c4e6">
+            <useCaseMoniker Id="5da54ef2-17ae-4ff2-b096-28335841980f" LastKnownName="管理附件项件号" />
+            <elementDefinition Id="36e6c9f8-091e-4429-9574-57b6b0557634" />
+          </include>
+          <include Id="e9e0a28e-342e-44e8-af76-b501b42f9033">
+            <useCaseMoniker Id="1055f117-6432-4e04-bf5f-4946b958c54e" LastKnownName="维护工作代码" />
+            <elementDefinition Id="a6337f65-7d93-4699-b538-d76feab9f7ee" />
+          </include>
+          <include Id="40c9c11e-0eb8-4d05-9a69-3019b75d3c51">
+            <useCaseMoniker Id="356a486d-7052-43e3-9091-693c08cd2e1e" LastKnownName="维护间隔单位" />
+            <elementDefinition Id="cf65cbe0-e0ee-4207-99cd-5e812016bacf" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="11337acb-77b2-4ccb-b91e-339e188150e1" name="管理件号" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7b91930-cd9f-4de4-aa9c-2221c93b520c" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0e51daae-607b-46e8-ac43-b148711cd3e1" name="导入新飞机装机信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe66195e-7acf-4cde-a5ce-d65314d31f4f" />
+        <extendedCases>
+          <extend Id="e61d5e31-7e24-4400-bb91-2becd3357173">
+            <useCaseMoniker Id="98179a82-3a65-4c38-bf10-1db862ba2693" LastKnownName="查询在位信息" />
+            <elementDefinition Id="ba8429a2-26d9-4105-8c56-bd335c81650f" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ec64b1e5-0125-45d3-afa7-5171502c505c" name="维护部件拆换记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa9689fe-c48f-43ae-b681-614c00886ec4" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e141ae2d-4a67-4a0e-b7bb-ba5ea0cf3607" name="定义维修控制时限" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e99b158e-217b-4c75-9745-024db9409cb0" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="edd2d623-6933-4b27-87e6-9767153ea933" name="计算平均日利用率" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ecaf91a-2aad-418d-94d0-dba19e19fdc8" />
+        <extendedCases>
+          <extend Id="365be83b-680c-4829-b9c9-8fe5ef7b6e0e">
+            <useCaseMoniker Id="28d6c3b5-3948-4f3c-a0fe-489267d2f6a8" LastKnownName="预测附件到寿时间" />
+            <elementDefinition Id="e6035126-fcfd-4992-be90-9a481735482e" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="28d6c3b5-3948-4f3c-a0fe-489267d2f6a8" name="预测附件到寿时间" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5e7f30c-0c5b-4b2d-9f44-870fab1df619" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="cccfce58-7e6b-4c8d-bf41-641f88f5aabb" name="查询附件构型" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc16b3f3-3a1a-47d0-9106-e831357a7855" />
+        <additions>
+          <include Id="0d949c2d-ad6e-4de5-b39b-a323d6b31043">
+            <useCaseMoniker Id="76ddf774-8c7f-4bce-812d-ddf7217a5c46" LastKnownName="查询附件构型变更历史" />
+            <elementDefinition Id="fa9e73e9-f4e6-454e-97e9-e1a4007fc909" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="76ddf774-8c7f-4bce-812d-ddf7217a5c46" name="查询附件构型变更历史" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6fb10ca9-e758-4b18-9709-ed8881a5a433" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="078db9d8-08b5-4c71-9e32-182dc5629b63" name="比较附件构型差异" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de4adf8c-800b-43e5-89ec-80c958b11b04" />
+        <extendedCases>
+          <extend Id="4cb3a878-da01-4d10-9921-32ddfb9da790">
+            <useCaseMoniker Id="cccfce58-7e6b-4c8d-bf41-641f88f5aabb" LastKnownName="查询附件构型" />
+            <elementDefinition Id="ca35c844-54ea-472c-978d-12616148604c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="98179a82-3a65-4c38-bf10-1db862ba2693" name="查询在位信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65fe0615-dbbe-4ab4-90a8-bd686a61892c" />
+        <additions>
+          <include Id="4372420e-eff5-4958-8d81-4d4c110f7628">
+            <useCaseMoniker Id="da743f70-adab-4f59-8cf6-045f6677dd2f" LastKnownName="查询在位部件履历信息" />
+            <elementDefinition Id="77c5b0c3-5ed0-4481-9196-2be155e42103" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="da743f70-adab-4f59-8cf6-045f6677dd2f" name="查询在位部件履历信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="baa0ca98-dc6f-4f1e-afee-409812d046e9" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="250ba736-1457-43f2-b9eb-f5923a21bed7" name="查询部件状态" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a585c2e6-6f83-4c3d-87f1-e7041a1fc5d7" />
+        <additions>
+          <include Id="dfa962c2-8d7d-432b-b718-27c3e42612b0">
+            <useCaseMoniker Id="1defaf78-7c0c-4767-81b3-3c66898d96fe" LastKnownName="查询部件拆换历史" />
+            <elementDefinition Id="8164d414-e0bf-44cf-ac7b-ce9ff140d014" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1defaf78-7c0c-4767-81b3-3c66898d96fe" name="查询部件拆换历史" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc117c76-46b7-44dd-b6a5-30b9bd2861ea" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8758d051-a03c-418c-8763-00831f6076e0" name="管理APU、发动机滑油" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c295f5a-2d2c-4763-8ac2-67073339cc6d" />
+        <additions>
+          <include Id="273011be-98d6-493a-b90b-41b48a72b155">
+            <useCaseMoniker Id="a6acf142-6b4d-47d9-b6fb-bd44f6fad0e6" LastKnownName="计算APU/ENG滑油滚动耗量" />
+            <elementDefinition Id="267776f9-bc57-4423-99bd-995083f87e7f" />
+          </include>
+          <include Id="7b6a8fcb-6c20-44be-8179-ef8b30cf12e0">
+            <useCaseMoniker Id="21d4500a-fdf1-4c6d-a93e-9894e94b958f" LastKnownName="预设APU/ENG滑油预警值" />
+            <elementDefinition Id="d16564eb-1527-4e92-b304-6e9c64be4bc6" />
+          </include>
+          <include Id="f58484df-4a11-4b64-b42a-93698b1a1a0a">
+            <useCaseMoniker Id="94bda4ad-1e3a-4c77-aff8-022e8feb2309" LastKnownName="维护APU/ENG滑油添加记录" />
+            <elementDefinition Id="d239aa1f-becd-4336-8aad-52c9a934d852" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a6acf142-6b4d-47d9-b6fb-bd44f6fad0e6" name="计算APU/ENG滑油滚动耗量" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c083799-3b2b-4100-912c-fb6547febcf4" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="21d4500a-fdf1-4c6d-a93e-9894e94b958f" name="预设APU/ENG滑油预警值" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c589034-3213-48b4-bb70-0b05ca1ce295" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6fdeebe4-3cc3-463e-b9b3-d8a8a254341e" name="查询维修记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c024b08-1cc3-4ab4-a01c-d6d30f96959d" />
+        <additions>
+          <include Id="e6dbf139-3656-4808-aa05-4de76e74cbc7">
+            <useCaseMoniker Id="2d1e3aab-d053-4ef6-9194-feec13cceb02" LastKnownName="查询维修记录 " />
+            <elementDefinition Id="c905306d-2036-4f18-bcb4-72945833e0a6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2d1e3aab-d053-4ef6-9194-feec13cceb02" name="查询维修记录 " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3cbd460-81e6-444b-b8c0-ef5852d6362c" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b43d7a6b-3276-440b-bf91-f4c803abb111" name="按附件项分析维修间隔差异 " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ebebe7b-59ab-4b46-a313-a42e9e8098a6" />
+        <extendedCases>
+          <extend Id="a0b144fa-be58-4db0-a16e-02726f7a6877">
+            <useCaseMoniker Id="6fdeebe4-3cc3-463e-b9b3-d8a8a254341e" LastKnownName="查询维修记录" />
+            <elementDefinition Id="44b5ade0-a2ef-46ab-a5c6-f9134cf66e2b" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b0a06614-252c-4c5d-a6d1-88d090c9439c" name="按件号分析维修间隔差异 " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3927d62c-bc12-4d3a-a8fe-e3187998e1af" />
+        <extendedCases>
+          <extend Id="4362a00a-6ab6-4df6-bfbb-5ec76f5b1deb">
+            <useCaseMoniker Id="6fdeebe4-3cc3-463e-b9b3-d8a8a254341e" LastKnownName="查询维修记录" />
+            <elementDefinition Id="4e32d016-33f6-40c7-9cde-231341a85b79" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="94bda4ad-1e3a-4c77-aff8-022e8feb2309" name="维护APU/ENG滑油添加记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8dd2bd34-fb43-4201-ac21-a9d4fced3b4c" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4a3774a6-94f6-4100-aa0e-a589c64322ba" name="维护SCN/MSCN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9bdc21e9-4264-4a1d-8895-6086ba13c530" />
+        <additions>
+          <include Id="4e5a3c37-3c77-4671-bbb2-9e717e12cac7">
+            <useCaseMoniker Id="f0c35268-043a-45b4-adaa-6d03a1172a77" LastKnownName="维护SCN/MSCN明细项" />
+            <elementDefinition Id="677ebde2-6bc7-47ff-a224-9abbdf59ddbd" />
+          </include>
+          <include Id="684d0ba2-b817-483e-9159-4c78086b8f4b">
+            <useCaseMoniker Id="478132f2-da94-4e3a-9ca4-4bdd9cb4f948" LastKnownName="维护适用合同飞机" />
+            <elementDefinition Id="b62941d1-1f1f-4e17-b7f0-7e5b703f025b" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="89920f0f-b793-4e98-8683-74a00540afc9" name="对比SCN/MSCN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3705b59-0a30-4ca9-8feb-9cb3b6b0342d" />
+        <extendedCases>
+          <extend Id="dcb6adad-c7fc-49ba-86dc-dd26c1e9850f">
+            <useCaseMoniker Id="4a3774a6-94f6-4100-aa0e-a589c64322ba" LastKnownName="维护SCN/MSCN" />
+            <elementDefinition Id="8ffe264a-f4b3-4325-a05c-10346f5400d3" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f0c35268-043a-45b4-adaa-6d03a1172a77" name="维护SCN/MSCN明细项" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="402296e1-dd7c-4ad2-b186-36c33eb8316b" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="478132f2-da94-4e3a-9ca4-4bdd9cb4f948" name="维护适用合同飞机" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb5fc2b1-d867-4a2f-a2dc-ff881436c825" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5da54ef2-17ae-4ff2-b096-28335841980f" name="管理附件项件号" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb93c028-09ef-495f-828a-7f12ff0d92c3" />
+        <additions>
+          <include Id="c420c552-a831-409f-8252-259bc586b6f5">
+            <useCaseMoniker Id="4b432343-c56e-46e3-8179-f46d2b2a1e5b" LastKnownName="指定控制时限组" />
+            <elementDefinition Id="e91519f0-3cd4-4dea-ac60-f361f9b63950" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4b432343-c56e-46e3-8179-f46d2b2a1e5b" name="指定控制时限组" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c388425-a2d0-4e4b-be07-71913bc8bf94" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1055f117-6432-4e04-bf5f-4946b958c54e" name="维护工作代码" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ef4227f-fe96-4ed5-a5dc-604182b1eee7" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="356a486d-7052-43e3-9091-693c08cd2e1e" name="维护间隔单位" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce9489d2-d573-48e2-8c2d-86dec0a721fa" />
+        <subjects>
+          <subsystemMoniker Id="43630174-3464-47b4-a3fc-060b2a961dc3" LastKnownName="附件" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="4d5ec42d-daac-4ec3-9e6b-436f1f37b670" name="技术标准室" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="57fbc650-e75b-4a78-9419-f066b130e41c" />
+        <targetEnds>
+          <association Id="94abf373-01f5-4f51-ad72-80e1a4e229a2" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="维护SCN/MSCN" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a3774a6-94f6-4100-aa0e-a589c64322ba" LastKnownName="维护SCN/MSCN" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8845cae0-33ee-49fd-aa43-3f9df0b2b3ab" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e248a573-03c3-4b2a-b67f-b978872bf995" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dda59e6d-68f4-41d3-9b7f-250989edb664" name="维护SCN/MSCN" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b822123d-2866-417b-8d13-6a3afaa032dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="35497543-01a5-43b9-83a8-80a195182303" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ba54c18d-7744-4068-96e3-376edfd4ec86" name="机身系统室" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9fbee19-d1f4-4996-ab3d-c5d33cfc0511" />
+        <targetEnds>
+          <association Id="656a4449-cf3d-4b56-bd4f-23f8846aa094" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="管理附件构型" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1d373e28-636b-475f-a5d2-105b31738d56" LastKnownName="管理附件构型" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="010773cd-8ac7-46e1-af5d-a0554919de3f" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71c1fc83-1b19-46c3-8a34-48ad0dd9a1db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38c22976-e9a6-4a73-99de-8f7fc7a53631" name="管理附件构型" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8cd9872-01fe-46e2-9717-a28eeade58d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dbb2870d-70f1-4487-8275-da121d3c2380" />
+          </association>
+          <association Id="bd39350e-ade1-4b1b-a77b-6cbfe06020a0" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="查询维修记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6fdeebe4-3cc3-463e-b9b3-d8a8a254341e" LastKnownName="查询维修记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c19bfe1e-b77b-47f3-b2e0-6695d2ce22d7" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15a0a0ea-d436-4b69-8ad3-e9a93edbc2ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="09e6bd1e-6fbf-48c1-b0d3-0ce2ba0b687d" name="查询维修记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6dbd655e-c2a0-4a1a-875c-d01564d7ea65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62cfaae9-454f-4f6a-be6a-4844901ffecf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="325c8975-9d56-4456-af16-b659db24cb7c" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+    <profileInstances>
+      <packageHasProfileInstances Id="adc77c8a-1fd7-48c7-a8b3-86017c68d108">
+        <profileInstance Id="0ce0beb1-664e-4722-9db3-bf1197648aa8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9bf41fe0-311b-4996-aa9e-8c744db3f2d8">
+        <profileInstance Id="0ea1f3eb-6f02-47d1-97c1-c964dd5a9cd7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.Component.Server.UnitTest</RootNamespace>
+    <AssemblyName>UniCloud.Component.Server.UnitTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\AutoMapper.2.1.265\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Windows.Controls.Input">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\FRPNEW\FRP\SiChuanAir\01_SCL\05_Code\Dev\packages\Telerik.Windows.Controls.Input.1.0.0\lib\Telerik.Windows.Controls.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Application">
+      <HintPath>..\..\..\packages\UniCloud.Application.1.0.1\lib\UniCloud.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.1.0.2\lib\UniCloud.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Document, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain">
+      <HintPath>..\..\..\packages\UniCloud.Domain.1.0.1\lib\UniCloud.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain.Repositories">
+      <HintPath>..\..\..\packages\UniCloud.Domain.Repositories.1.0.2\lib\UniCloud.Domain.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Events">
+      <HintPath>..\..\..\packages\UniCloud.Events.1.0.1\lib\UniCloud.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.1.0.1\lib\UniCloud.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Caching">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Caching.1.0.1\lib\UniCloud.Infrastructure.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Common">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Config">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Config.1.0.1\lib\UniCloud.Infrastructure.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure.Utility">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.Utility.1.0.2\lib\UniCloud.Infrastructure.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Service\IAcIntUnitUtilizaServiceTest.cs" />
+    <Compile Include="Query\IAcStructureQueryTest.cs" />
+    <Compile Include="Service\IAcStructureServiceTest.cs" />
+    <Compile Include="Query\IAdsbComplyQueryTest.cs" />
+    <Compile Include="Service\IAdsbComplyServiceTest.cs" />
+    <Compile Include="Query\IAdsbQueryTest.cs" />
+    <Compile Include="Service\IAdsbServiceTest.cs" />
+    <Compile Include="Service\IAirBusMSCNServiceTest.cs" />
+    <Compile Include="Query\IEgtMarginQueryTest.cs" />
+    <Compile Include="Service\IEgtMarginServiceTest.cs" />
+    <Compile Include="Query\IMajorEventQueryTest.cs" />
+    <Compile Include="Service\IMajorEventServiceTest.cs" />
+    <Compile Include="Query\IAtaQueryTest.cs" />
+    <Compile Include="Query\ICcOrderQueryTest.cs" />
+    <Compile Include="Service\ICcOrderServiceTest.cs" />
+    <Compile Include="Query\ICcpMainQueryTest.cs" />
+    <Compile Include="Service\ICcpMainServiceTest.cs" />
+    <Compile Include="Query\IIntUnitQueryTest.cs" />
+    <Compile Include="Service\IIntUnitServiceTest.cs" />
+    <Compile Include="Initializer.cs" />
+    <Compile Include="Query\IOilAnalysisQueryTest.cs" />
+    <Compile Include="Query\IOilHistoryQueryTest.cs" />
+    <Compile Include="Service\IOilHistoryServiceTest.cs" />
+    <Compile Include="Query\IPartsMonitorQueryTest.cs" />
+    <Compile Include="Service\IPartsMonitorServiceTest.cs" />
+    <Compile Include="Query\IPnRegQueryTest.cs" />
+    <Compile Include="Service\IPnRegServiceTest.cs" />
+    <Compile Include="Query\IScnMainQueryTest.cs" />
+    <Compile Include="Service\IScnMainServiceTest.cs" />
+    <Compile Include="Query\ISnHistoryQueryTest.cs" />
+    <Compile Include="Service\ISnHistoryServiceTest.cs" />
+    <Compile Include="Query\ISnRegQueryTest.cs" />
+    <Compile Include="Service\ISnRegServiceTest.cs" />
+    <Compile Include="Query\IWfHistoryQueryTest.cs" />
+    <Compile Include="Service\IWfHistoryServiceTest.cs" />
+    <Compile Include="Query\IWorkScopeQueryTest.cs" />
+    <Compile Include="Service\IWorkScopeServiceTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\DocService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service\IOilAnalysisServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\DocService\DocumentService.wsdl" />
+    <None Include="Service References\DocService\DocumentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocService\DocumentService1.wsdl" />
+    <None Include="Service References\DocService\DocumentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocService\DocumentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocService\DocumentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocService\UniCloud.Component.Server.UnitTest.DocService.DocumentDataObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DocService\UniCloud.Component.Server.UnitTest.DocService.DocumentTypeDataObjectList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\UniCloud.Application.Component\UniCloud.Application.Component.csproj">
+      <Project>{ac6fe143-dfc5-4b94-8caf-5efea74cc057}</Project>
+      <Name>UniCloud.Application.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Application\UniCloud.DataObjects.Component\UniCloud.DataObjects.Component.csproj">
+      <Project>{2f2cc87b-411b-4b0c-8e72-24af47c06a3e}</Project>
+      <Name>UniCloud.DataObjects.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Application\UniCloud.Events.Handlers.Component\UniCloud.Events.Handlers.Component.csproj">
+      <Project>{0515e7c1-3907-4e1d-bcd0-dfaa9ab0b86c}</Project>
+      <Name>UniCloud.Events.Handlers.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Application\UniCloud.Query.Component\UniCloud.Query.Component.csproj">
+      <Project>{6a473421-46a1-4298-abff-17f9647025ae}</Project>
+      <Name>UniCloud.Query.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Application\UniCloud.ServiceContracts.Component\UniCloud.ServiceContracts.Component.csproj">
+      <Project>{b5792242-4d99-4c9c-a781-7a22d8642b0d}</Project>
+      <Name>UniCloud.ServiceContracts.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Application\UniCloud.Services.Component\UniCloud.Services.Component.csproj">
+      <Project>{91d2af94-8c7d-4354-afa7-c65c5c08f0ee}</Project>
+      <Name>UniCloud.Services.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\UniCloud.Domain.Component\UniCloud.Domain.Component.csproj">
+      <Project>{b2b2448a-1d6d-4ec2-aab7-07a46bd3c528}</Project>
+      <Name>UniCloud.Domain.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Common\UniCloud.Infrastructure.Common.Component\UniCloud.Infrastructure.Common.Component.csproj">
+      <Project>{8aa69373-3753-424f-9160-e877f9c69fef}</Project>
+      <Name>UniCloud.Infrastructure.Common.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Repository\UniCloud.Domain.Repositories.Component\UniCloud.Domain.Repositories.Component.csproj">
+      <Project>{2c50eddc-aa50-4aa3-9d59-61d2634bfeb9}</Project>
+      <Name>UniCloud.Domain.Repositories.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DocService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocService\DocumentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

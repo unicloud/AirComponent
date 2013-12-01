@@ -1,0 +1,206 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Application.Component", "UniCloud.Component.Server\Application\UniCloud.Application.Component\UniCloud.Application.Component.csproj", "{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2226CD09-E336-47C4-9E28-0F48D0CCD5B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{48F1381D-E9C5-4CAA-B5AB-A28C85D4FE7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0F907C2F-FEC9-4EA2-8B65-3D3B24E774E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{81EBBF10-5FDB-49E7-A520-C4C3BEC19237}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{7E8704AC-B33E-4D2A-86BB-C09B11B92CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Domain.Component", "UniCloud.Component.Server\Domain\UniCloud.Domain.Component\UniCloud.Domain.Component.csproj", "{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.DataObjects.Component", "UniCloud.Component.Server\Application\UniCloud.DataObjects.Component\UniCloud.DataObjects.Component.csproj", "{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Events.Handlers.Component", "UniCloud.Component.Server\Application\UniCloud.Events.Handlers.Component\UniCloud.Events.Handlers.Component.csproj", "{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.ServiceContracts.Component", "UniCloud.Component.Server\Application\UniCloud.ServiceContracts.Component\UniCloud.ServiceContracts.Component.csproj", "{B5792242-4D99-4C9C-A781-7A22D8642B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Services.Component", "UniCloud.Component.Server\Application\UniCloud.Services.Component\UniCloud.Services.Component.csproj", "{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FD5878FA-B421-494C-ACD2-A84FE65296C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{F06084B2-0054-422D-A0A5-69EBF302AF04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Domain.Repositories.Component", "UniCloud.Component.Server\Infrastructure\Repository\UniCloud.Domain.Repositories.Component\UniCloud.Domain.Repositories.Component.csproj", "{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Infrastructure.Common.Component", "UniCloud.Component.Server\Infrastructure\Common\UniCloud.Infrastructure.Common.Component\UniCloud.Infrastructure.Common.Component.csproj", "{8AA69373-3753-424F-9160-E877F9C69FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseInit", "UniCloud.Component.Server\Tool\DataBaseInit\DataBaseInit.csproj", "{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Component.Server.UnitTest", "UniCloud.Component.Server\UnitTest\UniCloud.Component.Server.UnitTest\UniCloud.Component.Server.UnitTest.csproj", "{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.DataObjects.Component.Silverlight", "UniCloud.Component.Server\Application\UniCloud.DataObjects.Component.Silverlight\UniCloud.DataObjects.Component.Silverlight.csproj", "{A7310BAF-320A-43A0-A4FA-D576663F5649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Services.Component.Silverlight", "UniCloud.Component.Server\Application\UniCloud.Services.Component.Silverlight\UniCloud.Services.Component.Silverlight.csproj", "{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCodeTools", "UniCloud.Component.Server\Tool\BaseCodeTools\BaseCodeTools.csproj", "{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Query.Component", "UniCloud.Component.Server\Application\UniCloud.Query.Component\UniCloud.Query.Component.csproj", "{6A473421-46A1-4298-ABFF-17F9647025AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniCloud.Service.Refernce", "UniCloud.Component.Server\Application\UniCloud.Service.Refernce\UniCloud.Service.Refernce.csproj", "{BB51FDF9-FC9E-4191-9F98-B8128CED54C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://unicloud:8080/tfs/achrs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UniCloud.Component.Server\\Application\\UniCloud.Application.Component\\UniCloud.Application.Component.csproj
+		SccProjectTopLevelParentUniqueName1 = UniCloud.Component.Server.sln
+		SccProjectName1 = UniCloud.Component.Server/Application/UniCloud.Application.Component
+		SccLocalPath1 = UniCloud.Component.Server\\Application\\UniCloud.Application.Component
+		SccProjectUniqueName2 = UniCloud.Component.Server\\Domain\\UniCloud.Domain.Component\\UniCloud.Domain.Component.csproj
+		SccProjectTopLevelParentUniqueName2 = UniCloud.Component.Server.sln
+		SccProjectName2 = UniCloud.Component.Server/Domain/UniCloud.Domain.Component
+		SccLocalPath2 = UniCloud.Component.Server\\Domain\\UniCloud.Domain.Component
+		SccProjectUniqueName3 = UniCloud.Component.Server\\Application\\UniCloud.DataObjects.Component\\UniCloud.DataObjects.Component.csproj
+		SccProjectTopLevelParentUniqueName3 = UniCloud.Component.Server.sln
+		SccProjectName3 = UniCloud.Component.Server/Application/UniCloud.DataObjects.Component
+		SccLocalPath3 = UniCloud.Component.Server\\Application\\UniCloud.DataObjects.Component
+		SccProjectUniqueName4 = UniCloud.Component.Server\\Application\\UniCloud.Events.Handlers.Component\\UniCloud.Events.Handlers.Component.csproj
+		SccProjectTopLevelParentUniqueName4 = UniCloud.Component.Server.sln
+		SccProjectName4 = UniCloud.Component.Server/Application/UniCloud.Events.Handlers.Component
+		SccLocalPath4 = UniCloud.Component.Server\\Application\\UniCloud.Events.Handlers.Component
+		SccProjectUniqueName5 = UniCloud.Component.Server\\Application\\UniCloud.ServiceContracts.Component\\UniCloud.ServiceContracts.Component.csproj
+		SccProjectTopLevelParentUniqueName5 = UniCloud.Component.Server.sln
+		SccProjectName5 = UniCloud.Component.Server/Application/UniCloud.ServiceContracts.Component
+		SccLocalPath5 = UniCloud.Component.Server\\Application\\UniCloud.ServiceContracts.Component
+		SccProjectUniqueName6 = UniCloud.Component.Server\\Application\\UniCloud.Services.Component\\UniCloud.Services.Component.csproj
+		SccProjectTopLevelParentUniqueName6 = UniCloud.Component.Server.sln
+		SccProjectName6 = UniCloud.Component.Server/Application/UniCloud.Services.Component
+		SccLocalPath6 = UniCloud.Component.Server\\Application\\UniCloud.Services.Component
+		SccProjectUniqueName7 = UniCloud.Component.Server\\Infrastructure\\Repository\\UniCloud.Domain.Repositories.Component\\UniCloud.Domain.Repositories.Component.csproj
+		SccProjectTopLevelParentUniqueName7 = UniCloud.Component.Server.sln
+		SccProjectName7 = UniCloud.Component.Server/Infrastructure/Repository/UniCloud.Domain.Repositories.Component
+		SccLocalPath7 = UniCloud.Component.Server\\Infrastructure\\Repository\\UniCloud.Domain.Repositories.Component
+		SccProjectUniqueName8 = UniCloud.Component.Server\\Infrastructure\\Common\\UniCloud.Infrastructure.Common.Component\\UniCloud.Infrastructure.Common.Component.csproj
+		SccProjectTopLevelParentUniqueName8 = UniCloud.Component.Server.sln
+		SccProjectName8 = UniCloud.Component.Server/Infrastructure/Common/UniCloud.Infrastructure.Common.Component
+		SccLocalPath8 = UniCloud.Component.Server\\Infrastructure\\Common\\UniCloud.Infrastructure.Common.Component
+		SccProjectUniqueName9 = UniCloud.Component.Server\\Tool\\DataBaseInit\\DataBaseInit.csproj
+		SccProjectTopLevelParentUniqueName9 = UniCloud.Component.Server.sln
+		SccProjectName9 = UniCloud.Component.Server/Tool/DataBaseInit
+		SccLocalPath9 = UniCloud.Component.Server\\Tool\\DataBaseInit
+		SccProjectUniqueName10 = UniCloud.Component.Server\\UnitTest\\UniCloud.Component.Server.UnitTest\\UniCloud.Component.Server.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName10 = UniCloud.Component.Server.sln
+		SccProjectName10 = UniCloud.Component.Server/UnitTest/UniCloud.Component.Server.UnitTest
+		SccLocalPath10 = UniCloud.Component.Server\\UnitTest\\UniCloud.Component.Server.UnitTest
+		SccProjectUniqueName11 = UniCloud.Component.Server\\Application\\UniCloud.DataObjects.Component.Silverlight\\UniCloud.DataObjects.Component.Silverlight.csproj
+		SccProjectTopLevelParentUniqueName11 = UniCloud.Component.Server.sln
+		SccProjectName11 = UniCloud.Component.Server/Application/UniCloud.DataObjects.Component.Silverlight
+		SccLocalPath11 = UniCloud.Component.Server\\Application\\UniCloud.DataObjects.Component.Silverlight
+		SccProjectUniqueName12 = UniCloud.Component.Server\\Application\\UniCloud.Services.Component.Silverlight\\UniCloud.Services.Component.Silverlight.csproj
+		SccProjectTopLevelParentUniqueName12 = UniCloud.Component.Server.sln
+		SccProjectName12 = UniCloud.Component.Server/Application/UniCloud.Services.Component.Silverlight
+		SccLocalPath12 = UniCloud.Component.Server\\Application\\UniCloud.Services.Component.Silverlight
+		SccProjectUniqueName13 = UniCloud.Component.Server\\Tool\\BaseCodeTools\\BaseCodeTools.csproj
+		SccProjectTopLevelParentUniqueName13 = UniCloud.Component.Server.sln
+		SccProjectName13 = UniCloud.Component.Server/Tool/BaseCodeTools
+		SccLocalPath13 = UniCloud.Component.Server\\Tool\\BaseCodeTools
+		SccProjectUniqueName14 = UniCloud.Component.Server\\Application\\UniCloud.Query.Component\\UniCloud.Query.Component.csproj
+		SccProjectTopLevelParentUniqueName14 = UniCloud.Component.Server.sln
+		SccProjectName14 = UniCloud.Component.Server/Application/UniCloud.Query.Component
+		SccLocalPath14 = UniCloud.Component.Server\\Application\\UniCloud.Query.Component
+		SccProjectUniqueName15 = UniCloud.Component.Server\\Application\\UniCloud.Service.Refernce\\UniCloud.Service.Refernce.csproj
+		SccProjectTopLevelParentUniqueName15 = UniCloud.Component.Server.sln
+		SccProjectName15 = UniCloud.Component.Server/Application/UniCloud.Service.Refernce
+		SccLocalPath15 = UniCloud.Component.Server\\Application\\UniCloud.Service.Refernce
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5792242-4D99-4C9C-A781-7A22D8642B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5792242-4D99-4C9C-A781-7A22D8642B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5792242-4D99-4C9C-A781-7A22D8642B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5792242-4D99-4C9C-A781-7A22D8642B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA69373-3753-424F-9160-E877F9C69FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA69373-3753-424F-9160-E877F9C69FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA69373-3753-424F-9160-E877F9C69FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA69373-3753-424F-9160-E877F9C69FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7310BAF-320A-43A0-A4FA-D576663F5649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7310BAF-320A-43A0-A4FA-D576663F5649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7310BAF-320A-43A0-A4FA-D576663F5649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7310BAF-320A-43A0-A4FA-D576663F5649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A473421-46A1-4298-ABFF-17F9647025AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A473421-46A1-4298-ABFF-17F9647025AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A473421-46A1-4298-ABFF-17F9647025AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A473421-46A1-4298-ABFF-17F9647025AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB51FDF9-FC9E-4191-9F98-B8128CED54C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB51FDF9-FC9E-4191-9F98-B8128CED54C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB51FDF9-FC9E-4191-9F98-B8128CED54C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB51FDF9-FC9E-4191-9F98-B8128CED54C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC6FE143-DFC5-4B94-8CAF-5EFEA74CC057} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{0515E7C1-3907-4E1D-BCD0-DFAA9AB0B86C} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{B5792242-4D99-4C9C-A781-7A22D8642B0D} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{91D2AF94-8C7D-4354-AFA7-C65C5C08F0EE} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{A7310BAF-320A-43A0-A4FA-D576663F5649} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{48B027E5-46E6-48CD-9BB8-BFC8D827A0A5} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{6A473421-46A1-4298-ABFF-17F9647025AE} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{BB51FDF9-FC9E-4191-9F98-B8128CED54C7} = {2226CD09-E336-47C4-9E28-0F48D0CCD5B5}
+		{B2B2448A-1D6D-4EC2-AAB7-07A46BD3C528} = {48F1381D-E9C5-4CAA-B5AB-A28C85D4FE7E}
+		{FD5878FA-B421-494C-ACD2-A84FE65296C9} = {0F907C2F-FEC9-4EA2-8B65-3D3B24E774E7}
+		{F06084B2-0054-422D-A0A5-69EBF302AF04} = {0F907C2F-FEC9-4EA2-8B65-3D3B24E774E7}
+		{78CFFA38-1BCD-41EC-8C94-27F5D3B90DB1} = {81EBBF10-5FDB-49E7-A520-C4C3BEC19237}
+		{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1} = {81EBBF10-5FDB-49E7-A520-C4C3BEC19237}
+		{4ECCFEBD-CCE5-48EB-9ADF-7F2DCAC7957A} = {7E8704AC-B33E-4D2A-86BB-C09B11B92CF8}
+		{8AA69373-3753-424F-9160-E877F9C69FEF} = {FD5878FA-B421-494C-ACD2-A84FE65296C9}
+		{2C50EDDC-AA50-4AA3-9D59-61D2634BFEB9} = {F06084B2-0054-422D-A0A5-69EBF302AF04}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

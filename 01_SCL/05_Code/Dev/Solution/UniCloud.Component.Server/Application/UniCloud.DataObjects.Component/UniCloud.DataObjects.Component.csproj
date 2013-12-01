@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F2CC87B-411B-4B0C-8E72-24AF47C06A3E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.DataObjects</RootNamespace>
+    <AssemblyName>UniCloud.DataObjects.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniCloud.DataObjects">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.1.0.2\lib\UniCloud.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Document">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Document.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataObject\Aircraft\AtaDataObject.cs" />
+    <Compile Include="DataObject\Part\AcIntUnitUtilizaDataObject.cs" />
+    <Compile Include="DataObject\Part\AcStructureDataObject.cs" />
+    <Compile Include="DataObject\Part\AdsbComplyDataObject.cs" />
+    <Compile Include="DataObject\Part\AdsbDataObject.cs" />
+    <Compile Include="DataObject\Part\AirBusMSCNDataObject.cs" />
+    <Compile Include="DataObject\Part\AttactDocumentDataObject.cs" />
+    <Compile Include="DataObject\Part\CcinDataObject.cs" />
+    <Compile Include="DataObject\Part\CcOrderDataObject.cs" />
+    <Compile Include="DataObject\Part\CcoutDataObject.cs" />
+    <Compile Include="DataObject\Part\CcpLimitDataObject.cs" />
+    <Compile Include="DataObject\Part\CcpMainDataObject.cs" />
+    <Compile Include="DataObject\Part\CcpPnDataObject.cs" />
+    <Compile Include="DataObject\Part\Common\CompareAcDto.cs" />
+    <Compile Include="DataObject\Part\Common\CompareAcOrderDto.cs" />
+    <Compile Include="DataObject\Part\Common\CompareMscnDto.cs" />
+    <Compile Include="DataObject\Part\Common\EngineReportDto.cs" />
+    <Compile Include="DataObject\Part\Common\EngOilWarnDto.cs" />
+    <Compile Include="DataObject\Part\Common\ScnItemDto.cs" />
+    <Compile Include="DataObject\Part\Common\SnRegDto.cs" />
+    <Compile Include="DataObject\Part\Common\UseDetailInfo.cs" />
+    <Compile Include="DataObject\Part\Common\UtilizationData.cs" />
+    <Compile Include="DataObject\Part\EgtMarginDataObject.cs" />
+    <Compile Include="DataObject\Part\IntUnitDataObject.cs" />
+    <Compile Include="DataObject\Part\MajorEventDataObject.cs" />
+    <Compile Include="DataObject\Part\OilHistoryDataObject.cs" />
+    <Compile Include="DataObject\Part\Partial\AcStructureDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\OilAnalysisDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\OilHistoryDataObject.cs" />
+    <Compile Include="DataObject\Part\Partial\CcinDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\CcOrderDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\CcoutDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\CcpLimitDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\CcpMainDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\CcpPnDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\MajorEventDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\PartsMonitorDataObject.cs" />
+    <Compile Include="DataObject\Part\Partial\PnRegDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\ScnAcorderDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\ScnMainDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\SnHistoryDataObject.cs" />
+    <Compile Include="DataObject\Part\Partial\SnHistoryUnitDataObject.Partial.cs" />
+    <Compile Include="DataObject\Part\Partial\SnRegDataObject.cs" />
+    <Compile Include="DataObject\Part\PartsMonitorDataObject.cs" />
+    <Compile Include="DataObject\Part\PartsMonitorDetailDataObject.cs" />
+    <Compile Include="DataObject\Part\PnRegDataObject.cs" />
+    <Compile Include="DataObject\Part\ScnAcorderDataObject.cs" />
+    <Compile Include="DataObject\Part\ScnItemDataObject.cs" />
+    <Compile Include="DataObject\Part\ScnMainDataObject.cs" />
+    <Compile Include="DataObject\Part\SnHistoryDataObject.cs" />
+    <Compile Include="DataObject\Part\SnHistoryUnitDataObject.cs" />
+    <Compile Include="DataObject\Part\SnRegDataObject.cs" />
+    <Compile Include="DataObject\Part\WfHistoryDataObject.cs" />
+    <Compile Include="DataObject\Part\WorkScopeDataObject.cs" />
+    <Compile Include="DataObject\Part\OilAnalysisDataObject.cs" />
+    <Compile Include="IBaseDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,137 @@
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on "ID"in table 'Ccin'
+ALTER TABLE "UC_AMD"."CCIN"
+ADD CONSTRAINT "PK_CCIN"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'CcOrder'
+ALTER TABLE "UC_AMD"."CC_ORDER"
+ADD CONSTRAINT "PK_CCORDER"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'Ccout'
+ALTER TABLE "UC_AMD"."CCOUT"
+ADD CONSTRAINT "PK_CCOUT"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'CcpLimit'
+ALTER TABLE "UC_AMD"."CCP_LIMIT"
+ADD CONSTRAINT "PK_CCPLIMIT"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'CcpMain'
+ALTER TABLE "UC_AMD"."CCP_MAIN"
+ADD CONSTRAINT "PK_CCPMAIN"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'CcpPn'
+ALTER TABLE "UC_AMD"."CCPPN"
+ADD CONSTRAINT "PK_CCPPN"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'IntUnit'
+ALTER TABLE "UC_AMD"."INT_UNIT"
+ADD CONSTRAINT "PK_INTUNIT"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'OilHistory'
+ALTER TABLE "UC_AMD"."OIL_HISTORY"
+ADD CONSTRAINT "PK_OILHISTORY"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'PartsMonitor'
+ALTER TABLE "UC_AMD"."PARTS_MONITOR"
+ADD CONSTRAINT "PK_PARTSMONITOR"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'PartsMonitorDetail'
+ALTER TABLE "UC_AMD"."PARTS_MONITOR_DETAIL"
+ADD CONSTRAINT "PK_PARTSMONITORDETAIL"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'PnReg'
+ALTER TABLE "UC_AMD"."PN_REG"
+ADD CONSTRAINT "PK_PNREG"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'ScnAcorder'
+ALTER TABLE "UC_AMD"."SCN_ACORDER"
+ADD CONSTRAINT "PK_SCNACORDER"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'ScnItem'
+ALTER TABLE "UC_AMD"."SCN_ITEM"
+ADD CONSTRAINT "PK_SCNITEM"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'ScnMain'
+ALTER TABLE "UC_AMD"."SCN_MAIN"
+ADD CONSTRAINT "PK_SCNMAIN"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'SnHistory'
+ALTER TABLE "UC_AMD"."SN_HISTORY"
+ADD CONSTRAINT "PK_SNHISTORY"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'SnHistoryUnit'
+ALTER TABLE "UC_AMD"."SN_HISTORY_UNIT"
+ADD CONSTRAINT "PK_SNHISTORYUNIT"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'SnReg'
+ALTER TABLE "UC_AMD"."SN_REG"
+ADD CONSTRAINT "PK_SNREG"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'WfHistory'
+ALTER TABLE "UC_AMD"."WF_HISTORY"
+ADD CONSTRAINT "PK_WFHISTORY"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+
+-- Creating primary key on "ID"in table 'WorkScope'
+ALTER TABLE "UC_AMD"."WORK_SCOPE"
+ADD CONSTRAINT "PK_WORKSCOPE"
+ PRIMARY KEY ("ID" )
+ENABLE
+VALIDATE;
+

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2e8d6976-e9d0-4a04-a89b-d3bd2cccb5da" name="mcc" linkedPackageId="2db4d49d-68a5-46f5-9d41-e2cd2610be7e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31d4c5ae-204b-402a-b236-725f29dbb60c" name="查询结构损伤记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c0761e9-fd13-43ff-b2c4-0da446832e11" />
+        <extendedCases>
+          <extend Id="ca87b5da-031c-4cce-b147-279d816b36fe">
+            <useCaseMoniker Id="83ccde99-2394-44a3-ac54-569a81acc37d" LastKnownName="查询结构损伤附件" />
+            <elementDefinition Id="936c0240-8d87-4036-a634-da88213f0945" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b10067b9-86d1-41b2-8600-3f48ee312604" name="机身系统室" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9fbee19-d1f4-4996-ab3d-c5d33cfc0511" />
+        <targetEnds>
+          <association Id="c1ad2880-fce1-4372-87f3-bde6db1847cf" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="查询结构损伤记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="31d4c5ae-204b-402a-b236-725f29dbb60c" LastKnownName="查询结构损伤记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="844a338d-c6c4-4e24-80a7-f9818b054cbf" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7cb828d6-bf53-4ea7-a66d-f99ef90df929" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b13d174c-2463-4f1a-8f87-5ba0c83cafc2" name="查询结构损伤记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ccd1a5b8-20fa-4750-99a5-2b798a4ed23f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3b699d3-8ac2-49ad-953c-0815c776c5d2" />
+          </association>
+          <association Id="e32076d8-e2d6-40ae-8139-2bf2228201f5" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="管理结构损伤记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b6b63af-d340-45dd-a250-09829ad28e59" LastKnownName="管理结构损伤记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04233ffe-5476-4269-ab9a-0624209c71f2" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b350c26-fbcb-4709-b165-ea85c3031e57" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee51889c-6d05-4424-a1e3-f4f95f34edf9" name="管理结构损伤记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6810de40-e749-4124-b19e-4344e368eed1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e08ad26c-d5ae-4253-91c3-433aa1803a4e" />
+          </association>
+          <association Id="9b3728e8-b806-40ee-a097-0f6122ff80bb" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="查询腐蚀记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8daf670a-2a2f-4963-9146-1337bbfee8a7" LastKnownName="查询腐蚀记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0d4bac2-deb1-4070-9147-2b28ef4fd7da" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5321aac4-b49b-4901-bf25-6641cbba50fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ebf3006-1292-450e-b32c-bb706ff133f4" name="查询腐蚀记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="539a2b09-365a-4644-9ca7-f36024d3877b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7541823-3279-49a1-bfc3-88f1e03bda5d" />
+          </association>
+          <association Id="041ab70a-48ff-40e9-b6af-42d526436713" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="管理结构损伤记录1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9f738c3f-061a-4348-bdca-686cfa2b9298" LastKnownName="管理腐蚀记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e1f0a56-7c0c-4fa9-a0e5-6d6cb9ec6e65" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="050753dc-ded3-4b2a-a54c-082442284925" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="26b97fe3-2304-4f7a-a07e-88e26053ff62" name="管理结构损伤记录1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="71bf8029-ccce-46a6-8820-e7c14f638f0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b83788e-ae51-4bbb-8e6c-5a602e194ece" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b6b63af-d340-45dd-a250-09829ad28e59" name="管理结构损伤记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="863ca3c5-ab4f-47f3-b771-04b9024dfcd3" />
+        <extendedCases>
+          <extend Id="65eea78f-2c47-431b-92a5-ae5db112edf0">
+            <useCaseMoniker Id="74eee9da-b900-4700-8f77-6ce2313b533b" LastKnownName="管理结构损伤附件" />
+            <elementDefinition Id="3585c34b-f8b4-43bd-aa9e-f770d9158d5e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="83ccde99-2394-44a3-ac54-569a81acc37d" name="查询结构损伤附件" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77fd07ed-9a51-46bc-9034-0f3134e49ac9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="74eee9da-b900-4700-8f77-6ce2313b533b" name="管理结构损伤附件" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af61c467-5081-43ae-9a3c-ee38f53950d4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8daf670a-2a2f-4963-9146-1337bbfee8a7" name="查询腐蚀记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="566c4fa8-9d15-4d41-b238-55bb4aa35fbc" />
+        <extendedCases>
+          <extend Id="622283de-0df0-487f-abca-7aba7a8901f6">
+            <useCaseMoniker Id="358a7db4-a103-482d-bc73-60c4519d01ab" LastKnownName="查询腐蚀附件" />
+            <elementDefinition Id="59b6dbdf-bbc6-421d-a3c1-70b71c670612" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9f738c3f-061a-4348-bdca-686cfa2b9298" name="管理腐蚀记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29b2e2ff-916b-4c13-ada2-3aabd3cc5bb0" />
+        <extendedCases>
+          <extend Id="586527c2-0432-444d-83e4-2cb86d05ad53">
+            <useCaseMoniker Id="98b976c4-12bc-4f71-b1d4-b3a5ebe16220" LastKnownName="管理腐蚀附件" />
+            <elementDefinition Id="7bd2ff5e-0742-42ab-95c6-2adfe2ad777c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="358a7db4-a103-482d-bc73-60c4519d01ab" name="查询腐蚀附件" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd71fc8d-b6ee-473c-8d92-ad48e5bb7ad2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="98b976c4-12bc-4f71-b1d4-b3a5ebe16220" name="管理腐蚀附件" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e0d3ba1-7be0-4b98-bc19-e64d39069dfd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2db4d49d-68a5-46f5-9d41-e2cd2610be7e" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7de63656-0aad-4781-a9d4-71855e6395d0">
+        <profileInstance Id="de5dca15-324a-4326-905a-6e18e0349069" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="43ac9261-ba2d-493a-90b4-b6ab22f1b570">
+        <profileInstance Id="252ff16b-db92-49a3-b85d-0d58bfef0125" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

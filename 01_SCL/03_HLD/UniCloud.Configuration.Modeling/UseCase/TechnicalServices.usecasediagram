@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="a72212fc-b046-453f-bd22-36b6f2b9c24c" name="TechnicalServices" linkedPackageId="59ad5097-00af-4dac-a7a6-90a7863dd80b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="35f5cebc-31eb-40df-9ecb-1e1c3cabf1bd">
+      <profileInstance Id="a5523595-609b-48df-bac5-8c575f67b97d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b1a5f009-3234-4b82-8d6e-57631554cfae">
+      <profileInstance Id="74f17e6c-5cdb-4d5a-bd92-dc685cdfcfb8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ed0653e0-0346-475c-baac-681bcb83c280" name="机身系统室" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9fbee19-d1f4-4996-ab3d-c5d33cfc0511" />
+        <targetEnds>
+          <association Id="e21a9159-c59c-431f-91be-19b3f04b9f8b" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="查询AD执行历史" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98ebd43e-a673-4543-8993-f9f44e33df40" LastKnownName="查询AD执行历史" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="498b8cc4-cadb-473e-90b6-2c7e937a00e3" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4f572d84-e0de-470c-8921-04dfbcfbe18a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0cc206e-d118-43c8-bf60-6f8304d9e158" name="查询AD执行历史" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5251ecc8-872a-4800-a447-58949bc3eb0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="70a3932b-68ed-4599-acc6-532dce9c056a" />
+          </association>
+          <association Id="f658bdb9-a1ed-42a5-a371-7b328a647cd3" isDerived="false" sourceEndRoleName="机身系统室" targetEndRoleName="查询SB执行历史" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="54615ed3-443e-4f60-bccb-f294a9659c86" LastKnownName="查询SB执行历史" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94c3ddd4-5651-43c7-8ffd-443cdf13a7f1" name="机身系统室" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f4998b63-ebf0-4ce3-b709-1927f68df830" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="958f8a25-e842-4451-a245-d0b16b286931" name="查询SB执行历史" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="588a5a43-5a4f-4366-8643-ef6fd3c33108" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c6ad9d1f-8041-4ad7-8ad0-21e65554ef04" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="98ebd43e-a673-4543-8993-f9f44e33df40" name="查询AD执行历史" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9343903a-1548-4ce3-ab0d-60f8a937d7be" />
+        <extendedCases>
+          <extend Id="e0ddc2ac-8f69-4cd4-8f99-9b0934f639c4">
+            <useCaseMoniker Id="451b8163-fcdb-43fa-b91e-ac0d167efe28" LastKnownName="补录AD执行费用" />
+            <elementDefinition Id="18da80c2-1353-4ec2-a3ea-81dd70ac5b66" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54615ed3-443e-4f60-bccb-f294a9659c86" name="查询SB执行历史" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f36cec73-9ef7-44ad-b449-a79444b9a7e9" />
+        <extendedCases>
+          <extend Id="4ffd7b60-778c-4d77-8d75-37ddb6451f3d">
+            <useCaseMoniker Id="60650f39-e447-4060-873e-30173664e280" LastKnownName="补录SB执行费用" />
+            <elementDefinition Id="674dc92a-54db-40e1-a4ba-b862d25e0520" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="451b8163-fcdb-43fa-b91e-ac0d167efe28" name="补录AD执行费用" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e181c493-7848-4c11-8318-980d43f33721" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="60650f39-e447-4060-873e-30173664e280" name="补录SB执行费用" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5dfeed99-9081-489a-afea-755605287c3a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="59ad5097-00af-4dac-a7a6-90a7863dd80b" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+  </package>
+</useCaseModelRoot>

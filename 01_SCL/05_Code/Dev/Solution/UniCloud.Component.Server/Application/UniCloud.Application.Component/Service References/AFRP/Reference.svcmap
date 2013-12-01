@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="12ab98b8-fcfd-406f-96f1-1bfc58cbb336" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7948/Service/AFRPService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AFRPService.disco" MetadataType="Disco" ID="287951ee-4abc-42f7-9ffe-10d486387bf6" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?disco" />
+    <MetadataFile FileName="AFRPService.wsdl" MetadataType="Wsdl" ID="565f9250-66b9-4900-bc79-059b99676eaa" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?wsdl" />
+    <MetadataFile FileName="AFRPService.xsd" MetadataType="Schema" ID="4a724751-0059-4ac3-b2d8-e4d6eea64ee7" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AFRPService1.xsd" MetadataType="Schema" ID="83b5d4ef-4406-448a-91c8-3eefcb008605" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AFRPService2.xsd" MetadataType="Schema" ID="238cfae7-a212-45f3-a088-2c987dc68a99" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AFRPService3.xsd" MetadataType="Schema" ID="a4a8d67e-3683-4456-93a0-46e0dc932991" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AFRPService4.xsd" MetadataType="Schema" ID="81db5d49-5562-48eb-9982-2250b4f2d805" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AFRPService1.wsdl" MetadataType="Wsdl" ID="86fbefab-e789-4c92-be60-0c877da4ed8a" SourceId="1" SourceUrl="http://localhost:7948/Service/AFRPService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A473421-46A1-4298-ABFF-17F9647025AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.Query.Component</RootNamespace>
+    <AssemblyName>UniCloud.Query.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniCloud.DataObjects">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.1.0.2\lib\UniCloud.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain">
+      <HintPath>..\..\..\packages\UniCloud.Domain.1.0.1\lib\UniCloud.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Domain.Repositories">
+      <HintPath>..\..\..\packages\UniCloud.Domain.Repositories.1.0.2\lib\UniCloud.Domain.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Events">
+      <HintPath>..\..\..\packages\UniCloud.Events.1.0.1\lib\UniCloud.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.Infrastructure">
+      <HintPath>..\..\..\packages\UniCloud.Infrastructure.1.0.2\lib\UniCloud.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseQuery\IQuery.cs" />
+    <Compile Include="BaseQuery\QueryExtension.cs" />
+    <Compile Include="BaseQuery\SortByExtension.cs" />
+    <Compile Include="IQuerys\Aircraft\IAtaQuery.cs" />
+    <Compile Include="IQuerys\Part\IAcIntUnitUtilizaQuery.cs" />
+    <Compile Include="IQuerys\Part\IAcStructureQuery.cs" />
+    <Compile Include="IQuerys\Part\IAdsbComplyQuery.cs" />
+    <Compile Include="IQuerys\Part\IAdsbQuery.cs" />
+    <Compile Include="IQuerys\Part\IAirBusMSCNQuery.cs" />
+    <Compile Include="IQuerys\Part\IAttactDocumentQuery.cs" />
+    <Compile Include="IQuerys\Part\ICcOrderQuery.cs" />
+    <Compile Include="IQuerys\Part\ICcpMainQuery.cs" />
+    <Compile Include="IQuerys\Part\IEgtMarginQuery.cs" />
+    <Compile Include="IQuerys\Part\IIntUnitQuery.cs" />
+    <Compile Include="IQuerys\Part\IMajorEventQuery.cs" />
+    <Compile Include="IQuerys\Part\IOilAnalysisQuery.cs" />
+    <Compile Include="IQuerys\Part\IOilHistoryQuery.cs" />
+    <Compile Include="IQuerys\Part\IPartsMonitorQuery.cs" />
+    <Compile Include="IQuerys\Part\IPnRegQuery.cs" />
+    <Compile Include="IQuerys\Part\IScnMainQuery.cs" />
+    <Compile Include="IQuerys\Part\ISnHistoryQuery.cs" />
+    <Compile Include="IQuerys\Part\ISnRegQuery.cs" />
+    <Compile Include="IQuerys\Part\IWfHistoryQuery.cs" />
+    <Compile Include="IQuerys\Part\IWorkScopeQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Querys\Aircraft\AtaQuery.cs" />
+    <Compile Include="Querys\Part\AcIntUnitUtilizaQuery.cs" />
+    <Compile Include="Querys\Part\AcStructureQuery.cs" />
+    <Compile Include="Querys\Part\AdsbComplyQuery.cs" />
+    <Compile Include="Querys\Part\AdsbQuery.cs" />
+    <Compile Include="Querys\Part\AirBusMSCNQuery.cs" />
+    <Compile Include="Querys\Part\AttactDocumentQuery.cs" />
+    <Compile Include="Querys\Part\CcOrderQuery.cs" />
+    <Compile Include="Querys\Part\CcpMainQuery.cs" />
+    <Compile Include="Querys\Part\EgtMarginQuery.cs" />
+    <Compile Include="Querys\Part\IntUnitQuery.cs" />
+    <Compile Include="Querys\Part\MajorEventQuery.cs" />
+    <Compile Include="Querys\Part\OilAnalysisQuery.cs" />
+    <Compile Include="Querys\Part\OilHistoryQuery.cs" />
+    <Compile Include="Querys\Part\PartsMonitorQuery.cs" />
+    <Compile Include="Querys\Part\PnRegQuery.cs" />
+    <Compile Include="Querys\Part\ScnMainQuery.cs" />
+    <Compile Include="Querys\Part\SnHistoryQuery.cs" />
+    <Compile Include="Querys\Part\SnRegQuery.cs" />
+    <Compile Include="Querys\Part\WfHistoryQuery.cs" />
+    <Compile Include="Querys\Part\WorkScopeQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\UniCloud.Domain.Component\UniCloud.Domain.Component.csproj">
+      <Project>{b2b2448a-1d6d-4ec2-aab7-07a46bd3c528}</Project>
+      <Name>UniCloud.Domain.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Repository\UniCloud.Domain.Repositories.Component\UniCloud.Domain.Repositories.Component.csproj">
+      <Project>{2c50eddc-aa50-4aa3-9d59-61d2634bfeb9}</Project>
+      <Name>UniCloud.Domain.Repositories.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniCloud.DataObjects.Component\UniCloud.DataObjects.Component.csproj">
+      <Project>{2f2cc87b-411b-4b0c-8e72-24af47c06a3e}</Project>
+      <Name>UniCloud.DataObjects.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

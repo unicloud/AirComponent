@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="df343738-6ab1-4b48-96e5-90e7333b61ba" name="mcc" linkedPackageId="b1207ca9-223d-49b4-9137-2dc0f9cb90bd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a48b328-c4f7-4fd2-acf0-3bc39b93a9f7" name="AcStructure" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="154c120f-4259-43c8-af83-d9506b954bbd" />
+        <ownedAttributesInternal>
+          <property Id="f1622fbb-18df-451e-9bd2-323c40faa3c1" name="Actype" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>飞机</description>
+            <elementDefinition Id="770b8b40-a7f9-4aaf-b69e-8404047b9680" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f91c05ec-49f2-41c7-ba68-78e74402f116" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="78115096-100c-42e6-9a13-3686dd78a454" name="Acmodel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>机型</description>
+            <elementDefinition Id="95458ffa-2ed2-4a24-87de-b0b80fc48951" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="341feae6-7ac8-4894-b888-d2db83d3adeb" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="4c82af26-dfeb-48c5-8b54-364f088a528b" name="ReportNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92cd9c0e-342f-4b27-9f1a-6c99deefc28d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="852285c8-7d52-4c60-a01c-4f2cefc4e14d" LastKnownName="string(20)" />
+            </type_NamedElement>
+          </property>
+          <property Id="e8b0b0f8-6b07-4b51-a005-678d26e0feb5" name="ReportType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>文件类型（结构/腐蚀）报告</description>
+            <elementDefinition Id="173d4a39-b8eb-4b1e-9476-86c1c5b52938" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4c02b9d2-1e35-4fb7-9bfb-606851a48fe5" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="a404f48b-1de4-45aa-8b8a-cd8bc8273dbc" name="ReportDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>报告日期</description>
+            <elementDefinition Id="1cd78966-ec37-472c-84f0-5dddff381424" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="38fc0fdf-e3c2-4b75-b61a-8773f0dc1628" LastKnownName="date?" />
+            </type_NamedElement>
+          </property>
+          <property Id="1408bc30-2b94-4d2b-9b38-4c3b37501636" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>损伤/腐蚀描述</description>
+            <elementDefinition Id="51124d75-02c4-4848-9e59-bb1adb7ddcc9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2aa479ac-caac-4b1e-a854-107e97e204d3" LastKnownName="string(1000)" />
+            </type_NamedElement>
+          </property>
+          <property Id="bdd7d6fb-dac3-475e-a81a-a4121d899831" name="IsDefer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>是否保留</description>
+            <elementDefinition Id="802187db-b6c9-42ca-9d27-40405710c550" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b74f2f61-fccf-4361-a050-fc2e45342213" LastKnownName="string(4)" />
+            </type_NamedElement>
+          </property>
+          <property Id="0cdec70e-be4c-4419-be54-55ff0e894de2" name="Acreg" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="277b07f7-9f8c-4fdb-b0ff-a5e39666e400" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f91c05ec-49f2-41c7-ba68-78e74402f116" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="b8902dd3-ea58-4f8b-8645-a8b14b32f418" name="TecAss" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>技术评估</description>
+            <elementDefinition Id="23607b16-20d7-4187-a49b-774fe9eb2c4b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2aa479ac-caac-4b1e-a854-107e97e204d3" LastKnownName="string(1000)" />
+            </type_NamedElement>
+          </property>
+          <property Id="c6d8b1fe-2d07-46fc-8f3b-4072a5f2a786" name="TreatResult" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>处理结果</description>
+            <elementDefinition Id="4ac9f88d-bb64-4313-b754-2b434a59f8b9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2aa479ac-caac-4b1e-a854-107e97e204d3" LastKnownName="string(1000)" />
+            </type_NamedElement>
+          </property>
+          <property Id="38665ce7-f5e8-4a48-b6dc-24e994ada17e" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>状态</description>
+            <elementDefinition Id="dfe65bba-4f45-4061-ab84-4ba46ba8ec4a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dd343c05-c953-4583-a52c-9c3fa2e85a00" LastKnownName="string(6)" />
+            </type_NamedElement>
+          </property>
+          <property Id="d7d16bda-c951-4235-be0b-4cfcc5f6fd60" name="CloseDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>关闭日期</description>
+            <elementDefinition Id="a9a28b29-7c39-4d56-a9e5-5a95db39cf2c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c40df952-6bbf-41fa-aba6-e788ff9afd25" LastKnownName="Date?" />
+            </type_NamedElement>
+          </property>
+          <property Id="0d74364d-7b55-449b-bcab-90d17a090531" name="Source" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>来源</description>
+            <elementDefinition Id="f014a0b0-afcc-40fd-a1fd-ae0f8b7dce4b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="62c9abb6-b4aa-43d4-8f0c-cb528b75b0ce" LastKnownName="string(100)" />
+            </type_NamedElement>
+          </property>
+          <property Id="56dd53e5-a439-4235-8769-509a52910e36" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>腐蚀级别</description>
+            <elementDefinition Id="1c3f6b19-c661-4da4-90de-76f83b8174cf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f91c05ec-49f2-41c7-ba68-78e74402f116" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+          <property Id="360d92ab-a7c9-4da7-bea8-008ed314404b" name="RepairDeadline" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>修理期限</description>
+            <elementDefinition Id="ba59af2a-0776-485e-956a-e1803d50859e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f91c05ec-49f2-41c7-ba68-78e74402f116" LastKnownName="string(10)" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f91c05ec-49f2-41c7-ba68-78e74402f116" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="341feae6-7ac8-4894-b888-d2db83d3adeb" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2aa479ac-caac-4b1e-a854-107e97e204d3" name="string(1000)" isAbstract="false" isLeaf="false" cachedFullName="string(1000)">
+        <elementDefinition Id="46f2c7ef-5111-42b9-97e5-10c24d12481f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b74f2f61-fccf-4361-a050-fc2e45342213" name="string(4)" isAbstract="false" isLeaf="false" cachedFullName="string(4)">
+        <elementDefinition Id="ab8d48b5-91ba-4764-b04f-7854f3adc3f8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dd343c05-c953-4583-a52c-9c3fa2e85a00" name="string(6)" isAbstract="false" isLeaf="false" cachedFullName="string(6)">
+        <elementDefinition Id="3c692f08-60ff-4334-8a4b-fd866a5fe2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4c02b9d2-1e35-4fb7-9bfb-606851a48fe5" name="string(10)" isAbstract="false" isLeaf="false" cachedFullName="string(10)">
+        <elementDefinition Id="0e9b0828-166e-44a8-b710-9c8138dbe17a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="852285c8-7d52-4c60-a01c-4f2cefc4e14d" name="string(20)" isAbstract="false" isLeaf="false" cachedFullName="string(20)">
+        <elementDefinition Id="3c7591fe-0ed3-4870-8381-29307639c8e9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="62c9abb6-b4aa-43d4-8f0c-cb528b75b0ce" name="string(100)" isAbstract="false" isLeaf="false" cachedFullName="string(100)">
+        <elementDefinition Id="cc1dca4d-e39b-421c-b4f7-2c7507db28f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c40df952-6bbf-41fa-aba6-e788ff9afd25" name="Date?" isAbstract="false" isLeaf="false" cachedFullName="Date?">
+        <elementDefinition Id="62c44c4d-1e3d-452a-8918-feedcfd93610" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="38fc0fdf-e3c2-4b75-b61a-8773f0dc1628" name="date?" isAbstract="false" isLeaf="false" cachedFullName="date?">
+        <elementDefinition Id="c2bdfc72-a450-4634-9c40-9296eb382c87" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b1207ca9-223d-49b4-9137-2dc0f9cb90bd" name="UniCloud.Configuration.Modeling">
+    <elementDefinition Id="903f4ff4-4446-4ce5-90cc-13a1d2d8ee11" />
+    <profileInstances>
+      <packageHasProfileInstances Id="90f98f13-4eb8-4bfe-a6c3-869869a38e9a">
+        <profileInstance Id="2d431d2d-727d-49dd-ae70-abcdd8bc9b13" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5919c436-94ac-42d3-a8ac-f6411caa58de">
+        <profileInstance Id="31c23818-8e4b-432d-8bea-b34c3bb6e69f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

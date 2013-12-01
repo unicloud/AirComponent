@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B14CD76-0E98-4D73-8BE4-1F6E2FE0A7C1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseCodeTools</RootNamespace>
+    <AssemblyName>BaseCodeTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoGenerate\ClassCode\DataObjectClass.Silverlight.cs" />
+    <Compile Include="AutoGenerate\ClassCode\PartialClass.cs" />
+    <Compile Include="AutoGenerate\ClassCode\QueryInterface.cs" />
+    <Compile Include="AutoGenerate\ClassCode\QueryClass.cs" />
+    <Compile Include="AutoGenerate\ClassCode\ServiceContractInterface.cs" />
+    <Compile Include="AutoGenerate\ClassCode\ServiceImpl.cs" />
+    <Compile Include="AutoGenerate\FileCode\DataObjectFile.Silverlight.cs" />
+    <Compile Include="AutoGenerate\FileCode\PartialFile.cs" />
+    <Compile Include="AutoGenerate\FileCode\QueryFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoGenerate\FileCode\QueryFile.Interface.cs" />
+    <Compile Include="AutoGenerate\FileCode\ServiceContractFile.Interface.cs" />
+    <Compile Include="AutoGenerate\FileCode\ServiceImplFile.cs" />
+    <Compile Include="AutoGenerate\Generator\BaseGenerator.cs" />
+    <Compile Include="AutoGenerate\ClassCode\BaseClassCode.cs" />
+    <Compile Include="AutoGenerate\ClassCode\ConfigurationClass.SqlServer.cs" />
+    <Compile Include="AutoGenerate\ClassCode\IClassCode.cs" />
+    <Compile Include="AutoGenerate\ClassCode\DataObjectClass.Server.cs" />
+    <Compile Include="AutoGenerate\ClassCode\RepositoryClass.cs" />
+    <Compile Include="AutoGenerate\ClassCode\RepositoryInterface.cs" />
+    <Compile Include="AutoGenerate\ClassCode\ConfigurationClass.Oracle.cs" />
+    <Compile Include="AutoGenerate\FileCode\BaseFileCode.cs" />
+    <Compile Include="AutoGenerate\FileCode\IFileCode.cs" />
+    <Compile Include="AutoGenerate\FileCode\ConfigurationFile.SqlServer.cs" />
+    <Compile Include="AutoGenerate\FileCode\DataObjectFile.Server.cs" />
+    <Compile Include="AutoGenerate\FileCode\RepositoryFile.cs" />
+    <Compile Include="AutoGenerate\FileCode\RepositoryFile.Interface.cs" />
+    <Compile Include="AutoGenerate\FileCode\ConfigurationFile.Oracle.cs" />
+    <Compile Include="AutoGenerate\Generator\GeneratorContainer.cs" />
+    <Compile Include="AutoGenerate\Generator\IGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\ConfigurationsGenerator.SqlServer.cs" />
+    <Compile Include="AutoGenerate\Generator\DataObjectsGenerator.Server.cs" />
+    <Compile Include="AutoGenerate\Generator\DataObjectsGenerator.Silverlight.cs" />
+    <Compile Include="AutoGenerate\Generator\PaginationGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\PartialGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\ProjectConfigurationGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\QueryGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoGenerate\Generator\QueryGenerator.Interface.cs" />
+    <Compile Include="AutoGenerate\Generator\ServiceContractGenerator.Interface.cs" />
+    <Compile Include="AutoGenerate\Generator\ServiceImplGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\PaymentConfigGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\PaymentConfigrationsGenerator.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\IPropertyCode.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\PropertyCodeContainer.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\StringProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\IntProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\BooleanProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\DecimalProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\ByteArrayProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\GuidProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\GuidClassProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\DateTimeProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\XmlProperty.cs" />
+    <Compile Include="AutoGenerate\Generator\RepositoryGenerator.cs" />
+    <Compile Include="AutoGenerate\Generator\RepositoryGenerator.Interface.cs" />
+    <Compile Include="AutoGenerate\Generator\ConfigurationsGenerator.Oracle.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\BaseProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\DataObjectProperty.cs" />
+    <Compile Include="AutoGenerate\PropertyCode\CollectionProperty.cs" />
+    <Compile Include="GeneratorHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Compile Include="AutoGenerate\PropertyCode\ByteProperty.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

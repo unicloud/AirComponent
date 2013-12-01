@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UniCloud.Infrastructure</id>
+    <version>1.0.1</version>
+    <title>UniCloud.Infrastructure</title>
+    <authors>zhangnx</authors>
+    <owners>zhangnx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UniCloud.Infrastructure Framewok.
+Include Packages List
+UniCloud.Infrastructure.dll</description>
+    <summary>UniCloud.Infrastructure Framework.</summary>
+    <dependencies>
+      <dependency id="UniCloud.Infrastructure.Config" version="1.0.0" />
+      <dependency id="UniCloud.Infrastructure.Utility" version="1.0.0" />
+      <dependency id="Microsoft.Practices.Unity" version="1.0.0" />
+    </dependencies>
+    <references>
+      <reference file="UniCloud.Infrastructure.dll" />
+    </references>
+  </metadata>
+</package>

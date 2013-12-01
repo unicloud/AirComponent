@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7310BAF-320A-43A0-A4FA-D576663F5649}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniCloud.DataObjects.Component.Silverlight</RootNamespace>
+    <AssemblyName>UniCloud.DataObjects.Component.Silverlight</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="system">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Browser">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Document.Silverlight">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Document.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="UniCloud.DataObjects.Silverlight">
+      <HintPath>..\..\..\packages\UniCloud.DataObjects.Silverlight.1.0.0\lib\UniCloud.DataObjects.Silverlight.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Part\AcIntUnitUtilizaDataObject.cs" />
+    <Compile Include="Part\AcStructureDataObject.cs" />
+    <Compile Include="Part\AdsbComplyDataObject.cs" />
+    <Compile Include="Part\AdsbDataObject.cs" />
+    <Compile Include="Part\AirBusMSCNDataObject.cs" />
+    <Compile Include="Part\AttactDocumentDataObject.cs" />
+    <Compile Include="Part\CcinDataObject.cs" />
+    <Compile Include="Part\CcOrderDataObject.cs" />
+    <Compile Include="Part\CcoutDataObject.cs" />
+    <Compile Include="Part\CcpLimitDataObject.cs" />
+    <Compile Include="Part\CcpMainDataObject.cs" />
+    <Compile Include="Part\CcpPnDataObject.cs" />
+    <Compile Include="Part\Common\CcHistoryDto.cs" />
+    <Compile Include="Part\Common\ComboBoxDto.cs" />
+    <Compile Include="Part\Common\CompareAcDto.cs" />
+    <Compile Include="Part\Common\CompareAcOrderDto.cs" />
+    <Compile Include="Part\Common\CompareMscnDto.cs" />
+    <Compile Include="Part\Common\EngineReportDto.cs" />
+    <Compile Include="Part\Common\EngOilWarnDto.cs" />
+    <Compile Include="Part\Common\OilHistoryDto.cs" />
+    <Compile Include="Part\Common\ScnItemDto.cs" />
+    <Compile Include="Part\Common\UseDetailInfo.cs" />
+    <Compile Include="Part\Common\UtilizationData.cs" />
+    <Compile Include="Part\EgtMarginDataObject.cs" />
+    <Compile Include="Part\IntUnitDataObject.cs" />
+    <Compile Include="Part\MajorEventDataObject.cs" />
+    <Compile Include="Part\OilAnalysisDataObject.cs" />
+    <Compile Include="Part\OilHistoryDataObject.cs" />
+    <Compile Include="Part\Partial\OilHistoryDataObject.cs" />
+    <Compile Include="Part\Partial\PartsMonitorDataObject.cs" />
+    <Compile Include="Part\Partial\SnHistoryDataObject.cs" />
+    <Compile Include="Part\Partial\SnRegDataObject.cs" />
+    <Compile Include="Part\Partial\OilAnalysisDataObject.cs" />
+    <Compile Include="Part\PartsMonitorDataObject.cs" />
+    <Compile Include="Part\PartsMonitorDetailDataObject.cs" />
+    <Compile Include="Part\PnRegDataObject.cs" />
+    <Compile Include="Part\ScnAcorderDataObject.cs" />
+    <Compile Include="Part\ScnItemDataObject.cs" />
+    <Compile Include="Part\ScnMainDataObject.cs" />
+    <Compile Include="Part\SnHistoryDataObject.cs" />
+    <Compile Include="Part\SnHistoryUnitDataObject.cs" />
+    <Compile Include="Part\SnRegDataObject.cs" />
+    <Compile Include="Part\WfHistoryDataObject.cs" />
+    <Compile Include="Part\WorkScopeDataObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z-GenerateCode\Common1.txt">
+      <DependentUpon>Common.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="Z-GenerateCode\GenerateSilverDataObject.txt">
+      <DependentUpon>GenerateSilverDataObject.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Z-GenerateCode\Common.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Common1.txt</LastGenOutput>
+    </Content>
+    <Content Include="Z-GenerateCode\GenerateSilverDataObject.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GenerateSilverDataObject.txt</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aircraft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

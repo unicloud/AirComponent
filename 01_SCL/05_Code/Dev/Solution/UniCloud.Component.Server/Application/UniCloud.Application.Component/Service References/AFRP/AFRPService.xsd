@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.UniCloud.com/CollectionDataObjectList.xsd" elementFormDefault="qualified" targetNamespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7948/Service/AFRPService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+  <xs:complexType name="BaseNDRCRequestDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="NDRCRequestDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q1:NDRCRequestDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseNDRCRequestDataObjectList" nillable="true" type="tns:BaseNDRCRequestDataObjectList" />
+  <xs:complexType name="BasePlanAircraftDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PlanAircraftDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q2:PlanAircraftDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasePlanAircraftDataObjectList" nillable="true" type="tns:BasePlanAircraftDataObjectList" />
+  <xs:complexType name="BasePlanEngineDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PlanEngineDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q3:PlanEngineDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasePlanEngineDataObjectList" nillable="true" type="tns:BasePlanEngineDataObjectList" />
+  <xs:complexType name="BasePlanDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PlanDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q4:PlanDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasePlanDataObjectList" nillable="true" type="tns:BasePlanDataObjectList" />
+  <xs:complexType name="BaseProgrammCategoryDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ProgrammCategoryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q5:ProgrammCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseProgrammCategoryDataObjectList" nillable="true" type="tns:BaseProgrammCategoryDataObjectList" />
+  <xs:complexType name="BaseProgrammingDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ProgrammingDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q6:ProgrammingDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseProgrammingDataObjectList" nillable="true" type="tns:BaseProgrammingDataObjectList" />
+  <xs:complexType name="BaseRAApprovalDocDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RAApprovalDocDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q7:RAApprovalDocDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRAApprovalDocDataObjectList" nillable="true" type="tns:BaseRAApprovalDocDataObjectList" />
+  <xs:complexType name="BaseRARequestDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RARequestDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q8:RARequestDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRARequestDataObjectList" nillable="true" type="tns:BaseRARequestDataObjectList" />
+  <xs:complexType name="BaseRequestDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RequestDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q9:RequestDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRequestDataObjectList" nillable="true" type="tns:BaseRequestDataObjectList" />
+  <xs:complexType name="BaseSAWSApprovalDocDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SAWSApprovalDocDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q10:SAWSApprovalDocDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseSAWSApprovalDocDataObjectList" nillable="true" type="tns:BaseSAWSApprovalDocDataObjectList" />
+  <xs:complexType name="BaseSAWSRequestDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SAWSRequestDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q11:SAWSRequestDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseSAWSRequestDataObjectList" nillable="true" type="tns:BaseSAWSRequestDataObjectList" />
+  <xs:complexType name="BaseXmlConfigDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="XmlConfigDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q12:XmlConfigDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseXmlConfigDataObjectList" nillable="true" type="tns:BaseXmlConfigDataObjectList" />
+  <xs:complexType name="BaseAirlinesDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AirlinesDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q13:AirlinesDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAirlinesDataObjectList" nillable="true" type="tns:BaseAirlinesDataObjectList" />
+  <xs:complexType name="BaseMailAddressDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MailAddressDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q14:MailAddressDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseMailAddressDataObjectList" nillable="true" type="tns:BaseMailAddressDataObjectList" />
+  <xs:complexType name="BaseManagerDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ManagerDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q15:ManagerDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseManagerDataObjectList" nillable="true" type="tns:BaseManagerDataObjectList" />
+  <xs:complexType name="BaseManufacturerDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ManufacturerDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q16:ManufacturerDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseManufacturerDataObjectList" nillable="true" type="tns:BaseManufacturerDataObjectList" />
+  <xs:complexType name="BaseOperatorDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OperatorDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q17:OperatorDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseOperatorDataObjectList" nillable="true" type="tns:BaseOperatorDataObjectList" />
+  <xs:complexType name="BaseOwnerDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OwnerDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q18:OwnerDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseOwnerDataObjectList" nillable="true" type="tns:BaseOwnerDataObjectList" />
+  <xs:complexType name="BaseXmlSettingDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="XmlSettingDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q19:XmlSettingDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseXmlSettingDataObjectList" nillable="true" type="tns:BaseXmlSettingDataObjectList" />
+  <xs:complexType name="BaseActionCategoryDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ActionCategoryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q20:ActionCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseActionCategoryDataObjectList" nillable="true" type="tns:BaseActionCategoryDataObjectList" />
+  <xs:complexType name="BaseAircraftCategoryDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AircraftCategoryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q21:AircraftCategoryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAircraftCategoryDataObjectList" nillable="true" type="tns:BaseAircraftCategoryDataObjectList" />
+  <xs:complexType name="BaseAircraftDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AircraftDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q22:AircraftDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAircraftDataObjectList" nillable="true" type="tns:BaseAircraftDataObjectList" />
+  <xs:complexType name="BaseAircraftTypeDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AircraftTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q23:AircraftTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAircraftTypeDataObjectList" nillable="true" type="tns:BaseAircraftTypeDataObjectList" />
+  <xs:complexType name="BaseAirlineProgrammingDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AirlineProgrammingDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q24:AirlineProgrammingDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAirlineProgrammingDataObjectList" nillable="true" type="tns:BaseAirlineProgrammingDataObjectList" />
+  <xs:complexType name="BaseAnnualSummaryDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AnnualSummaryDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q25:AnnualSummaryDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAnnualSummaryDataObjectList" nillable="true" type="tns:BaseAnnualSummaryDataObjectList" />
+  <xs:complexType name="BaseApprovalDocDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ApprovalDocDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q26:ApprovalDocDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseApprovalDocDataObjectList" nillable="true" type="tns:BaseApprovalDocDataObjectList" />
+  <xs:complexType name="BaseCAACProgrammingDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CAACProgrammingDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q27:CAACProgrammingDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseCAACProgrammingDataObjectList" nillable="true" type="tns:BaseCAACProgrammingDataObjectList" />
+  <xs:complexType name="BaseEnginePlanDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EnginePlanDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q28:EnginePlanDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEnginePlanDataObjectList" nillable="true" type="tns:BaseEnginePlanDataObjectList" />
+  <xs:complexType name="BaseEngineDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EngineDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q29:EngineDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEngineDataObjectList" nillable="true" type="tns:BaseEngineDataObjectList" />
+  <xs:complexType name="BaseEngineTypeDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EngineTypeDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q30:EngineTypeDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEngineTypeDataObjectList" nillable="true" type="tns:BaseEngineTypeDataObjectList" />
+  <xs:complexType name="BaseNDRCApprovalDocDataObjectList">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Base{0}List" Namespace="http://www.UniCloud.com/CollectionDataObjectList.xsd" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="NDRCApprovalDocDataObject" Namespace="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/UniCloud.DataObjects" minOccurs="0" maxOccurs="unbounded" name="BaseItem" nillable="true" type="q31:NDRCApprovalDocDataObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseNDRCApprovalDocDataObjectList" nillable="true" type="tns:BaseNDRCApprovalDocDataObjectList" />
+</xs:schema>

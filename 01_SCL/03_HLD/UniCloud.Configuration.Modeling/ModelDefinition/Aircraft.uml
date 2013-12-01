@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="dd062d75-a7ff-4a38-b5b7-a2cbeefcfd53"
+  name="Aircraft" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1561bae9-b80d-43dd-a7bb-0f596c4adc67"
+        LastKnownName="Aircraft_Class"
+        LastKnownLocation="Aircraft_Class.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="15b109b3-bfa6-4fe0-83a1-ba192d7ca8de"
+        LastKnownName="Aircraft_Active"
+        LastKnownLocation="Aircraft_Active.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="91da33dc-a3ff-4e7d-aa3a-3903973bc006"
+        LastKnownName="Aircraft_UseCase"
+        LastKnownLocation="Aircraft_UseCase.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

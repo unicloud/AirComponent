@@ -1,0 +1,66 @@
+﻿-- --------------------------------------------------
+-- Creating all Sequence
+-- --------------------------------------------------
+
+-- Creating sequence  'Ac_Ata'
+CREATE sequence "UC_AMD"."SEQ_AC_ATA" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'AC_CATEGORY'
+CREATE sequence "UC_AMD"."SEQ_AC_CATEGORY" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Ac_Config'
+CREATE sequence "UC_AMD"."SEQ_AC_CONFIG" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'Ac_Model'
+CREATE sequence "UC_AMD"."SEQ_AC_MODEL" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'AC_REG'
+CREATE sequence "UC_AMD"."SEQ_AC_REG" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'ACREG_LICENSE'
+CREATE sequence "UC_AMD"."SEQ_ACREG_LICENSE" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'ATA'
+CREATE sequence "UC_AMD"."SEQ_ATA" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'AC_TYPE'
+CREATE sequence "UC_AMD"."SEQ_AC_TYPE" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;
+
+-- Creating sequence  'LICENSE_TYPE'
+CREATE sequence "UC_AMD"."SEQ_LICENSE_TYPE" 
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1;

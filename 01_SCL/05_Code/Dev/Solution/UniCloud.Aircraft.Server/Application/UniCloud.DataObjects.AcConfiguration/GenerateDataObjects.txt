@@ -1,0 +1,1 @@
+﻿svcutil.exe /dconly /n:*,UniCloud.DataObjects /l:cs /o:AHMTDataObjects.cs transcode/*.xsd /d:transcode

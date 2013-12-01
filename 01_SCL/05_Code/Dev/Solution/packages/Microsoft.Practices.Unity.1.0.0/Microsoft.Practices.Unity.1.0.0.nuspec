@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Practices.Unity</id>
+    <version>1.0.0</version>
+    <title />
+    <authors>zhangnx</authors>
+    <owners>zhangnx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.Practices.Unity Framework.</description>
+    <summary>Microsoft.Practices.Unity Framework</summary>
+    <references>
+      <reference file="Microsoft.Practices.Unity.Configuration.dll" />
+      <reference file="Microsoft.Practices.Unity.dll" />
+      <reference file="Microsoft.Practices.Unity.Interception.Configuration.dll" />
+      <reference file="Microsoft.Practices.Unity.Interception.dll" />
+    </references>
+  </metadata>
+</package>
